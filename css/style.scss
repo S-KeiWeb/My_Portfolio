@@ -54,3 +54,50 @@ header {
 
 //----------main共通部分----------//
 
+.main-content {
+    display: flex;
+    flex-flow: column;
+    width: 900px;
+}
+
+//
+
+.main-section-wrap {
+    display: flex;
+    // flex-flow: column;
+
+}
+
+//----------main_top----------//
+
+.top {
+    position: relative;
+    margin-bottom: 130px;
+}
+
+.concept {
+    position: absolute;
+    top: 324px;
+    left: 0;
+    margin-left: 90px;
+}
+
+.main-concept {
+    display: flex;
+    flex-flow: column;
+    font-size: 150px;
+    font-family: "shinryu", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.concept-text {
+    padding: 8px;
+    font-size: 50px;
+}
+
+.top-img {
+    margin-right: 0;
+    margin-left: auto;
+    display: block;
+}
