@@ -1,3 +1,8 @@
+html {
+    font-size: 30px;
+    color: #707070;
+}
+
 img {
     max-width: 100%;	
 }
@@ -24,8 +29,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: flex-end;
-
-		column-gap: 80px;
+    column-gap: 80px;
 }
 
 .header-nav-item {
@@ -34,7 +38,7 @@ header {
 }
 
 .header-nav-item:first-child {
-    border-right: 1px solid #000;
+    border-right: 1px solid #707070;
 }
 
 .contact {
@@ -49,35 +53,45 @@ header {
 .main-content {
     display: flex;
     flex-flow: column;
-    width: 900px;
+    margin-bottom: 80px;
 }
 
-//
-
-.main-section-wrap {
+.main-content-title {
     display: flex;
-    // flex-flow: column;
-
+    flex-direction: column;
+    border-left: 5px solid #707070;
+    padding-left: 40px;
+    margin-bottom: 50px;
 }
+
+.main-content-title-en {
+    font-size: 1.7rem;
+    padding-bottom: 5px;
+}
+
+.main-content-title-ja {
+    font-size: 0.5rem;
+}
+
 
 //----------main_top----------//
 
 .top {
     position: relative;
-    margin-bottom: 130px;
+    margin-bottom: 120px;
 }
 
 .concept {
     position: absolute;
-    top: 324px;
+    top: 40%;
     left: 0;
-    margin-left: 90px;
+    padding-left: 4.6875%;
 }
 
 .main-concept {
     display: flex;
     flex-flow: column;
-    font-size: 150px;
+    font-size: clamp(100px, 10vw, 150px);
     font-family: "shinryu", sans-serif;
     font-weight: 400;
     font-style: normal;
@@ -85,14 +99,71 @@ header {
 
 .concept-text {
     padding: 8px;
-    font-size: 50px;
+    font-size: 1.5rem;
 }
 
 .top-img {
     margin-right: 0;
     margin-left: auto;
     display: block;
+    padding-left: 26.041%;
 }
+
+//----------main_section----------//
+
+.main-section-wrap {
+    display: flex;
+    margin-left: 16.666%;
+    margin-right: 10.666%;
+}
+
+.main-section-content-wrap {
+    margin-left: 7.8125%;
+}
+
+.main-section-nav-title {
+    margin: 130px 45px 60px 45px;
+}
+
+.main-section-nav-item {
+    margin-bottom: 50px;
+    margin-left: 25px
+}
+
+.main-section-nav-item a {
+    padding: 20px;
+}
+
+//----------main_button----------//
+
+.mainpage-button{
+    border: 1px solid #707070;
+    border-radius: 30px;
+    padding: 14px 77px;
+    font-size: 0.73rem;
+    margin: 0 auto;
+}
+
+//----------main_section_About----------//
+
+.main-content-wrap {
+    display: flex;
+}
+
+.main-about-wrap {
+    margin-left: 5.5555%;
+}
+
+.main-about-text {
+    font-size: 0.525rem;
+    margin-right: 4.4444%;
+}
+
+.main-about-text p {
+    margin-bottom: 17px;
+}
+
+//----------mediaquery----------//
 
 @media (max-width: 1024px) {
 }
