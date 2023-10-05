@@ -1,5 +1,5 @@
 html {
-  font-size: 30px;
+  font-size: 50px;
   color: #707070;
 }
 
@@ -19,7 +19,7 @@ header {
 .site-title {
   display: flex;
   width: 100%;
-  font-size: 66px;
+  font-size: 1.26rem;
   padding: 20px 0;
 }
 
@@ -32,7 +32,7 @@ header {
 }
 
 .header-nav-item {
-  font-size: 40px;
+  font-size: 0.8rem;
   padding-right: 80px;
 }
 
@@ -41,10 +41,41 @@ header {
 }
 
 .contact {
-  font-size: 40px;
+  font-size: 0.8rem;
   color: #fff;
   background-color: #000;
   padding: 40px 2.608%;
+}
+
+.top {
+  position: relative;
+  margin-bottom: 120px;
+}
+
+.concept {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  padding-left: 4.6875%;
+}
+
+.main-concept {
+  display: flex;
+  font-size: clamp(2rem, 11vw, 3rem);
+  font-family: "shinryu", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.concept-text {
+  padding-top: 5px;
+  font-size: clamp(0.5rem, 3vw, 1rem);
+}
+
+.top-img {
+  margin-left: auto;
+  display: block;
+  padding-left: 26.041%;
 }
 
 .main-content {
@@ -62,55 +93,16 @@ header {
 }
 
 .main-content-title-en {
-  font-size: 1.7rem;
+  font-size: 1rem;
   padding-bottom: 5px;
 }
 
 .main-content-title-ja {
-  font-size: 0.5rem;
+  font-size: 0.32rem;
 }
 
-.top {
-  position: relative;
-  margin-bottom: 120px;
-}
-
-.concept {
-  position: absolute;
-  top: 40%;
-  left: 0;
-  padding-left: 4.6875%;
-}
-
-.main-concept {
-  display: flex;
-  flex-flow: column;
-  font-size: clamp(100px, 10vw, 150px);
-  font-family: "shinryu", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-}
-
-.concept-text {
-  padding: 8px;
-  font-size: 1.5rem;
-}
-
-.top-img {
-  margin-right: 0;
-  margin-left: auto;
-  display: block;
-  padding-left: 26.041%;
-}
-
-.main-section-wrap {
-  display: flex;
-  margin-left: 16.666%;
-  margin-right: 10.666%;
-}
-
-.main-section-content-wrap {
-  margin-left: 7.8125%;
+.main-section-nav {
+  font-size: 0.72rem;
 }
 
 .main-section-nav-title {
@@ -126,27 +118,47 @@ header {
   padding: 20px;
 }
 
+.main-section-wrap {
+  display: flex;
+  margin-left: 16.666%;
+}
+
+.main-section-content-wrap {
+  margin-left: 7.8125%;
+}
+
+.main-content-img {
+  width: 40.3125%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
 .mainpage-button {
   border: 1px solid #707070;
   border-radius: 30px;
-  padding: 14px 77px;
-  font-size: 0.73rem;
+  padding: 14px 80px;
+  font-size: 0.44rem;
   margin: 0 auto;
 }
 
 .main-content-wrap {
   display: flex;
+  margin-bottom: 60px;
 }
 
 .main-about-wrap {
+  width: 59.6875%;
+  margin-top: 10px;
   margin-left: 5.5555%;
+  height: 33%;
 }
 
 .main-about-text {
-  font-size: 0.525rem;
+  max-width: 417px;
+  font-size: 0.44rem;
   margin-right: 4.4444%;
 }
 
 .main-about-text p {
-  margin-bottom: 17px;
+  margin-bottom: 20px;
 }/*# sourceMappingURL=style.css.map */
