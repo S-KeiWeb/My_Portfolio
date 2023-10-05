@@ -161,4 +161,20 @@ header {
 
 .main-about-text p {
   margin-bottom: 20px;
+}
+
+.main-content-text {
+  display: flex;
+  justify-content: center;
+  margin-left: 12%;
+  margin-right: 12%;
+  margin-bottom: 80px;
+}
+
+.main-works-text {
+  font-size: 0.44rem;
+}
+
+.main-contact-text {
+  font-size: 0.44rem;
 }/*# sourceMappingURL=style.css.map */

@@ -131,7 +131,6 @@ header {
     margin-left: 16.666%;
 }
 
-
 .main-section-content-wrap {
     margin-left: 7.8125%;
 
@@ -174,6 +173,25 @@ header {
 
 .main-about-text p {
     margin-bottom: 20px;
+}
+
+//----------main_works----------//
+
+.main-content-text {
+    display: flex;
+    justify-content: center;
+    margin-left: 12%;
+    margin-right: 12%;
+    margin-bottom: 80px;
+}
+.main-works-text {
+    font-size: 0.44rem;
+}
+
+//----------main_contact----------//
+
+.main-contact-text {
+    font-size: 0.44rem;
 }
 
 //----------mediaquery----------//
