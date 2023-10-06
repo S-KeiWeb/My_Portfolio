@@ -3,6 +3,10 @@ html {
     color: #707070;
 }
 
+p {
+    line-height: 0.65rem;
+}
+
 img {
     max-width: 100%;	
 }
@@ -184,15 +188,38 @@ header {
     margin-right: 12%;
     margin-bottom: 80px;
 }
+
 .main-works-text {
     font-size: 0.44rem;
+    // line-height: 10;
 }
+
+.main-works-img-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+}
+
+.main-works-img {
+    width: 45%;
+    margin-right: 5%;
+    margin-bottom: 40px;
+}
+
+.works-title {
+    font-size: 0.32rem;
+    margin-bottom: 12px;
+}
+
 
 //----------main_contact----------//
 
 .main-contact-text {
     font-size: 0.44rem;
 }
+
+//----------footer----------//
 
 //----------mediaquery----------//
 
