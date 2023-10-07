@@ -88,6 +88,10 @@ header {
   margin-bottom: 80px;
 }
 
+.main-content:last-child {
+  margin-bottom: 120px;
+}
+
 .main-content-title {
   display: flex;
   flex-direction: column;
@@ -125,6 +129,7 @@ header {
 .main-section-wrap {
   display: flex;
   margin-left: 16.666%;
+  position: relative;
 }
 
 .main-section-content-wrap {
@@ -198,4 +203,25 @@ header {
 
 .main-contact-text {
   font-size: 0.44rem;
+}
+
+.footer-nav-wrap {
+  border-top: 1px solid #707070;
+}
+
+.footer-nav-list {
+  display: flex;
+  justify-content: space-between;
+  margin: 70px 40% 60px 40%;
+  font-size: 0.4rem;
+}
+
+.footer-list-item a {
+  padding: 10px;
+}
+
+.copyright {
+  font-size: 0.4rem;
+  text-align: center;
+  margin-bottom: 80px;
 }/*# sourceMappingURL=style.css.map */
