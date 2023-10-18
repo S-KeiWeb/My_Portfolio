@@ -12,10 +12,10 @@ img {
 }
 
 .main-text {
-    margin-left: 12%;
-    margin-right: 12%;
+    max-width: 900px;
+    margin-left: 10%;
     margin-bottom: 80px;
-    font-size: 0.44rem;
+    font-size: 0.4rem;
 }
 
 //----------header----------//
@@ -58,6 +58,8 @@ header {
     background-color: #000;
     padding: 40px 2.608%;
 }
+
+/*======================index.html========================== */
 
 //----------main_top----------//
 
@@ -188,23 +190,13 @@ header {
 }
 
 .main-about-text {
-    font-size: 0.44rem;
-    margin-right: 1.5444%;
+    font-size: 0.4rem;
+    margin-right: 18.5444%;
 }
 
 .main-about-text p {
     margin-bottom: 20px;
 }
-
-//----------main_works----------//
-
-// .main-content-text {
-//     display: flex;
-//     justify-content: center;
-//     margin-left: 12%;
-//     margin-right: 12%;
-//     margin-bottom: 80px;
-// }
 
 .main-works-img-wrap {
     display: flex;
@@ -221,6 +213,165 @@ header {
 .works-title {
     font-size: 0.32rem;
     margin-bottom: 12px;
+}
+
+
+/*======================about.html========================== */
+
+//----------profile_img----------//
+
+.about-page-wrap {
+    margin: 0 11%;
+}
+
+.profile {
+    display: flex;
+    margin-bottom: 80px;
+    font-size: 0.4rem;
+}
+
+.profile-img-wrap {
+    width: 30%;
+}
+
+.page-title {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 120px;
+}
+
+.title-en {
+    font-size: 2rem;
+}
+
+.title-ja {
+    font-size: 0.4rem;
+}
+
+.my-img {
+    margin-bottom: 20px;
+}
+
+.my-name-kana {
+    font-size: 0.32rem;
+    text-align: center;
+}
+
+.my-name {
+    font-size: 0.72rem;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.my-birth {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 0.4rem;
+}
+
+.my-profile-text {
+    font-size: 0.4rem;
+
+}
+
+.profile-text-wrap {
+    width: 70%;
+}
+
+.profile-title {
+    font-size: 0.72rem;
+    border-top: 1px solid #707070;
+    border-bottom: 1px solid #707070;
+    padding: 26px 0;
+    margin: 0 50px;
+    text-align: center;
+}
+
+.profile-text {
+    margin: 40px 90px 0 90px;
+}
+
+//----------Skill_content----------//
+
+.skill-content {
+    margin-right: 16%;
+}
+
+.skill-content {
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(6, 1fr);
+    margin-bottom: 70px;
+}
+
+.skill-html-css {
+    font-size: 0.6rem;
+}
+
+.skill-item {
+    width: 150px;
+    height: 150px;
+    border: 5px solid #707070;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 150px;
+}
+
+.skill-html-css {
+    position: relative;
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 5px solid #707070;
+}
+
+.skill-html-css span {
+    position: absolute;
+    display: inline-block;
+    left: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 150px;
+    text-align:center;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+.skill-item-text {
+    font-size: 0.32rem;
+    text-align: center;
+}
+
+.skill-html-css-text {
+    font-size: 0.32rem;
+    text-align: center;
+    margin-top: -9px;
+}
+
+.skill-text-title {
+    width: 317px;
+    font-size: 0.72rem;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 20px;
+}
+
+.prospects-wrap {
+    display: flex;
+    flex-direction: column;
+    margin: 0 7% 40px 7%;
+}
+
+.prospects-img {
+    margin: 0 auto;
+
+}
+
+.prospects-img-text {
+    font-size: 0.32rem;
+    margin: 0 0 0 auto;
 }
 
 //----------footer----------//
