@@ -8,7 +8,7 @@ p {
 }
 
 img {
-    max-width: 100%;	
+    max-width: 100%;
 }
 
 .main-text {
@@ -92,6 +92,7 @@ header {
     margin-left: auto;
     display: block;
     padding-left: 26.041%;
+    object-fit: cover;	
 }
 
 //----------main_section共通部分----------//
@@ -182,16 +183,13 @@ header {
     margin-bottom: 60px;
 }
 
-.main-about-wrap {
+.main-about-text {
+    font-size: 0.4rem;
+    margin-right: 18.5444%;
     width: 59.6875%;
     margin-top: 10px;
     margin-left: 5.5555%;
     height: 33%;
-}
-
-.main-about-text {
-    font-size: 0.4rem;
-    margin-right: 18.5444%;
 }
 
 .main-about-text p {
@@ -400,4 +398,97 @@ header {
 //----------mediaquery----------//
 
 @media (max-width: 1024px) {
+    //-----header-----//
+    
+    header {
+        margin-bottom: 40px;
+    }
+
+    .site-title {
+        font-size: 0.4rem;
+    }
+    
+    .header-nav {
+        display: none;
+    }
+
+    .contact {
+        display: none;
+    }
+
+    .top {
+        margin-bottom: 40px;
+    }
+
+    .top-img {
+        display: inline;
+        padding: 0;
+    }
+
+    .concept {
+        padding-left: 20px;
+        top: 70%;
+    }
+
+    .main-concept {
+        line-height: 1%;
+        font-size: clamp(0.8rem, 11vw, 3rem);
+    }
+
+    .concept-text {
+        font-size: clamp(0.3rem, 3vw, 1rem);
+    }
+
+    .main-section-nav {
+        display: none;
+    }
+
+    .main-section-wrap {
+        margin-left: 0;
+    }
+
+
+    .main-content-title {
+        padding-left: 15px;
+        margin-bottom: 36px;
+    }
+
+    .main-content-title-en {
+        font-size: 0.6rem;
+    }
+
+    .main-content-title-ja {
+        font-size: 0.23rem;
+    }
+
+    .main-section-content-wrap {
+        margin: 0 20px;
+    }
+
+    .main-content-wrap {
+        display: block;
+    }
+
+    .main-content-img {
+        width: 100%;
+        height: 180px;
+    }
+
+    .main-about-text {
+        font-size: 0.4rem;
+        margin-right: 0;
+        margin-left: 0;
+        width: 100%;
+    }
+
+    //-----footer-----//
+    .footer-nav-wrap {
+        margin-bottom: 30px;
+    }
+
+    .footer-nav-list {
+        display: none;
+    }
+
+
 }
