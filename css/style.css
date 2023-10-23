@@ -200,7 +200,8 @@ header {
 
 /*======================about.html========================== */
 .about-page-wrap {
-  margin: 0 11%;
+  max-width: 1280px;
+  margin-inline: auto;
 }
 
 .profile {
@@ -254,6 +255,7 @@ header {
 
 .profile-text-wrap {
   width: 70%;
+  margin-left: 50px;
 }
 
 .profile-title {
@@ -261,21 +263,18 @@ header {
   border-top: 1px solid #707070;
   border-bottom: 1px solid #707070;
   padding: 26px 0;
-  margin: 0 50px;
   text-align: center;
 }
 
 .profile-text {
-  margin: 40px 90px 0 90px;
-}
-
-.skill-content {
-  margin-right: 16%;
+  width: 71.11%;
+  margin-inline: auto;
+  margin-top: 40px;
 }
 
 .skill-content {
   display: grid;
-  gap: 30px;
+  gap: 2.345%;
   grid-template-columns: repeat(6, 1fr);
   margin-bottom: 70px;
 }
@@ -325,6 +324,10 @@ header {
   margin-top: -9px;
 }
 
+.skill-text-wrap {
+  margin: 0 5.859%;
+}
+
 .skill-text-title {
   width: 317px;
   font-size: 0.72rem;
@@ -333,10 +336,17 @@ header {
   margin-bottom: 20px;
 }
 
+.skill-text {
+  margin-left: 5%;
+  margin-bottom: 80px;
+  font-size: 0.4rem;
+}
+
 .prospects-wrap {
   display: flex;
   flex-direction: column;
-  margin: 0 7% 40px 7%;
+  max-width: 934px;
+  margin-inline: auto;
 }
 
 .prospects-img {
@@ -346,6 +356,13 @@ header {
 .prospects-img-text {
   font-size: 0.32rem;
   margin: 0 0 0 auto;
+}
+
+.prospects-main-text {
+  max-width: 640px;
+  font-size: 0.4rem;
+  margin: 40px 0 120px 0;
+  margin-inline: auto;
 }
 
 .footer-nav-wrap {
@@ -369,6 +386,13 @@ header {
   margin-bottom: 80px;
 }
 
+@media (max-width: 1280px) {
+  .about-page-wrap {
+    max-width: 1280px;
+    margin-inline: auto;
+    margin: 0 5%;
+  }
+}
 @media (max-width: 1024px) {
   header {
     margin-bottom: 40px;
