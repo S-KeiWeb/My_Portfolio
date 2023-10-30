@@ -1,3 +1,4 @@
+@charset "UTF-8";
 html {
   font-size: 50px;
   color: #707070;
@@ -18,6 +19,9 @@ img {
   font-size: 0.4rem;
 }
 
+/*
+header
+================================================ */
 header {
   width: 100%;
   display: flex;
@@ -51,6 +55,31 @@ header {
   border-right: 1px solid #707070;
 }
 
+.header-nav-item a {
+  padding: 15px;
+}
+
+.header-nav-item {
+  position: relative;
+}
+
+.header-nav-item:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 15px;
+  width: 54.768%;
+  height: 2px;
+  background: #0481A2;
+  transition: all 0.3s;
+  transform: scale(0, 1);
+  transform-origin: left top;
+}
+
+.header-nav-item:hover:after {
+  transform: scale(1, 1);
+}
+
 .contact {
   font-size: 0.8rem;
   color: #fff;
@@ -58,7 +87,9 @@ header {
   padding: 40px 2.608%;
 }
 
-/*======================index.html========================== */
+/*
+index.html/main_top
+================================================ */
 .top {
   position: relative;
   margin-bottom: 120px;
@@ -92,6 +123,9 @@ header {
      object-fit: cover;
 }
 
+/*
+index.html/main_section(共通部分)
+================================================ */
 .main-content {
   display: flex;
   flex-flow: column;
@@ -119,30 +153,36 @@ header {
   font-size: 0.32rem;
 }
 
-.main-section-nav {
+/*
+index.html/main_section_nav
+================================================ */
+.side-menu {
   font-size: 0.36rem;
 }
 
-.main-section-nav-title {
+.side-menu-title {
   font-size: 0.52rem;
   margin: 10px 0 60px 0;
 }
 
-.main-section-nav-title a {
+.side-menu-title a {
   padding: 10px;
 }
 
-.main-section-nav-item {
+.side-menu-item {
   margin-bottom: 50px;
 }
 
-.main-section-nav-item a {
+.side-menu-item a {
   padding: 10px;
 }
 
+/*
+index.html/main_section
+================================================ */
 .main-section-wrap {
   display: flex;
-  margin-left: 9.666%;
+  padding: 0 5% 0 10%;
 }
 
 .main-section-content-wrap {
@@ -155,14 +195,31 @@ header {
      object-fit: cover;
 }
 
+/*
+index.html/main_button
+================================================ */
 .mainpage-button {
   border: 1px solid #707070;
   border-radius: 30px;
   padding: 14px 80px;
   font-size: 0.44rem;
   margin: 0 auto;
+  transition: all 0.3s ease;
 }
 
+@media (hover) {
+  .mainpage-button:hover {
+    background-color: #707070;
+    color: #fff;
+  }
+  .header-nav-item:hover,
+  .header-nav-item a:hover {
+    color: #0481A2;
+  }
+}
+/*
+index.html/main_section_About
+================================================ */
 .main-content-wrap {
   display: flex;
   margin-bottom: 60px;
@@ -170,11 +227,8 @@ header {
 
 .main-about-text {
   font-size: 0.4rem;
-  margin-right: 18.5444%;
-  width: 59.6875%;
   margin-top: 10px;
   margin-left: 5.5555%;
-  height: 33%;
 }
 
 .main-about-text p {
@@ -198,7 +252,9 @@ header {
   margin-bottom: 12px;
 }
 
-/*======================about.html========================== */
+/*
+about.html/profile_img
+================================================ */
 .about-page-wrap {
   max-width: 1280px;
   margin-inline: auto;
@@ -272,6 +328,9 @@ header {
   margin-top: 40px;
 }
 
+/*
+about.html/Skill_content
+================================================ */
 .skill-content {
   display: grid;
   gap: 2.345%;
@@ -325,6 +384,9 @@ header {
   font-size: 0.4rem;
 }
 
+/*
+about.html/prospects
+================================================ */
 .prospects-wrap {
   display: flex;
   flex-direction: column;
@@ -348,6 +410,9 @@ header {
   margin-inline: auto;
 }
 
+/*
+footer
+================================================ */
 .footer-nav-wrap {
   border-top: 1px solid #707070;
 }
@@ -369,6 +434,9 @@ header {
   margin-bottom: 80px;
 }
 
+/*
+mediaquery
+================================================ */
 @media (max-width: 1280px) {
   .about-page-wrap {
     max-width: 1280px;
@@ -407,11 +475,11 @@ header {
   .concept-text {
     font-size: clamp(0.3rem, 3vw, 1rem);
   }
-  .main-section-nav {
+  .side-menu {
     display: none;
   }
   .main-section-wrap {
-    margin-left: 0;
+    padding: 0;
   }
   .main-content-title {
     padding-left: 15px;
@@ -428,16 +496,26 @@ header {
   }
   .main-content-wrap {
     display: block;
+    margin-bottom: 30px;
   }
   .main-content-img {
     width: 100%;
     height: 180px;
+    margin-bottom: 30px;
   }
   .main-about-text {
     font-size: 0.4rem;
     margin-right: 0;
     margin-left: 0;
     width: 100%;
+  }
+  .main-text {
+    margin-left: 0;
+    margin-bottom: 40px;
+  }
+  .mainpage-button {
+    padding: 10px 50px;
+    font-size: 0.35rem;
   }
   .footer-nav-wrap {
     margin-bottom: 30px;
