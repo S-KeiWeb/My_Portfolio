@@ -3,7 +3,6 @@ html {
   font-size: 50px;
   color: #707070;
 }
-
 p {
   line-height: 0.65rem;
 }
@@ -11,6 +10,11 @@ p {
 img {
   max-width: 100%;
 }
+
+:root {
+  --main-color: rgb(45, 157, 185);
+}
+
 
 .main-text {
   max-width: 900px;
@@ -68,7 +72,7 @@ header {
   position: absolute;
   bottom: 0;
   left: 15px;
-  width: 54.768%;
+  width: 52.768%;
   height: 2px;
   background: #0481A2;
   transition: all 0.3s;
@@ -139,7 +143,7 @@ index.html/main_section(共通部分)
 .main-content-title {
   display: flex;
   flex-direction: column;
-  border-left: 5px solid #707070;
+  border-left: 5px solid var(--main-color);
   padding-left: 40px;
   margin-bottom: 50px;
 }
@@ -207,16 +211,6 @@ index.html/main_button
   transition: all 0.3s ease;
 }
 
-@media (hover) {
-  .mainpage-button:hover {
-    background-color: #707070;
-    color: #fff;
-  }
-  .header-nav-item:hover,
-  .header-nav-item a:hover {
-    color: #0481A2;
-  }
-}
 /*
 index.html/main_section_About
 ================================================ */
@@ -434,9 +428,53 @@ footer
   margin-bottom: 80px;
 }
 
+.footer-list-item {
+  display: inline-block;
+  padding-bottom: 5px;
+  position: relative;
+}
+
+.footer-list-item:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  width: 75.768%;
+  height: 2px;
+  background: #0481A2;
+  transition: all 0.3s;
+  transform: scale(0, 1);
+  transform-origin: left top;
+}
+
+.footer-list-item:hover:after {
+  transform: scale(1, 1);
+}
+
 /*
 mediaquery
 ================================================ */
+@media (hover) {
+  .mainpage-button:hover {
+    background-color: #707070;
+    color: #fff;
+  }
+  .header-nav-item:hover,
+  .header-nav-item a:hover {
+    color: #0481A2;
+  }
+  .site-title:hover {
+    opacity: 0.7;
+  }
+  .contact:hover {
+    opacity: 0.7;
+  }
+  .footer-list-item:hover,
+  .footer-list-item a:hover {
+    color: #0481A2;
+  }
+}
+
 @media (max-width: 1280px) {
   .about-page-wrap {
     max-width: 1280px;
@@ -444,6 +482,7 @@ mediaquery
     margin: 0 5%;
   }
 }
+
 @media (max-width: 1024px) {
   header {
     margin-bottom: 40px;

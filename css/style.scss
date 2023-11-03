@@ -3,6 +3,10 @@ html {
     color: #707070;
 }
 
+:root {
+    --main-color: rgb(45, 157, 185);
+}
+
 p {
     line-height: 0.65rem;
 }
@@ -68,7 +72,7 @@ header {
     position: absolute;
     bottom: 0;
     left: 15px;
-    width: 54.768%;
+    width: 52.768%;
     height: 2px;
     background: #0481A2;
     transition: all .3s;
@@ -157,7 +161,6 @@ index.html/main_section_nav
 ================================================ */
 .side-menu {
     font-size: 0.36rem;
-    // position: sticky;
 }
 
 .side-menu-title {
@@ -198,7 +201,8 @@ index.html/main_section
 index.html/main_button
 ================================================ */
 .mainpage-button {
-    border: 1px solid #707070;
+    border: 1px solid;
+    border-color: var(--main-color);
     border-radius: 30px;
     padding: 14px 80px;
     font-size: 0.44rem;
