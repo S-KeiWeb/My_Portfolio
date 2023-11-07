@@ -220,6 +220,13 @@ index.html/main_button
     .header-nav-item a:hover {
         color: #0481A2;
     }
+
+    .site-title:hover {
+        opacity: .3;
+    }
+    .contact:hover {
+        opacity: .3;
+    }
 }
 
 
@@ -420,6 +427,49 @@ about.html/prospects
     margin-inline: auto;
 }
 
+.works-text {
+    font-size: 0.32rem;
+}
+
+/*
+works.html/main
+================================================ */
+.works-page-wrap {
+    max-width: 940px;
+    margin-inline: auto;
+}
+
+.works-image-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.works-content-title {
+    width: 20%;
+    margin-inline: auto;
+    text-align: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #707070;
+    margin-bottom: 60px;
+}
+
+.works-image {
+    margin-bottom: 20px;
+}
+
+.works-content-text {
+    max-width: 900px;
+    font-size: 0.4rem;
+    margin-bottom: 30px;
+    margin-inline: auto;
+}
+
+.works-summary {
+    display: grid;
+    margin-bottom: 120px;
+}
 /*
 footer
 ================================================ */
