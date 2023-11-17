@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://unpkg.com/destyle.css@4.0.0/destyle.min.css">
   <link rel="stylesheet" href="css/style.css">
+  <script src="js/jquery-3.7.1.min.js"></script>
   <script src="js/app.js"></script>
-  <script src="js//jquery-3.7.1.min.js"></script>
   <title>Kei's-Portfolio</title>
 </head>
 
 <body>
-  <header>
+  <header class="header">
     <div class="site-title"><a href="index.html">Kei's-Portfolio</a></div>
     <nav class="header-nav-wrap">
       <ul class="header-nav">
@@ -21,6 +21,21 @@
       </ul>
     </nav>
     <a class="contact" href="#">Contact</a>
+    <div class="openbtn">
+      <div class="openbtn-area">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <nav class="mask-menu-wrap" id="mask-menu">
+      <ul class="mask-nav">
+        <li class="mask-nav-item"><a href="index.html">Kei's-Portfolio</a></li>
+        <li class="mask-nav-item"><a href="about.html">About</a></li>
+        <li class="mask-nav-item"><a href="works.html">Works</a></li>
+        <li class="mask-nav-item"><a href="#">Contact</a></li>
+      </ul>
+    </nav>
   </header>
 
   <main>
@@ -56,9 +71,7 @@
                 <img class="main-content-img" src="img/profile-test.jpg" alt="about-img">
                 <div class="main-about-text">
                   <p>はじめまして、齊藤恵と申します。<br>当サイトをご覧いただきありがとうございます。</p>
-                  <p>
-                    3年前から、更なるキャリアチェンジを目指し、独学でプログラミングを学び始めました。<br>プログラミングスクール、MENTAを利用して、プロからの技術指導も受けております。<br>その成果として、クラウドソーシングサイトでWEB制作の仕事を請け負うまでになりました。
-                  </p>
+                  <p>3年前から、更なるキャリアチェンジを目指し、独学でプログラミングを学び始めました。<br>プログラミングスクール、MENTAを利用して、プロからの技術指導も受けております。<br>その成果として、クラウドソーシングサイトでWEB制作の仕事を請け負うまでになりました。</p>
                 </div>
             </div>
             <a class="mainpage-button" href="about.html">経歴をもっと見る</a>
@@ -70,10 +83,10 @@
             </h2>
             <div class="main-content-text">
             <p class="main-text">
-              制作物については、今までに、ココナラ、CloudWorksなどクラウドソーシングサイトから、WEB制作の依頼をいただき制作しました。<br>詳しい制作内容も紹介しておりますので、リンクからぜひご覧いただけますと幸いです。
+              制作物については、ココナラ、CloudWorksなどクラウドソーシングサイトから、WEB制作の依頼をいただき制作しました。<br>詳しい制作内容も紹介しておりますので、リンクからご覧いただけますと幸いです。
             </p>
             </div>
-            <div class="main-works-img-wrap">
+            <div class="main-works-image-wrap">
               <div class="main-works-img">
                 <h3 class="works-title">NEXT RISE</h3>
                 <img src="img/nextrise-hp-top.png" alt="NEXTRISEホームページ画像">
@@ -91,7 +104,7 @@
                 <img src="img/ultimateone-lp-top.png" alt="UltimateOneランディングページ画像">
               </div>
             </div>
-            <a class="mainpage-button">制作物はこちらから</a>
+            <a class="mainpage-button" href="works.html">制作物はこちらから</a>
           </section>
           <section class="main-content">
             <h2 class="main-content-title">
@@ -109,7 +122,7 @@
     </div>
   </main>
 
-  <footer>
+  <footer class="footer">
     <nav class="footer-nav-wrap">
       <ul class="footer-nav-list">
         <li class="footer-list-item"><a href="index.html">Top</a></li>
