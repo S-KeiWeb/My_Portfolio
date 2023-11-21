@@ -52,7 +52,9 @@
                 <?php while ( have_posts() ) : the_post(); ?>
                   <div class="main-works-img">
                     <h3 class="works-title"><?php the_title(); ?></h3>
-                    <?php the_post_thumbnail( 'large' ); ?>
+                    <div class="main-works-image">
+                      <?php the_post_thumbnail( 'large' ); ?>
+                    </div>
                   </div>
                 <?php endwhile; ?>
               <?php endif; ?>

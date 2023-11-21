@@ -8,9 +8,9 @@
 
 })(document);
 
-$(function (){
-  $('.openbtn').click(function () {
-    $(this).toggleClass('active');
-    $('#mask, #mask-menu').toggleClass('show');
+jquery(function (){
+  jquery('.openbtn').click(function () {
+    jquery(this).toggleClass('active');
+    jquery('#mask, #mask-menu').toggleClass('show');
   });
 });
