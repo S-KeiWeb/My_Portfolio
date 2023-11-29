@@ -32,12 +32,14 @@
       </div>
     </div>
     <nav class="mask-menu-wrap" id="mask-menu">
-      <ul class="mask-nav">
-        <li class="mask-nav-item"><a href="index.html">Kei's-Portfolio</a></li>
-        <li class="mask-nav-item"><a href="about.html">About</a></li>
-        <li class="mask-nav-item"><a href="works.html">Works</a></li>
-        <li class="mask-nav-item"><a href="#">Contact</a></li>
-      </ul>
+      <?php
+      $args = array(
+        'menu' => 'sp-global-navigation',
+        'menu_class' => 'mask-nav-item',
+        'container' => false,
+      );
+      wp_nav_menu($args);
+      ?>
     </nav>
   </header>
 
