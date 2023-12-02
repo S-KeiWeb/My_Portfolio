@@ -15,3 +15,4 @@ function my_plugin_assets() {
   wp_enqueue_script('portfolio-main', get_template_directory_uri() . '/js/app.js');
 }
 
+remove_filter( 'the_excerpt' , 'wpautop' );
