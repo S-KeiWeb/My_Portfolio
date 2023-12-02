@@ -262,6 +262,10 @@ index.html/main_section_About
      object-fit: cover;
 }
 
+.works-image-title {
+  font-size: 2rem;
+}
+
 /*
 about.html/profile_img
 ================================================ */
@@ -431,7 +435,7 @@ about.html/prospects
 }
 
 /*
-works.html/main
+page-works.php
 ================================================ */
 .works-contact {
   display: grid;
@@ -460,7 +464,7 @@ works.html/main
   font-size: 3.6rem;
 }
 
-.works-image {
+.main-works-image img {
   margin-bottom: 20px;
 }
 

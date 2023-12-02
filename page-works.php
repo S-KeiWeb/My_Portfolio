@@ -1,7 +1,5 @@
 <?php get_header(); ?>  
 
-<?php if ( have_posts() ) : ?>
-  <?php while ( have_posts() ) : the_post(); ?>
   <main class="page-wrap">
     <h1 class="page-title">
         <span class="title-en"><?php echo strtoupper ($post->post_name); ?></span>
@@ -15,35 +13,27 @@
         </h2>
         <h3 class="works-content-title">制作物</h3>
         <div class="works-image-wrap">
-          <a href="works-nextrise.html">
-          <div class="main-works-img">
-            <h4 class="works-title">NEXT RISE</h4>
-            <img class="works-image" src="<?php echo get_template_directory_uri(); ?>img/nextrise-hp-top.png" alt="NEXTRISEホームページ画像">
-            <p class="works-text">埼玉県越谷市で蓄電池販売を行っている企業様のホームページを制作させていただきました。</p>
+          <?php
+            $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+            $args = array(
+              'post_type' => 'my-works',
+              'posts_per_page' => 4,
+              'paged' => $paged
+            );
+            $the_query = new WP_Query( $args );
+          ?>
+          <?php if($the_query->have_posts() ) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
+          <div class="main-works-image">
+            <a href="<?php the_permalink(); ?>">
+              <h4 class="works-image-title"><?php the_title(); ?></h4>
+                <?php if ( has_post_thumbnail() ) {
+                  the_post_thumbnail();
+                }
+                ?>
+                <p class="works-text"><?php the_excerpt(); ?></p>
+            </a>
           </div>
-          </a>
-          <a href="works-nextrise.html">
-          <div class="main-works-img">
-            <h4 class="works-title">株式会社松栄</h4>
-            <img class="works-image" src="img/shouei-hp-top.png" alt="株式会社松栄ホームページ画像">
-            <p class="works-text">オンライン講座受講予約用ホームページを制作と、保守管理を任せていただきました。<br><span class="shouei-comment">※業務終了のためHPは閉鎖しています</span>
-            </p>
-          </div>
-          </a>
-          <a href="works-nextrise.html">
-          <div class="main-works-img">
-            <h4 class="works-title">JOYROASTER</h4>
-            <img class="works-image" src="img/joyroaster-hp-top.png" alt="JOYROASTERホームページ画像">    
-            <p class="works-text">ローストチキン販売店のテイクアウト予約用のホームページを制作させていただきました。</p>
-          </div>
-          </a>
-          <a href="works-nextrise.html">
-          <div class="main-works-img">
-            <h4 class="works-title">Rainbow Ark</h4>
-            <img class="works-image" src="img/ultimateone-lp-top.png" alt="UltimateOneランディングページ画像">
-            <p class="works-text">Ultimate Oneという美容液のランディングページを制作させていただきました。</p>
-          </div>
-          </a>
+          <?php endwhile; ?>    
         </div>       
       </section>
       <section class="works-summary">
@@ -61,7 +51,6 @@
       </section>
     </div>
   </main>
-  <?php endwhile; ?>
 <?php endif; ?>
 
 <?php get_footer(); ?>
