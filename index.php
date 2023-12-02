@@ -48,15 +48,24 @@
             </p>
             </div>
             <div class="main-works-image-wrap">
-              <?php if ( have_posts() ) : ?>
-                <?php while ( have_posts() ) : the_post(); ?>
-                  <div class="main-works-img">
-                    <h3 class="works-title"><?php the_title(); ?></h3>
-                    <div class="main-works-image">
-                      <?php the_post_thumbnail( 'large' ); ?>
-                    </div>
-                  </div>
-                <?php endwhile; ?>
+            <?php
+            $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+            $args = array(
+              'post_type' => 'my-works',
+              'posts_per_page' => 4,
+              'paged' => $paged
+            );
+            $the_query = new WP_Query( $args );
+          ?>
+          <?php if($the_query->have_posts() ) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
+          <div class="main-works-image">
+              <h4 class="works-image-title"><?php the_title(); ?></h4>
+                <?php if ( has_post_thumbnail() ) {
+                  the_post_thumbnail();
+                }
+                ?>
+          </div>
+          <?php endwhile; ?>    
               <?php endif; ?>
             </div>
             <a class="mainpage-button" href="works.html">制作物はこちらから</a>
