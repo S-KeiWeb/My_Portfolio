@@ -2,7 +2,7 @@
 
 <?php if ( have_posts() ) : ?>
   <?php while ( have_posts() ) : the_post(); ?>
-  <main class="page-wrap">
+  <main class="about-page-wrap">
     <h1 class="page-title">
         <span class="title-en"><?php echo strtoupper ($post->post_name); ?></span>
         <span class="title-ja"><?php the_title(); ?></span>
@@ -77,7 +77,7 @@
           </h2>
           <div class="prospects-wrap">
             <img class="prospects-img" src="<?php echo get_template_directory_uri(); ?>/img/prospects-img.jpg" alt="出身県の風景">
-            <p class="prospects-img-text">故郷岩手県の風景</p>
+            <p class="prospects-image-text">故郷岩手県の風景</p>
           </div>
           <p class="prospects-main-text">最後までご覧いただきありがとうございました。<br>日々楽しく、やりたいことをできるようにする<br>36歳の節目にして初めて人生の目的を見つけました。<br>そのために必要なスキルや知識を獲得するため努力し、日々ITリテラシーの向上に取り組んでいます。<br>私の目標は、自身の技術や知識を活かし、多くの人々がITに親しみを持てるようサポートすることです。<br>私は年齢に負けずに情熱を持ち、会社に求められるだけの価値を提供できると確信しており、ぜひ貴社でのチャンスを頂戴したいと考えています。どうぞよろしくお願いいたします。</p>
       </section>

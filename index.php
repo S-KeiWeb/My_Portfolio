@@ -35,7 +35,7 @@
                   <p>3年前から、更なるキャリアチェンジを目指し、独学でプログラミングを学び始めました。<br>プログラミングスクール、MENTAを利用して、プロからの技術指導も受けております。<br>その成果として、クラウドソーシングサイトでWEB制作の仕事を請け負うまでになりました。</p>
                 </div>
             </div>
-            <a class="mainpage-button" href="about.html">経歴をもっと見る</a>
+            <a class="mainpage-button" href="<?php echo esc_url( home_url( '/' ) ); ?>about">経歴をもっと見る</a>
           </section>
           <section class="main-content">
             <h2 class="main-content-title">
@@ -68,7 +68,7 @@
           <?php endwhile; ?>    
               <?php endif; ?>
             </div>
-            <a class="mainpage-button" href="works.html">制作物はこちらから</a>
+            <a class="mainpage-button" href="<?php echo esc_url( home_url( '/' ) ); ?>works">制作物はこちらから</a>
           </section>
           <section class="main-content">
             <h2 class="main-content-title">
@@ -80,7 +80,7 @@
                 ポートフォリオサイトをご覧いただきありがとうございました。<br>業界未経験ではありますが、転職の機会を通じて新たな挑戦でも貢献できるよう準備を整えております。<br>もし、追加の情報や質問がありましたらどうぞお気軽にお知らせください。<br>最後に、お忙しい中私のポートフォリオサイトにお時間を割いていただき、誠にありがとうございました。
               </p>
             </div>
-            <a class="mainpage-button">お問い合わせはこちら</a>
+            <a class="mainpage-button" href="<?php echo esc_url( home_url( '/' ) ); ?>contact">お問い合わせはこちら</a>
           </section>
         </div>
     </div>
