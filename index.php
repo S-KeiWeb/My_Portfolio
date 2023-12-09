@@ -1,13 +1,24 @@
 <?php get_header(); ?>  
   <main>
-    <div class="top">
-      <h1 class="concept">
-        <strong>
-          <span class="main-concept">継続と挑戦</span>
-          <span class="concept-text">キャリアチェンジを目指して</span>
-        </strong>
-      </h1>
-      <img class="top-img" src="<?php echo get_template_directory_uri(); ?>/img/top_demo.jpg" alt="メイン画像">
+    <div class="top-mv">
+      <section class="top-main-wrap">
+        <div class="top-message">
+          <p class="bg-text">Continuity and Challenge</p>
+        </div>
+        <div class="top">
+          <div class="top-concept-wrap">
+            <h1 class="concept">
+              <strong>
+                <span class="main-concept">継続と挑戦</span>
+                <span class="concept-text">キャリアチェンジを目指して</span>
+              </strong>
+            </h1>
+          </div>
+          <div class="top-img-wrap">
+            <img class="top-img" src="<?php echo get_template_directory_uri(); ?>/img/top_demo.jpg" alt="メイン画像">
+          </div>
+        </div>
+      </section>
     </div>
 
     <div class="main-section-wrap" id="section-nav-wrap">

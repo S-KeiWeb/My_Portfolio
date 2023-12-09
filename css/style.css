@@ -25,7 +25,7 @@ header
 ================================================ */
 .header {
   display: flex;
-  margin-bottom: 120px;
+  margin-bottom: 170px;
   padding-left: 4.6875%;
   align-items: center;
 }
@@ -129,22 +129,48 @@ index.php/main_button
 /*
 index.php
 ================================================ */
+.top-main-wrap {
+  position: relative;
+  overflow: hidden;
+  padding: 0 3.125vw;
+}
+
+.top-message {
+  position: absolute;
+  overflow: hidden;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.bg-text {
+  display: inline-block;
+  margin-top: 5.34375vw;
+  margin-left: 10.39062vw;
+  font-size: 17rem;
+  font-family: "Montserrat";
+  opacity: 20%;
+  white-space: nowrap;
+}
+
 .top {
   position: relative;
   margin-bottom: 120px;
 }
 
+.top-concept-wrap {
+  margin-bottom: 60px;
+}
+
 .concept {
-  position: absolute;
-  top: 40%;
-  left: 0;
   padding-left: 4.6875%;
 }
 
 .main-concept {
   display: flex;
-  font-size: clamp(12rem, 11vw, 14rem);
-  font-family: "shinryu", sans-serif;
+  font-size: clamp(8rem, 11vw, 10rem);
+  font-family: "Noto Sans JP", sans-serif;
   font-weight: 400;
   font-style: normal;
 }
@@ -152,12 +178,13 @@ index.php
 .concept-text {
   padding-top: 5px;
   font-size: clamp(2.5rem, 3vw, 5rem);
+  font-family: "Noto Sans JP", sans-serif;
 }
 
 .top-img {
-  margin-left: auto;
   display: block;
-  padding-left: 26.041%;
+  margin-inline: auto;
+  border-radius: 20px;
   -o-object-fit: cover;
      object-fit: cover;
 }
