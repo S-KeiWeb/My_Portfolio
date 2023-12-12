@@ -14,7 +14,6 @@ img {
 body {
     font-family: 'Gothic A1', sans-serif;
 }
-
 /*
 header
 ================================================ */
@@ -28,6 +27,7 @@ header
     width: 100%;
     font-size: 6.3rem;
     font-family: 'Montserrat', sans-serif;
+    color: $main-color;
 }
 .header-nav {
     display: flex;
@@ -71,7 +71,7 @@ header
 }
 #menu-item-57 a{
     color: #fff;
-    background-color: #8F8E81;
+    background-color: $sub-color;
     padding: 20px 40px;
     margin: 10px;
     border-radius: 20px;
@@ -117,7 +117,7 @@ index.php
     overflow: hidden;
     padding: 0 3.125vw;
 }
-.top-message {
+.bg-message {
     position: absolute;
     overflow: hidden;
     top: 0;
@@ -125,7 +125,7 @@ index.php
     bottom: 0;
     left: 0;
 }
-.bg-text {
+.bg-message-text-active {
     display: inline-block;
     margin-top: 5.34375vw;
     margin-left: 10.39062vw;
@@ -155,7 +155,6 @@ index.php
     padding-top: 5px;
     font-size: clamp(2.5rem, 3vw, 5rem);
     font-family: "Noto Sans JP", sans-serif;
-
 }
 .top-img {
     display: block;
@@ -190,7 +189,7 @@ index.php
     flex-direction: column;
     border-left: 5px solid #707070;
     padding-left: 40px;
-    margin-bottom: 80px;
+    margin-bottom: 120px;
 }
 .main-content-title-en {
     font-size: 5rem;
@@ -205,11 +204,11 @@ index.php
     padding: 0 5% 0 10%;
 }
 .main-section-content-wrap {
-    margin-left: 10.8125%;
+    margin-inline: auto;
 }
 .main-content-img {
-    width: 40.3125%;
-    object-fit: cover;
+    display: block;
+    margin-inline: auto;
 }
 .main-content-wrap {
     display: flex;
@@ -222,6 +221,11 @@ index.php
 }
 .main-about-text p {
     margin-bottom: 20px;
+}
+.mainpage-about-button {
+    margin-inline: auto;
+    margin-top: auto;
+    align-self: flex-end;
 }
 .main-works-image-wrap {
     display: grid;

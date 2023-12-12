@@ -2,9 +2,6 @@
   <main>
     <div class="top-mv">
       <section class="top-main-wrap">
-        <div class="top-message">
-          <p class="bg-text">Continuity and Challenge</p>
-        </div>
         <div class="top">
           <div class="top-concept-wrap">
             <h1 class="concept">
@@ -40,13 +37,19 @@
               <span class="main-content-title-ja">わたしについて</span>
             </h2>
             <div class="main-content-wrap">
+              <div class="mainpage-about-image">
                 <img class="main-content-img" src="<?php echo get_template_directory_uri(); ?>/img/profile-test.jpg" alt="about-img">
-                <div class="main-about-text">
-                  <p>はじめまして、齊藤恵と申します。<br>当サイトをご覧いただきありがとうございます。</p>
-                  <p>3年前から、更なるキャリアチェンジを目指し、独学でプログラミングを学び始めました。<br>プログラミングスクール、MENTAを利用して、プロからの技術指導も受けております。<br>その成果として、クラウドソーシングサイトでWEB制作の仕事を請け負うまでになりました。</p>
+              </div>
+                <div class="main-about-content">
+                  <div class="main-about-text">
+                    <p>はじめまして、齊藤恵と申します。<br>当サイトをご覧いただきありがとうございます。</p>
+                    <p>更なるキャリアチェンジを目指し、独学でプログラミングを学び始めました。<br>その成果として、クラウドソーシングサイトでWEB制作の仕事を請け負うまでになりました。</p>
+                  </div>
+                  <div class="mainpage-about-button">
+                    <a class="mainpage-button" href="<?php echo esc_url( home_url( '/' ) ); ?>about">Who is Kei?</a>
+                  </div>
                 </div>
             </div>
-            <a class="mainpage-button" href="<?php echo esc_url( home_url( '/' ) ); ?>about">経歴をもっと見る</a>
           </section>
           <section class="main-content">
             <h2 class="main-content-title">
