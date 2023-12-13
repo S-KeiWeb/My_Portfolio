@@ -30,10 +30,10 @@
     </div>
 
     <div class="skill-content-wrap">
-      <section class="main-content">
-        <h2 class="main-content-title">
-          <span class="main-content-title-en">Skill</span>
-          <span class="main-content-title-ja">できること</span>
+      <section class="main-section-content">
+        <h2 class="main-section-content-title">
+          <span class="main-section-content-title-en">Skill</span>
+          <span class="main-section-content-title-ja">できること</span>
         </h2>
         <div class="skill-content">
           <div class="skill-wrap">
@@ -71,15 +71,15 @@
         </div>
       </section>
       <section>
-          <h2 class="main-content-title">
-            <span class="main-content-title-en">Prospects</span>
-            <span class="main-content-title-ja">これからのこと</span>
+          <h2 class="main-section-content-title">
+            <span class="main-section-content-title-en">Vision</span>
+            <span class="main-section-content-title-ja">これからのこと</span>
           </h2>
-          <div class="prospects-wrap">
-            <img class="prospects-img" src="<?php echo get_template_directory_uri(); ?>/img/prospects-img.jpg" alt="出身県の風景">
-            <p class="prospects-image-text">故郷岩手県の風景</p>
+          <div class="message-image-wrap">
+            <img class="message-image" src="<?php echo get_template_directory_uri(); ?>/img/message-img.jpg" alt="出身県の風景">
+            <p class="message-image-text">故郷岩手県の風景</p>
           </div>
-          <p class="prospects-main-text">最後までご覧いただきありがとうございました。<br>日々楽しく、やりたいことをできるようにする<br>36歳の節目にして初めて人生の目的を見つけました。<br>そのために必要なスキルや知識を獲得するため努力し、日々ITリテラシーの向上に取り組んでいます。<br>私の目標は、自身の技術や知識を活かし、多くの人々がITに親しみを持てるようサポートすることです。<br>私は年齢に負けずに情熱を持ち、会社に求められるだけの価値を提供できると確信しており、ぜひ貴社でのチャンスを頂戴したいと考えています。どうぞよろしくお願いいたします。</p>
+          <p class="message-main-text">最後までご覧いただきありがとうございました。<br>日々楽しく、やりたいことをできるようにする<br>36歳の節目にして初めて人生の目的を見つけました。<br>そのために必要なスキルや知識を獲得するため努力し、日々ITリテラシーの向上に取り組んでいます。<br>私の目標は、自身の技術や知識を活かし、多くの人々がITに親しみを持てるようサポートすることです。<br>私は年齢に負けずに情熱を持ち、会社に求められるだけの価値を提供できると確信しており、ぜひ貴社でのチャンスを頂戴したいと考えています。どうぞよろしくお願いいたします。</p>
       </section>
     </div>
   </main>
