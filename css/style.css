@@ -577,6 +577,9 @@ footer
 mediaquery
 ================================================ */
 @media (max-width: 1280px) {
+  p {
+    line-height: 2.75rem;
+  }
   .site-title {
     font-size: 5.85rem;
   }
