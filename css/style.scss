@@ -308,16 +308,17 @@ page-about.php
     gap: 2.345%;
     grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     margin-bottom: 70px;
+    font-family: 'Montserrat', sans-serif;
 }
 .skill-item {
-    width: 150px;
-    height: 150px;
+    width: clamp(9rem, 11vw, 15rem);
+    height: clamp(9rem, 11vw, 15rem);
     border: 5px solid #707070;
     border-radius: 50%;
     text-align: center;
     display: grid;
     place-content: center;
-    font-size: 5rem;
+    font-size: clamp(1.6rem, 11vw, 5rem);
 }
 .skill-html-css {
     font-size: 3rem;
@@ -684,8 +685,11 @@ mediaquery
         font-size: 1.6rem;
     }
     .skill-content {
-        gap: 0.945%;
-        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+        gap: 4.645%;
+        grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    }
+    .skill-html-css {
+        font-size: 1.8rem;
     }
     .skill-text-wrap {
         margin: 0;
