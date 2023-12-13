@@ -2,9 +2,7 @@ html {
     font-size: 10px;
     color: #707070;
 }
-:root {
-    --main-color: rgb(45, 157, 185);
-}
+
 p {
     line-height: 3.25rem;
 }
@@ -19,6 +17,7 @@ header
 ================================================ */
 .header {
     display: flex;
+    margin-top: 20px;
     margin-bottom: 170px;
     padding-left: 4.6875%;
     align-items: center;
@@ -27,7 +26,6 @@ header
     width: 100%;
     font-size: 6.3rem;
     font-family: 'Montserrat', sans-serif;
-    color: $main-color;
 }
 .header-nav {
     display: flex;
@@ -38,10 +36,11 @@ header
 }
 .header-nav > .menu-item  {
     font-size: 4rem;
-}
-.header-nav > .menu-item:first-child {
     border-right: 1px solid #707070;
     padding-right: 80px;
+}
+.header-nav > .menu-item:last-child  {
+    border-right: none;
 }
 .openbtn {
     display: none;
@@ -50,6 +49,7 @@ header
 .menu-item a {
     position: relative;
     display: block;
+    font-family: 'Montserrat', sans-serif;
 }
 .header-nav > .menu-item a:after {
     content: '';
@@ -63,18 +63,8 @@ header
     transform: scale(0, 1);
     transform-origin: left top;
 }
-.header-nav > .menu-item:last-child a:after {
-    content: none;
-}
 .header-nav > .menu-item a:hover:after {
     transform: scale(1, 1);
-}
-#menu-item-57 a{
-    color: #fff;
-    background-color: $sub-color;
-    padding: 20px 40px;
-    margin: 10px;
-    border-radius: 20px;
 }
 
 //-----隠しメニュー-----//
@@ -102,40 +92,17 @@ index.php/main_button
 ================================================ */
 .mainpage-button {
     border: 1px solid;
-    border-color: var(--main-color);
     border-radius: 30px;
     padding: 14px 80px;
     font-size: 2.2rem;
     margin: 0 auto;
     transition: all 0.3s ease;
+    font-family: 'Montserrat', sans-serif;
 }
 /*
 index.php
 ================================================ */
 .top-main-wrap {
-    position: relative;
-    overflow: hidden;
-    padding: 0 3.125vw;
-}
-.bg-message {
-    position: absolute;
-    overflow: hidden;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-}
-.bg-message-text-active {
-    display: inline-block;
-    margin-top: 5.34375vw;
-    margin-left: 10.39062vw;
-    font-size: 17rem;
-    font-family: 'Montserrat';
-    opacity: 20%;
-    white-space: nowrap;
-}
-.top {
-    position: relative;
     margin-bottom: 120px;
 }
 .top-concept-wrap {
@@ -147,64 +114,84 @@ index.php
 .main-concept {
     display: flex;
     font-size: clamp(8rem, 11vw, 10rem);
-    font-family: "Noto Sans JP", sans-serif;
     font-weight: 400;
     font-style: normal;
 }
-.concept-text {
+.main-concept-text {
     padding-top: 5px;
-    font-size: clamp(2.5rem, 3vw, 5rem);
-    font-family: "Noto Sans JP", sans-serif;
+    font-size: clamp(1.8rem, 3vw, 5rem);
 }
-.top-img {
+.top-image {
     display: block;
     margin-inline: auto;
-    border-radius: 20px;
     object-fit: cover;	
+}
+#main-container {
+    position: relative;
+}
+.main-section-wrap {
+    display: flex;
+    max-width: 1290px;
+    margin-inline: auto;
+}
+#aside {
+    width: 20%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    max-height: calc(100vh - 20px);
+    overflow: auto;
+    padding-top: 20px;
+}
+#aside.is-fixed {
+    position: fixed;
+    top: 20px;
+}
+#aside.is-fixed.is-end {
+    position: absolute;
+    top: auto;
+    bottom: 0;
 }
 .side-menu-title {
     font-size: 2.6rem;
-    margin: 10px 0 60px 0;
+    font-family: 'Montserrat', sans-serif;
+    margin: 10px 0 30px 0;
 }
 .side-menu-title a {
     padding: 10px;
 }
-.side-menu-item {
-    margin-bottom: 50px;
+.side-nav .menu-item {
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
 }
-.side-menu-item a {
+.side-nav .menu-item a {
     padding: 10px;
     font-size: 1.8rem;
 }
-.main-content {
+.main-section-content {
     display: flex;
     flex-flow: column;
     margin-bottom: 80px;
 }
-.main-content:last-child {
+.main-section-content:last-child {
     margin-bottom: 120px;
 }
-.main-content-title {
+.main-section-content-title {
     display: flex;
     flex-direction: column;
-    border-left: 5px solid #707070;
-    padding-left: 40px;
-    margin-bottom: 120px;
+    margin-bottom: 100px;
 }
-.main-content-title-en {
+.main-section-content-title-en {
     font-size: 5rem;
     padding-bottom: 5px;
     font-family: 'Montserrat', sans-serif;
 }
-.main-content-title-ja {
+.main-section-content-title-ja {
     font-size: 1.6rem;
-}
-.main-section-wrap {
-    display: flex;
-    padding: 0 5% 0 10%;
 }
 .main-section-content-wrap {
     margin-inline: auto;
+    margin-left: 40%;
 }
 .main-content-img {
     display: block;
@@ -216,22 +203,21 @@ index.php
 }
 .main-about-text {
     font-size: 2rem;
-    margin-top: 10px;
-    margin-left: 5.5555%;
+    margin-bottom: 40px;
+    margin-left: 9%;
 }
 .main-about-text p {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 .mainpage-about-button {
-    margin-inline: auto;
-    margin-top: auto;
-    align-self: flex-end;
+    display: block;
+    text-align: center;
 }
 .main-works-image-wrap {
     display: grid;
-    gap: 40px 2.345%;
+    gap: 20px 2.345%;
     grid-template-columns: repeat(auto-fit, minmax(48%, 1fr));
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 .works-title {
     font-size: 2rem;
@@ -246,9 +232,7 @@ index.php
     font-size: 2rem;
 }
 .main-text {
-    max-width: 900px;
-    margin-left: 10%;
-    margin-bottom: 80px;
+    margin: 0 10% 80px;
     font-size: 2rem;
 }
 /*
@@ -322,7 +306,7 @@ page-about.php
 .skill-content {
     display: grid;
     gap: 2.345%;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     margin-bottom: 70px;
 }
 .skill-item {
@@ -362,20 +346,20 @@ page-about.php
     margin-left: 5%;
     font-size: 2rem;
 }
-.prospects-wrap {
+.message-image-wrap {
     display: flex;
     flex-direction: column;
     max-width: 934px;
     margin-inline: auto;
 }
-.prospects-img {
+.message-image {
     margin: 0 auto;
 }
-.prospects-image-text {
+.message-image-text {
     font-size: 1.6rem;
     margin: 0 0 0 auto;
 }
-.prospects-main-text {
+.message-main-text {
     max-width: 640px;
     font-size: 2rem;
     margin: 40px 0 120px 0;
@@ -577,42 +561,35 @@ mediaquery
         transform: translate(0);
     }
     /*
-    index.html
+    index.php
     ======================================== */
-    //-----main_top-----//
+    .header {
+        margin-bottom: 80px;
+    }
     .contact {
         display: none;
     }
     .top {
         margin-bottom: 40px;
     }
-    .top-img {
+    .top-image {
         display: inline;
-        padding: 0;
-    }
-    .concept {
-        padding-left: 20px;
-        top: 70%;
     }
     .main-concept {
-        line-height: 1%;
+        line-height: -1%;
         font-size: clamp(0.8rem, 11vw, 4rem);
     }
-    .concept-text {
-        font-size: clamp(0.3rem, 3vw, 1.5rem);
-        position: absolute;
-        top: 15px;
+    .top-concept-wrap {
+        margin-bottom: 10px;
     }
-    //-----main-section-----//
     .side-menu {
         display: none;
     }
     .main-section-wrap {
         padding: 0;
     }
-    .main-content-title {
-        padding-left: 15px;
-        margin-bottom: 36px;
+    .main-section-content-title {
+        margin-bottom: 60px;
     }
     .main-content-title-en {
         font-size: 3rem;
@@ -621,7 +598,7 @@ mediaquery
         font-size: 1.4rem;
     }
     .main-section-content-wrap {
-        margin: 0 20px;
+        margin: 0 10px;
     }
     .main-content-wrap {
         display: block;
@@ -631,6 +608,8 @@ mediaquery
         width: 100%;
         height: 180px;
         margin-bottom: 30px;
+        object-fit: cover;
+        object-position: 10% 30%;
     }
     .main-about-text {
         font-size: 1.6rem;
@@ -640,8 +619,11 @@ mediaquery
     }
     .main-text {
         font-size: 1.6rem;
-        margin-left: 0;
+        margin-inline: auto;
         margin-bottom: 40px;
+    }
+    .works-image-title {
+        font-size: 1.4rem;
     }
     .mainpage-button {
         padding: 10px 50px;
@@ -651,10 +633,13 @@ mediaquery
         font-size: 1.2rem;
     }
     /*
-    about.html
+    about-page.php
     ======================================== */
+    .about-page-wrap {
+        margin: 0 10px;
+    }
     .page-title {
-        margin-bottom: 20px;
+        margin-bottom: 50px;
     }
     .title-en {
         font-size: 4rem;
@@ -669,11 +654,21 @@ mediaquery
         width: 100%;
         margin-bottom: 50px;
     }
+    .my-img {
+        width: 100%;
+        height: 180px;
+        margin-bottom: 30px;
+        object-fit: cover;
+        object-position: 10% 30%;
+    }
     .my-name {
         font-size: 3rem;
     }
     .my-name-birth {
         font-size: 2rem;
+    }
+    .my-profile-text {
+        font-size: 1.6rem;
     }
     .profile-text-wrap {
         width: 100%;
@@ -686,6 +681,11 @@ mediaquery
     .profile-text {
         width: 100%;
         line-height: 3.25rem;
+        font-size: 1.6rem;
+    }
+    .skill-content {
+        gap: 0.945%;
+        grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
     }
     .skill-text-wrap {
         margin: 0;
@@ -698,6 +698,10 @@ mediaquery
     }
     .skill-text {
         margin-left: 0;
+        font-size: 1.6rem;
+    }
+    .message-main-text {
+        font-size: 1.6rem;
     }
     /*
     works.html
@@ -751,9 +755,6 @@ mediaquery_@hover
     }
     .menu-item a:hover {
         color: #0481A2;
-    }
-    .menu-item-57 a:hover {
-        opacity: .3;
     }
     .site-title a:hover {
         opacity: .3;
