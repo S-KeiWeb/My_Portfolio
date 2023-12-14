@@ -257,6 +257,7 @@ page-about.php
 }
 .title-en {
     font-size: 10rem;
+    font-family: 'Montserrat', sans-serif;
 }
 .title-ja {
     font-size: 2rem;
@@ -383,15 +384,6 @@ page-works.php
     grid-template-columns: repeat(auto-fit, minmax(46%, 1fr));
     margin-bottom: 120px;
 }
-.works-content-title {
-    width: 20%;
-    margin-inline: auto;
-    text-align: center;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #707070;
-    margin-bottom: 60px;
-    font-size: 3.6rem;
-}
 .works-excerpt {
     font-size: 2rem;
 }
@@ -404,9 +396,13 @@ page-works.php
     margin-bottom: 60px;
     margin-inline: auto;
 }
-.works-summary {
+.works-content-wrap {
     display: grid;
     margin-bottom: 120px;
+}
+.experience-img {
+    margin-inline: auto;
+    margin-bottom: 40px;
 }
 /*
 single.php
@@ -712,10 +708,6 @@ mediaquery
     /*
     works.html
     ======================================== */
-    .works-content-title {
-        width: 100%;
-        font-size: 3rem;
-    }
     .works-text {
         font-size: 1.4rem;
         line-height: 2.2rem;
