@@ -407,17 +407,26 @@ page-works.php
 /*
 single.php
 ================================================ */
+.single-page-wrap {
+    display: flex;
+    justify-content: space-around;
+}
+.single-page-content-title {
+    font-size: clamp(2rem, 5vw, 5rem);
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 40px;
+}
 .wp-block-image {
     margin-bottom: 40px;
 }
 .wp-block-table {
     max-width: 900px;
-    font-size: 2rem;
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 40px;
+    font-size: clamp(1.6rem, 5vw, 2rem);
+    margin-inline: auto;
+    margin-bottom: 80px;
 }
 .wp-block-table tr {
+    font-family: 'Gothic A1', sans-serif;
     line-height: 3.25rem;
 }
 .wp-block-table td:nth-of-type(1) {
@@ -435,23 +444,23 @@ Contact_form
 .content p {
     font-size: 2rem;
 }
-.wpcf7 {
-    margin-top: 80px;
+.contact-form {
+    max-width: 100%;
+    margin-inline: auto;
 }
-.contact-text {
-    font-family: 'Montserrat', sans-serif;
-    max-width: 12.6%;
-    padding: 10px;
-    color: #fff;
-    background-color: #0481A2;
+.table-row {
+    display: flex;
+    flex-direction: column;
 }
-.wpcf7-form-control-wrap {
-    border: 1px solid #000;
+
+.table-data {
+    border: 1px solid #707070;
 }
 /*
 footer
 ================================================ */
 .footer {
+    font-family: 'Montserrat', sans-serif;
     border-top: 1px solid #707070;
     padding-bottom: 80px;
 }
@@ -632,6 +641,12 @@ mediaquery
         font-size: 1.2rem;
     }
     /*
+    page.php
+    ======================================== */
+    .page-wrap {
+        margin: 0 10px;
+    }
+    /*
     about-page.php
     ======================================== */
     .about-page-wrap {
@@ -706,26 +721,33 @@ mediaquery
         font-size: 1.6rem;
     }
     /*
-    works.html
+    works.php
     ======================================== */
     .works-text {
         font-size: 1.4rem;
         line-height: 2.2rem;
     }
     /*
-    works-nextrise.html
+    single.php
     ======================================== */
-    .works-list-wrap {
-        display: block;
-        font-size: 1.6rem;
+    .single-page-wrap {
+        margin: 0 10px;
     }
-    .works-list-title {
+    .wp-block-table tr {
+        display: flex;
+        flex-direction: column;
+    }
+    .wp-block-table td {
+        line-height: 2.75rem;
+    }
+    .wp-block-table td:nth-of-type(1) {
         width: 100%;
         margin-bottom: 10px;
+        padding: 0;
     }
-    .works-list-item {
+    .wp-block-table td:nth-of-type(2) {
         width: 100%;
-        line-height: 2.45rem;
+        padding: 0;
     }
     /*
     footer
