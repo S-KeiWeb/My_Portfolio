@@ -40,7 +40,7 @@
         <span class="main-section-content-title-ja">実績紹介</span>
       </h2>
       <img class="experience-img" src="<?php echo get_template_directory_uri(); ?>/img/Experience-image.png" alt="coconala画像">
-      <p class="works-content-text">今まで仕事の依頼は全てクラウドソーシングサイトから請け負っておりました。<br>その中でも、一番依頼いただいたのがココナラからでした。<br>以下にリンクを貼っておきますので、実績・評価も併せてご覧ください。</p>
+      <p class="works-content-text">今まで仕事の依頼は全てクラウドソーシングサイトから請け負っておりました。<br>その中でも、一番依頼いただいたのがココナラからでした。<br>主に、新規店舗立ち上げのためのホームページや、新規会員募集のためのランディングページなどのデザインを頼まれたりしました。<br>クライアントからの要望をしっかり伺い、できるだけ形にできるよう努力してまいりました。<br>以下にリンクを貼っておきますので、実績・評価も併せてご覧ください。</p>
       <a class="mainpage-button" href="https://coconala.com/users/2346005" target="_blank">Go To coconala (External Sites)</a>
     </section>
     <section class="works-content-wrap">
