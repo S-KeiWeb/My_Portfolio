@@ -1,14 +1,15 @@
-jQuery(function (){
-  jQuery('.openbtn').click(function () {
-    jQuery(this).toggleClass('active');
-    jQuery('#mask, #mask-menu').toggleClass('show');
-  });
-});
-
 document.addEventListener('DOMContentLoaded', function() {
   const container = document.getElementById('main-container');
   const aside = document.getElementById('aside');
   const offsetY = 20;
+  const openBtns = document.querySelectorAll('.openbtn');
+
+  openBtns.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      this.classList.toggle('active');
+      document.getElementById('mask-menu').classList.toggle('show');
+    });
+  });
 
   if (container && aside) {
     container.style.minHeight = aside.clientHeight + 'px';
