@@ -22,7 +22,7 @@ header
 .header {
   display: flex;
   margin-top: 20px;
-  margin-bottom: 170px;
+  margin-bottom: 100px;
   padding-left: 4.6875%;
   align-items: center;
 }
@@ -101,7 +101,7 @@ header
 }
 
 /*
-index.php/main_button
+front-page.php/main_button
 ================================================ */
 .mainpage-button {
   border: 1px solid;
@@ -114,9 +114,12 @@ index.php/main_button
 }
 
 /*
-index.php
+front-page.php
 ================================================ */
 .top-main-wrap {
+  position: relative;
+  max-width: 100%;
+  height: 45vw;
   margin-bottom: 120px;
 }
 
@@ -140,11 +143,22 @@ index.php
   font-size: clamp(1.8rem, 3vw, 5rem);
 }
 
-.top-image {
-  display: block;
-  margin-inline: auto;
-  -o-object-fit: cover;
-     object-fit: cover;
+.concept-en {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  padding-right: 4.6875%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main-concept-en {
+  font-size: clamp(3rem, 9vw, 5rem);
+  margin-bottom: 20px;
+}
+
+.main-concept-message {
+  font-size: clamp(1.5rem, 4vw, 3rem);
+  padding-left: 3px;
 }
 
 #main-container {
@@ -681,8 +695,8 @@ mediaquery
   /*
   header
   ======================================== */
-  header {
-    margin-bottom: 40px;
+  .header {
+    margin-bottom: 80px;
   }
   .site-title {
     font-size: 3rem;
@@ -747,26 +761,33 @@ mediaquery
     transform: translate(0);
   }
   /*
-  index.php
+  front-page.php
   ======================================== */
-  .header {
-    margin-bottom: 80px;
-  }
   .contact {
     display: none;
+  }
+  .top-main-wrap {
+    margin-bottom: 250px;
   }
   .top {
     margin-bottom: 40px;
   }
-  .top-image {
-    display: inline;
-  }
   .main-concept {
-    line-height: -1%;
     font-size: clamp(0.8rem, 11vw, 4rem);
   }
   .top-concept-wrap {
-    margin-bottom: 10px;
+    margin-bottom: 40px;
+  }
+  .concept-en {
+    position: static;
+    padding-right: 0%;
+    padding-left: 4.6875%;
+  }
+  .main-concept-en {
+    margin-bottom: 20px;
+  }
+  .main-concept-message {
+    padding-left: 3px;
   }
   .side-menu {
     display: none;

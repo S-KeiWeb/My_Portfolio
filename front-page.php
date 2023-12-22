@@ -10,7 +10,10 @@
             </strong>
           </h1>
         </div>
-        <img class="top-image" src="<?php echo get_template_directory_uri(); ?>/img/top_demo.jpg" alt="メイン画像">
+        <div class="concept-en">
+          <h2 class="main-concept-en">Continuity and Challenge</h2>
+          <p class="main-concept-message">Even if you lose, it doesn’t end there.<br>There is always a next time.<br>As long as one is aiming for the next,<br>one is never finished.</p>
+        </div>
       </div>
     </section>
 
