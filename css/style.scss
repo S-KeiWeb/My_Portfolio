@@ -400,6 +400,9 @@ page-works.php
     display: grid;
     margin-bottom: 120px;
 }
+.no-br {
+    display: none;
+}
 .experience-img {
     margin-inline: auto;
     margin-bottom: 40px;
@@ -441,20 +444,92 @@ single.php
 /*
 Contact_form
 ================================================ */
-.content p {
+.content {
     font-size: 2rem;
 }
+.contact-message {
+    margin-bottom: 40px;
+}
+.contact-message-text {
+    font-size: 5rem;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+}
 .contact-form {
-    max-width: 100%;
+    max-width: 800px;
     margin-inline: auto;
 }
-.table-row {
-    display: flex;
-    flex-direction: column;
+.contact-form-area {
+	padding: 2em 0;
+	border-bottom: 1px dashed #ccc;
+	transition: all .3s;
 }
 
-.table-data {
-    border: 1px solid #707070;
+.contact-form-area:last-child {
+	border-bottom: none;
+}
+
+.contact-form-area dt {
+    flex: 1;
+    font-family: 'Montserrat', sans-serif;
+}
+.contact-form-area dd {
+    flex: 1;
+}
+
+.contact-form-area input, .contact-form-area textarea {
+  width: 100%;
+  padding: 0.8em;
+  border: none;
+  background-color: #e6e6e6;
+  font-size: 16px;
+    resize: vertical;
+    transition: all .3s;
+}
+
+.contact-form-area input:focus,.contact-form-area textarea:focus {
+	outline: none;
+	background: #dde2e9;
+}
+.contact-form-send input {
+	display: block;
+	background: linear-gradient(135deg, #6b7a8e 0%, #3b4a5e 100%);
+	width: 300px;
+	height: 60px;
+	margin: 30px auto 0;
+	border: none;
+	border-radius: 10px;
+	color: #fff;
+	box-shadow: 2px 5px 15px 0 rgba(0, 0, 0, .2);
+	font-size: 1.3em;
+	font-weight: bold;
+	transition: all .3s;
+}
+.contact-form-send {
+    text-align: center;
+}
+.contact-form-send input:hover {
+	filter: brightness(1.25);
+}
+
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
+	background-color: #fce3e3;
+	border: none;
+	text-align: center;
+}
+
+@media screen and (max-width:768px){
+	.contact-form-area {
+		display: block;
+	}
+
+	.contact-form-area dt {
+    width: 100%;
+		margin-bottom: 5px;
+    padding-right: 0;
+    text-align: left;
+		line-height:1.5em;
+	}
 }
 /*
 footer
@@ -723,9 +798,33 @@ mediaquery
     /*
     works.php
     ======================================== */
+    // .works-content-wrap {
+    //     margin-bottom: ;
+    // }
+    .works-image-wrap {
+        display: block;
+    }
+    .main-works-image {
+        margin-bottom: 40px;
+    }
+    .main-works-image:last-child {
+        margin-bottom: 0;
+    }
+    .main-works-image img {
+        margin-bottom: 10px;
+    }
     .works-text {
         font-size: 1.4rem;
         line-height: 2.2rem;
+    }
+    .works-excerpt {
+        font-size: 1.6rem;
+    }
+    .works-content-text {
+        font-size: 1.6rem;
+    }
+    .no-br {
+        display: block;
     }
     /*
     single.php
