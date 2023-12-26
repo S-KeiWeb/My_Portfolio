@@ -121,6 +121,7 @@ front-page.php
   max-width: 100%;
   height: 45vw;
   margin-bottom: 120px;
+  background-image: url(/img/concept.png);
 }
 
 .top-concept-wrap {
@@ -294,6 +295,29 @@ front-page.php
 .main-text {
   margin: 0 10% 80px;
   font-size: 2rem;
+}
+
+#loading {
+  background-color: #e7eded;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  display: grid;
+  place-items: center;
+}
+
+#loading-screen {
+  background-color: #b9e8e5;
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  translate: 0 100vh;
+}
+
+#loading p {
+  font-size: 2rem;
+  font-family: "Montserrat", sans-serif;
+  color: #707070;
 }
 
 /*

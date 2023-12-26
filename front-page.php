@@ -1,6 +1,10 @@
 <?php get_header(); ?>  
   <main>
     <section class="top-main-wrap">
+      <div id="loading">
+        <p>Loading...</p>
+        <div id="loading-screen"></div>
+      </div>
       <div class="top-main">
         <div class="top-concept-wrap">
           <h1 class="concept">
