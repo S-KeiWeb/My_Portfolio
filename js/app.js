@@ -1,8 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-  const container = document.getElementById('main-container');
-  const aside = document.getElementById('aside');
-  const offsetY = 20;
-  const openBtns = document.querySelectorAll('.openbtn');
   const keyName = 'visited';
   const keyValue = true;
   if (!sessionStorage.getItem(keyName)) {
@@ -58,6 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
     loadingAreaGrey.style.display = 'none';
   }
 
+  const openBtns = document.querySelectorAll('.openbtn');
   openBtns.forEach(function (btn) {
     btn.addEventListener('click', function () {
       this.classList.toggle('active');
@@ -65,6 +62,9 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   });
 
+  const container = document.getElementById('main-container');
+  const aside = document.getElementById('aside');
+  const offsetY = 20;
   if (container && aside) {
     container.style.minHeight = aside.clientHeight + 'px';
 
