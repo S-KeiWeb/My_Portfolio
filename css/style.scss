@@ -141,7 +141,7 @@ body.page-id-89 {
     font-family: 'Montserrat', sans-serif;
 }
 .main-concept-en {
-    font-size: clamp(4rem, 2.7vw, 5rem);
+    font-size: clamp(2.5rem, 2.7vw, 5rem);
     margin-bottom: 20px;
 }
 .main-concept-message {
@@ -701,11 +701,18 @@ mediaquery
     /*
     front-page.php
     ======================================== */
+    body.page-id-89 {
+        height: 670px;
+        background-size: cover;
+        // background-position: center;
+        background-position-x: -320px;
+        background-position-y: -108px;
+    }
     .contact {
         display: none;
     }
     .top-main-wrap {
-        margin-bottom: 250px;
+        margin-bottom: 350px;
     }
     .top {
         margin-bottom: 40px;
@@ -714,7 +721,7 @@ mediaquery
         font-size: clamp(0.8rem, 11vw, 4rem);
     }
     .top-concept-wrap {
-        margin-bottom: 40px;
+        margin-bottom: 140px;
     }
     .concept-en {
         position: static;

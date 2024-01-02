@@ -30,10 +30,10 @@
             </h2>
             <div class="main-content-wrap">
               <div class="mainpage-about-image">
-                <img class="main-content-img" src="<?php echo get_template_directory_uri(); ?>/img/profile-test.jpg" alt="about-img">
+                <img class="main-content-img fadein" src="<?php echo get_template_directory_uri(); ?>/img/profile-test.jpg" alt="about-img">
               </div>
                 <div class="main-about-content">
-                  <div class="main-about-text">
+                  <div class="main-about-text fadein">
                     <p>はじめまして、齊藤恵と申します。<br>当サイトをご覧いただきありがとうございます。</p>
                     <p>更なるキャリアチェンジを目指し、独学でプログラミングを学び始めました。<br>その成果として、クラウドソーシングサイトでWEB制作の仕事を請け負うまでになりました。</p>
                   </div>
