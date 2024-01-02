@@ -1,6 +1,6 @@
 <?php get_header(); ?>  
+<section class="top-main-wrap">
   <main>
-    <section class="top-main-wrap">
       <div id="loading">
         <p>Loading...</p>
         <div id="loading-screen"></div>
@@ -15,7 +15,7 @@
           </h1>
         </div>
         <div class="concept-en">
-          <h2 class="main-concept-en">Continuity and Challenge</h2>
+          <h2 class="main-concept-en">A new beginning.</h2>
           <p class="main-concept-message">Even if you lose, it doesn’t end there.<br>There is always a next time.<br>As long as one is aiming for the next,<br>one is never finished.</p>
         </div>
       </div>

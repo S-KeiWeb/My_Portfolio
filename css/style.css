@@ -14,6 +14,7 @@ img {
 
 body {
   font-family: "Gothic A1", sans-serif;
+  background-color: #fdf8ed;
 }
 
 /*
@@ -29,7 +30,7 @@ header
 
 .site-title {
   width: 100%;
-  font-size: 6.3rem;
+  font-size: 5rem;
   font-family: "Montserrat", sans-serif;
 }
 
@@ -43,7 +44,7 @@ header
 }
 
 .header-nav > .menu-item {
-  font-size: 4rem;
+  font-size: 3rem;
   border-right: 1px solid #707070;
   padding-right: 80px;
 }
@@ -116,12 +117,21 @@ front-page.php/main_button
 /*
 front-page.php
 ================================================ */
+body.page-id-89 {
+  background-image: url(../img/top-image.jpg);
+  background-repeat: no-repeat;
+}
+
+.page-id-89 .header {
+  color: #fff;
+}
+
 .top-main-wrap {
   position: relative;
   max-width: 100%;
-  height: 45vw;
+  height: 40vw;
   margin-bottom: 120px;
-  background-image: url(/img/concept.png);
+  color: #fff;
 }
 
 .top-concept-wrap {
@@ -134,14 +144,14 @@ front-page.php
 
 .main-concept {
   display: flex;
-  font-size: clamp(8rem, 11vw, 10rem);
+  font-size: clamp(3.5rem, 11vw, 8rem);
   font-weight: 400;
   font-style: normal;
 }
 
 .main-concept-text {
   padding-top: 5px;
-  font-size: clamp(1.8rem, 3vw, 5rem);
+  font-size: clamp(1.3rem, 3vw, 3rem);
 }
 
 .concept-en {
@@ -153,12 +163,12 @@ front-page.php
 }
 
 .main-concept-en {
-  font-size: clamp(3rem, 9vw, 5rem);
+  font-size: clamp(4rem, 2.7vw, 5rem);
   margin-bottom: 20px;
 }
 
 .main-concept-message {
-  font-size: clamp(1.5rem, 4vw, 3rem);
+  font-size: clamp(1.5rem, 1.8vw, 3rem);
   padding-left: 3px;
 }
 
@@ -170,6 +180,7 @@ front-page.php
   display: flex;
   max-width: 1290px;
   margin-inline: auto;
+  margin-top: 200px;
 }
 
 #aside {
@@ -700,7 +711,12 @@ footer
 /*
 mediaquery
 ================================================ */
-@media (max-width: 1280px) {
+@media (max-width: 1440px) {
+  body.page-id-89 {
+    background-size: 100% 890px;
+  }
+}
+@media (max-width: 1290px) {
   p {
     line-height: 2.75rem;
   }
@@ -713,6 +729,12 @@ mediaquery
   }
   .header-nav > .menu-item {
     padding-right: 40px;
+  }
+  body.page-id-89 {
+    background-size: 100% 890px;
+  }
+  .top-main-wrap {
+    height: 45vw;
   }
 }
 @media (max-width: 1024px) {
