@@ -147,6 +147,7 @@ body.page-id-89 {
 .main-concept-message {
     font-size: clamp(1.5rem, 1.8vw, 3rem);
     padding-left: 3px;
+    line-height: 4.45rem;
 }
 #main-container {
     position: relative;
@@ -228,6 +229,9 @@ body.page-id-89 {
     font-size: 2rem;
     margin-bottom: 40px;
     margin-left: 9%;
+}
+.fadein {
+    opacity: 0;
 }
 .main-about-text p {
     margin-bottom: 10px;
@@ -661,7 +665,7 @@ mediaquery
         position: absolute;
         left: 10px;
         height: 3px;
-        background: #707070;
+        background: #fff;
         width: 45%;
     }
     .openbtn.active span {
