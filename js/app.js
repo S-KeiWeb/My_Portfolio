@@ -122,9 +122,23 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   };
   const fadeObserver = new IntersectionObserver(animateFade);
-
   const fadeElements = document.querySelectorAll('.fadein');
   fadeElements.forEach((fadeElement) => {
     fadeObserver.observe(fadeElement);
   });
+
+  const animateFadeUp = (entries, obs) => {
+    entries.forEach((entry) => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('fadeup');
+        obs.unobserve(entry.target);
+      }
+    });
+  };
+  const fadeUpObserver = new IntersectionObserver(animateFadeUp);
+  const fadeUpElements = document.querySelectorAll('.main-works-image');
+  fadeUpElements.forEach((fadeupElement) => {
+    fadeUpObserver.observe(fadeupElement);
+  });
+
 });

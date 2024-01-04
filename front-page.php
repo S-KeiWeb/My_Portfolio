@@ -48,32 +48,31 @@
               <span class="main-section-content-title-en">Works</span>
               <span class="main-section-content-title-ja">制作物について</span>
             </h2>
-            <div class="main-section-content-text">
-              <p class="main-text">
-              制作物については、ココナラ、CloudWorksなどクラウドソーシングサイトから、WEB制作の依頼をいただき制作しました。<br>詳しい制作内容も紹介しておりますので、リンクからご覧いただけますと幸いです。
-            </p>
-            </div>
-            <div class="main-works-image-wrap">
-            <?php
-              $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-              $args = array(
-                'post_type' => 'my-works',
-                'posts_per_page' => 4,
-                'paged' => $paged
-              );
-              $the_query = new WP_Query( $args );
-            ?>
-
-            <?php if($the_query->have_posts() ) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
-              <div class="main-works-image">
-              <h4 class="works-image-title"><?php the_title(); ?></h4>
-                <?php if ( has_post_thumbnail() ) {
-                  the_post_thumbnail();
-                }
-                ?>
+            <div class="overlay-text-wrap">
+              <div class="main-works-image-wrap">
+                <?php
+                  $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+                  $args = array(
+                    'post_type' => 'my-works',
+                    'posts_per_page' => 4,
+                    'paged' => $paged
+                  );
+                  $the_query = new WP_Query( $args );
+                  if($the_query->have_posts() ) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
+                  <div class="main-works-image">
+                    <?php if ( has_post_thumbnail() ) {
+                      the_post_thumbnail();
+                    }
+                  ?>
+                </div>
+                <?php endwhile; ?>    
+                <?php endif; ?>
               </div>
-              <?php endwhile; ?>    
-            <?php endif; ?>
+              <div class="overlay-text fadein">
+                  <p>
+                  制作物については、ココナラ、CloudWorksなどクラウドソーシングサイトから、WEB制作の依頼をいただき制作しました。<br>詳しい制作内容も紹介しておりますので、リンクからご覧いただけますと幸いです。
+                  </p>
+              </div>          
             </div>
             <a class="mainpage-button" href="<?php echo esc_url( home_url( '/' ) ); ?>works">Go to Works Page</a>
           </section>
@@ -82,12 +81,14 @@
               <span class="main-section-content-title-en">Contact</span>
               <span class="main-section-content-title-ja">お問い合わせについて</span>
             </h2>
-            <div class="main-content-text">
-              <p class="main-text">
+            <div class="overlay-text-wrap">
+              <img class="contact-image" src="<?php echo get_template_directory_uri(); ?>/img/contact-background.jpg" alt="contact-image">
+
+              <p class="overlay-text">
                 ポートフォリオサイトをご覧いただきありがとうございました。<br>業界未経験ではありますが、転職の機会を通じて新たな挑戦でも貢献できるよう準備を整えております。<br>もし、追加の情報や質問がありましたらどうぞお気軽にお知らせください。<br>最後に、お忙しい中私のポートフォリオサイトにお時間を割いていただき、誠にありがとうございました。
               </p>
+              <a class="contact-button" href="<?php echo esc_url( home_url( '/' ) ); ?>contact">Please Message</a>
             </div>
-            <a class="mainpage-button" href="<?php echo esc_url( home_url( '/' ) ); ?>contact">Please Message</a>
           </section>
         </div>
         <div id="aside" class="side-menu">
