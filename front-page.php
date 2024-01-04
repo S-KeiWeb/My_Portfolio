@@ -68,7 +68,7 @@
                 <?php endwhile; ?>    
                 <?php endif; ?>
               </div>
-              <div class="overlay-text fadein">
+              <div class="works-overlay-text fadein">
                   <p>
                   制作物については、ココナラ、CloudWorksなどクラウドソーシングサイトから、WEB制作の依頼をいただき制作しました。<br>詳しい制作内容も紹介しておりますので、リンクからご覧いただけますと幸いです。
                   </p>
@@ -83,11 +83,10 @@
             </h2>
             <div class="overlay-text-wrap">
               <img class="contact-image" src="<?php echo get_template_directory_uri(); ?>/img/contact-background.jpg" alt="contact-image">
-
               <p class="overlay-text">
                 ポートフォリオサイトをご覧いただきありがとうございました。<br>業界未経験ではありますが、転職の機会を通じて新たな挑戦でも貢献できるよう準備を整えております。<br>もし、追加の情報や質問がありましたらどうぞお気軽にお知らせください。<br>最後に、お忙しい中私のポートフォリオサイトにお時間を割いていただき、誠にありがとうございました。
               </p>
-              <a class="contact-button" href="<?php echo esc_url( home_url( '/' ) ); ?>contact">Please Message</a>
+              <a class="contact-button" href="<?php echo esc_url( home_url( '/' ) ); ?>contact">Please Message >></a>
             </div>
           </section>
         </div>
