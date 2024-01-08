@@ -499,6 +499,37 @@ page-about.php
   font-size: 2rem;
 }
 
+.circle-wrap {
+  width: 160px;
+  display: block;
+}
+
+.circle-animation {
+  fill: none;
+  stroke: #707070;
+  stroke-width: 4px;
+  stroke-dasharray: 314;
+  transform: rotate(-90deg);
+  transform-origin: 50% 50%;
+  animation: dash 4s ease-in-out forwards;
+}
+
+@keyframes dash {
+  from {
+    stroke-dashoffset: 314;
+  }
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+.circle-text {
+  font-size: 4rem;
+}
+
+.text-html, .text-css {
+  font-size: 2rem;
+}
+
 .skill-content {
   display: grid;
   gap: 2.345%;

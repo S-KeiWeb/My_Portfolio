@@ -37,6 +37,50 @@
         </h2>
         <div class="skill-content">
           <div class="skill-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" class="circle-wrap" >
+                <circle cx="55" cy="55" r="50" class="circle-animation" />
+                <text x="50%" y="40%" alignment-baseline="middle" text-anchor="middle" fill="#707070" class="circle-text text-html">HTML</text>
+                <text x="50%" y="60%" alignment-baseline="middle" text-anchor="middle" fill="#707070" class="circle-text text-css">CSS</text>
+            </svg>
+            <p class="skill-item-text">HTML&CSS</p>
+          </div>
+          <div class="skill-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" class="circle-wrap" >
+                <circle cx="55" cy="55" r="50" class="circle-animation" />
+                <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#707070" class="circle-text">JS</text>
+            </svg>
+            <p class="skill-item-text">JavaScript</p>
+          </div>
+          <div class="skill-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" class="circle-wrap" >
+                <circle cx="55" cy="55" r="50" class="circle-animation" />
+                <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#707070" class="circle-text">WP</text>
+            </svg>
+            <p class="skill-item-text">WordPress</p>
+          </div>
+          <div class="skill-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" class="circle-wrap" >
+                <circle cx="55" cy="55" r="50" class="circle-animation" />
+                <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#707070" class="circle-text">PS</text>
+            </svg>
+            <p class="skill-item-text">Photoshop</p>
+          </div>
+          <div class="skill-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" class="circle-wrap" >
+                <circle cx="55" cy="55" r="50" class="circle-animation" />
+                <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#707070" class="circle-text">Ai</text>
+            </svg>
+            <p class="skill-item-text">illustrator</p>
+          </div>
+          <div class="skill-wrap">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" class="circle-wrap" >
+                <circle cx="55" cy="55" r="50" class="circle-animation" />
+                <text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#707070" class="circle-text">XD</text>
+            </svg>
+            <p class="skill-item-text">Adobe XD</p>
+          </div>
+
+          <!-- <div class="skill-wrap">
             <p class="skill-item skill-html-css">HTML<br>CSS</p>
             <p class="skill-item-text">HTML/CSS</p>
           </div>
@@ -59,7 +103,7 @@
           <div class="skill-wrap">
             <p class="skill-item">XD</p>
             <p class="skill-item-text">Adobe XD</p>
-          </div>
+          </div> -->
         </div>
         <div class="skill-text-wrap">
           <h3 class="skill-text-title">WEBデザイン</h3>
