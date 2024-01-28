@@ -40,7 +40,7 @@
                     <?php echo wp_kses_post ( get_field('main-about-text') ); ?>
                     </div>
                     <div class="mainpage-about-button">
-                      <a class="mainpage-button" href="<?php echo esc_url( home_url( '/' ) ); ?>about">Who is Kei?</a>
+                      <a class="main-button" href="<?php echo esc_url( home_url( '/' ) ); ?>about">Who is Kei?</a>
                     </div>
                   </div>
               </div>
@@ -74,7 +74,7 @@
                   <p><?php echo wp_kses_post ( get_field('works-overlay-text') ); ?></p>
                 </div>          
               </div>
-              <a class="mainpage-button" href="<?php echo esc_url( home_url( '/' ) ); ?>works">Go to Works Page</a>
+              <a class="main-button" href="<?php echo esc_url( home_url( '/' ) ); ?>works">Go to Works Page</a>
             </section>
             <section class="main-section-content">
               <h2 class="main-section-content-title">
