@@ -11,6 +11,7 @@ img {
 }
 body {
     font-family: 'Gothic A1', sans-serif;
+    font-weight: 300;
     background-color: #fdf8ed;
 }
 /*
@@ -125,13 +126,13 @@ body.page-id-89 {
 }
 .main-concept {
     display: flex;
-    font-size: clamp(3.5rem, 11vw, 8rem);
+    font-size: clamp(4.8rem, 11vw, 12rem);
     font-weight: 400;
     font-style: normal;
 }
 .main-concept-text {
     padding-top: 5px;
-    font-size: clamp(1.3rem, 3vw, 3rem);
+    font-size: clamp(1.6rem, 3vw, 4rem);
 }
 .concept-en {
     position: absolute;
@@ -433,7 +434,10 @@ page-about.php
     stroke-dasharray: 314;
     transform: rotate(-90deg);
     transform-origin: 50% 50%;
+}
+.circle-animation-active .circle-animation {
     animation: dash 4s ease-in-out forwards;
+
 }
 
 @keyframes dash {
@@ -624,14 +628,15 @@ Contact_form
     flex: 1;
 }
 
-.contact-form-area input, .contact-form-area textarea {
+.contact-form-area input,
+.contact-form-area textarea {
   width: 100%;
   padding: 0.8em;
   border: none;
   background-color: #e6e6e6;
   font-size: 16px;
-    resize: vertical;
-    transition: all .3s;
+  resize: vertical;
+  transition: all .3s;
 }
 
 .contact-form-area input:focus,.contact-form-area textarea:focus {
@@ -640,7 +645,7 @@ Contact_form
 }
 .contact-form-send input {
 	display: block;
-	background: linear-gradient(135deg, #6b7a8e 0%, #3b4a5e 100%);
+	background: linear-gradient(135deg, #6b7a8e 0%, #4b6aa5 100%);
 	width: 300px;
 	height: 60px;
 	margin: 30px auto 0;
@@ -659,7 +664,8 @@ Contact_form
 	filter: brightness(1.25);
 }
 
-.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output {
+.wpcf7 form.invalid .wpcf7-response-output, .wpcf7 form.unaccepted .wpcf7-response-output, .wpcf7 form.payment-required .wpcf7-response-output 
+{
 	background-color: #fce3e3;
 	border: none;
 	text-align: center;
@@ -710,7 +716,6 @@ mediaquery
         background-size: 100% 890px;
     }
 }
-
 @media (max-width: 1290px) {
     p {
         line-height: 2.75rem;
@@ -807,7 +812,6 @@ mediaquery
     body.page-id-89 {
         height: 670px;
         background-size: cover;
-        // background-position: center;
         background-position-x: -320px;
         background-position-y: -108px;
     }
@@ -819,9 +823,6 @@ mediaquery
     }
     .top {
         margin-bottom: 40px;
-    }
-    .main-concept {
-        font-size: clamp(0.8rem, 11vw, 4rem);
     }
     .top-concept-wrap {
         margin-bottom: 140px;
@@ -879,6 +880,9 @@ mediaquery
         width: 90%;
         height: 72%;
         padding: 15px;
+    }
+    .works-overlay-text p {
+        line-height: 2.45rem;
     }
     .main-text {
         font-size: 1.6rem;
@@ -956,6 +960,9 @@ mediaquery
     .skill-content {
         gap: 4.645%;
         grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
+    }
+    .circle-wrap {
+        width: 100px;
     }
     .skill-html-css {
         font-size: 1.8rem;

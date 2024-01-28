@@ -1,57 +1,66 @@
 document.addEventListener('DOMContentLoaded', function() {
   const keyName = 'visited';
   const keyValue = true;
+
+  const isElementPresent = (element) => {
+    return element !== null && element !== 'undefined';
+  };
+
   if (!sessionStorage.getItem(keyName)) {
     sessionStorage.setItem(keyName, keyValue);
     const loadingAreaGrey = document.querySelector('#loading');
     const loadingAreaGreen = document.querySelector('#loading-screen');
     const loadingText = document.querySelector('#loading p');
-    window.addEventListener('load', ()=> {
-      loadingAreaGrey.animate(
-        {
-          opacity: [1, 0],
-          visibility: 'hidden',
-        },
-        {
-          duration: 2000,
-          delay: 1200,
-          easing: 'ease',
-          fill: 'forwards',
-        }
-      );
-      loadingAreaGreen.animate(
-        {
-          translate: ['0 100vh', '0 0', '0 -100vh']
-        },
-        {
-          duration: 2000,
-          delay: 800,
-          easing: 'ease',
-          fill: 'forwards',
-        }
-      );
-      loadingText.animate(
-        [
+
+    if (isElementPresent(loadingAreaGrey) && isElementPresent(loadingAreaGreen) && isElementPresent(loadingText)) {
+      window.addEventListener('load', () => {
+        loadingAreaGrey.animate(
           {
-            opacity: 1,
-            offset: .8
+            opacity: [1, 0],
+            visibility: 'hidden',
           },
           {
-            opacity: 0,
-            offset: 1
+            duration: 2000,
+            delay: 1200,
+            easing: 'ease',
+            fill: 'forwards',
+          }
+        );
+        loadingAreaGreen.animate(
+          {
+            translate: ['0 100vh', '0 0', '0 -100vh']
           },
-        ],
-        {
-          duration: 1200,
-          easing: 'ease',
-          fill: 'forwards',
-        }
-      );
-    });
+          {
+            duration: 2000,
+            delay: 800,
+            easing: 'ease',
+            fill: 'forwards',
+          }
+        );
+        loadingText.animate(
+          [
+            {
+              opacity: 1,
+              offset: .8
+            },
+            {
+              opacity: 0,
+              offset: 1
+            },
+          ],
+          {
+            duration: 1200,
+            easing: 'ease',
+            fill: 'forwards',
+          }
+        );
+      });
+    }
   } else {
-    // ページが再読み込みされた場合はloading要素を非表示にする
     const loadingAreaGrey = document.querySelector('#loading');
-    loadingAreaGrey.style.display = 'none';
+    if (isElementPresent(loadingAreaGrey)) {
+      loadingAreaGrey.style.display = 'none';
+    }
   }
 
   const openBtns = document.querySelectorAll('.openbtn');
@@ -140,5 +149,23 @@ document.addEventListener('DOMContentLoaded', function() {
   fadeUpElements.forEach((fadeupElement) => {
     fadeUpObserver.observe(fadeupElement);
   });
+
+  const item = document.querySelector('.skill-content');
+
+  const callback = function(entries, observer) {
+    entries.forEach(entry => {
+      if(entry.isIntersecting) {
+        entry.target.classList.add('circle-animation-active');
+
+        fadeObserver.unobserver(entry.target);
+
+      } else {
+        entry.target.classList.remove('circle-animation-active');
+      }
+    })
+  }
+
+  const io = new IntersectionObserver(callback);
+  io.observe(item);
 
 });

@@ -65,8 +65,8 @@
                       <?php if ( has_post_thumbnail() ) {
                         the_post_thumbnail();
                       }
-                    ?>
-                  </div>
+                      ?>
+                    </div>
                   <?php endwhile; ?>    
                   <?php endif; wp_reset_postdata(); ?>
                 </div>
