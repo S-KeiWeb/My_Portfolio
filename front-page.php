@@ -50,7 +50,6 @@
                 <span class="main-section-content-title-en">Works</span>
                 <span class="main-section-content-title-ja">制作物について</span>
               </h2>
-              <div class="main-works-image-wrap">
                 <?php
                   $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
                   $args = array(
@@ -63,6 +62,8 @@
                   $the_query = new WP_Query( $args );
                   if($the_query->have_posts() ) : while ($the_query->have_posts()) : $the_query->the_post(); 
                 ?>
+              <div class="main-works-image-wrap">
+
                 <div class="main-works-image">
                   <?php
                     $content = get_the_content();
@@ -80,9 +81,9 @@
                   <p class="works-text"><?php the_excerpt(); ?></p>
                   <p class="works-image-text"><?php the_title(); ?></p>
                 </div> 
+              </div>
                 <?php endwhile; ?>    
                 <?php endif; wp_reset_postdata(); ?>
-              </div>
               <a class="main-button" href="<?php echo esc_url( home_url( '/' ) ); ?>works">Go to Works Page</a>
             </section>
           </div>
