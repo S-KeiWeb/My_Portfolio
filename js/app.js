@@ -145,7 +145,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
   };
   const fadeUpObserver = new IntersectionObserver(animateFadeUp);
-  const fadeUpElements = document.querySelectorAll('.main-works-image');
+  const fadeUpElements = document.querySelectorAll('.main-works-image-wrap');
   fadeUpElements.forEach((fadeupElement) => {
     fadeUpObserver.observe(fadeupElement);
   });

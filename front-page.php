@@ -50,45 +50,40 @@
                 <span class="main-section-content-title-en">Works</span>
                 <span class="main-section-content-title-ja">制作物について</span>
               </h2>
-              <div class="overlay-text-wrap">
-                <div class="main-works-image-wrap">
+              <div class="main-works-image-wrap">
+                <?php
+                  $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
+                  $args = array(
+                    'post_type' => 'my-works',
+                    'posts_per_page' => 4,
+                    'paged' => $paged,
+                    'orderby'  => 'date',
+                    'order' => 'ASC'
+                  );
+                  $the_query = new WP_Query( $args );
+                  if($the_query->have_posts() ) : while ($the_query->have_posts()) : $the_query->the_post(); 
+                ?>
+                <div class="main-works-image">
                   <?php
-                    $paged = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-                    $args = array(
-                      'post_type' => 'my-works',
-                      'posts_per_page' => 4,
-                      'paged' => $paged
-                    );
-                    $the_query = new WP_Query( $args );
-                    if($the_query->have_posts() ) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
-                    <div class="main-works-image">
-                      <?php if ( has_post_thumbnail() ) {
+                    $content = get_the_content();
+                    preg_match_all( '/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $content, $matches );
+                    if ( isset( $matches[1][0] ) ) {
+                      echo '<img src="' . esc_url( $matches[1][0] ) . '" alt="Post Image">';
+                    } else {
+                      if ( has_post_thumbnail() ) {
                         the_post_thumbnail();
                       }
-                      ?>
-                    </div>
-                  <?php endwhile; ?>    
-                  <?php endif; wp_reset_postdata(); ?>
+                    }
+                  ?>
                 </div>
-                <div class="works-overlay-text fadein">
-                  <p><?php echo wp_kses_post ( get_field('works-overlay-text') ); ?></p>
-                </div>          
+                <div class="works-text-wrap">
+                  <p class="works-text"><?php the_excerpt(); ?></p>
+                  <p class="works-image-text"><?php the_title(); ?></p>
+                </div> 
+                <?php endwhile; ?>    
+                <?php endif; wp_reset_postdata(); ?>
               </div>
               <a class="main-button" href="<?php echo esc_url( home_url( '/' ) ); ?>works">Go to Works Page</a>
-            </section>
-            <section class="main-section-content">
-              <h2 class="main-section-content-title">
-                <span class="main-section-content-title-en">Contact</span>
-                <span class="main-section-content-title-ja">お問い合わせについて</span>
-              </h2>
-              <div class="contact-wrap">
-                <div class="contact-text-wrap">
-                  <p class="contact-text"><?php echo wp_kses_post ( get_field('contact-text') ); ?></p>
-                  <p class="contact-button-wrap">
-                    <a class="contact-button" href="<?php echo esc_url( home_url( '/' ) ); ?>contact">Please Message ＞＞</a>
-                  </p>
-                </div>
-              </div>
             </section>
           </div>
           <div id="aside" class="side-menu">
