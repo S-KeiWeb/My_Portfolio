@@ -63,7 +63,6 @@
                   if($the_query->have_posts() ) : while ($the_query->have_posts()) : $the_query->the_post(); 
                 ?>
               <div class="main-works-image-wrap">
-
                 <div class="main-works-image">
                   <?php
                     $content = get_the_content();
