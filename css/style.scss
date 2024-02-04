@@ -1,6 +1,6 @@
 html {
   font-size: 10px;
-  color: #707070;
+  color: #333;
 }
 
 p {
@@ -381,17 +381,19 @@ page-about.php
 .profile {
   display: flex;
   margin-bottom: 80px;
-  font-size: 0.4rem;
 }
 .profile-img-wrap {
-  width: 30%;
+  padding-right: 50px;
 }
 .my-img {
   margin-bottom: 20px;
 }
+.profile-text-wrap {
+	width: 57%;
+}
 .name-wrap {
 	display: flex;
-	width: 70%;
+	width: 76%;
 	border-bottom: 3px solid #4b6aa5;
 	margin-bottom: 40px;
 	padding-top: 10%;
@@ -406,23 +408,42 @@ page-about.php
   font-size: 2rem;
 	font-family: "Montserrat", sans-serif;
 }
-.my-name-birth {
-  text-align: center;
-  font-size: 2.5rem;
-  margin-top: auto;
-}
 .profile-text {
   font-size: 2rem;
 }
-.profile-title {
-  font-size: 3.6rem;
-  border-top: 1px solid #707070;
-  border-bottom: 1px solid #707070;
-  padding: 26px 0;
-  text-align: center;
+.web-production-wrap {
+	margin-bottom: 130px;
 }
-.web-production-title-wrap {
-	border-bottom: 1px solid #4b6aa5;
+.production-title-wrap {
+	border-bottom: 1px solid #333;
+	margin-bottom: 80px;
+}
+.production-title {
+	font-size: 4rem;
+	padding-bottom: 10px;
+}
+.production-contents-wrap {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 80px;
+}
+.production-contents {
+	display: flex;
+	flex-direction: column;
+	width: 47%;
+}
+.production-contents-icon {
+	font-size: 10rem;
+	padding-bottom: 20px;
+	margin-inline: auto;
+}
+.production-contents-title {
+	font-size: 2.5rem;
+	margin-bottom: 40px;
+	margin-inline: auto;
+}
+.production-contents-text {
+	font-size: 2rem;
 }
 .circle-wrap {
   width: 160px;
@@ -431,15 +452,32 @@ page-about.php
 .circle-animation {
   fill: none;
   stroke: #707070;
-  stroke-width: 4px;
+  stroke-width: 2px;
   stroke-dasharray: 314;
   transform: rotate(-90deg);
   transform-origin: 50% 50%;
 }
+.html-css-circle-color {
+	stroke: #F16528;
+}
+.js-color {
+	stroke: #F0D91C;
+}
+.wp-circle-color {
+	stroke: #3AABD2;
+}
+.ps-circle-color {
+	stroke: #001E36;
+}
+.ai-circle-color {
+	stroke: #330000;
+}
+.xd-circle-color {
+	stroke: #470137;
+}
 .circle-animation-active .circle-animation {
   animation: dash 4s ease-in-out forwards;
 }
-
 @keyframes dash {
   from {
     stroke-dashoffset: 314;
@@ -449,11 +487,11 @@ page-about.php
   }
 }
 .circle-text {
-  font-size: 4rem;
+  font-size: 2.5rem;
 }
 .text-html,
 .text-css {
-  font-size: 2rem;
+  font-size: 1.6rem;
 }
 .skill-content {
   display: grid;

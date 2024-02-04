@@ -37,97 +37,93 @@
 								<span class="main-section-content-title-ja">できること</span>
 							</h2>
 							<div class="web-production-wrap">
-								<div class="web-production-title-wrap">
-									<h2 class="web-production-title">WEB制作スキル</h2>
+								<div class="production-title-wrap">
+									<h3 class="production-title">WEB制作スキル</h3>
 								</div>
-								<div class="web-production-contents-wrap">
-									<h3 class="skill-text-title">WEBデザイン</h3>
-									<i class="fa-solid fa-pen-nib"></i>
-									<p>WEBサイトを作る際、準備が大事だと感じています。仕事で学んだ経験を活かし、クライアントの声に耳を傾け、相手の意図や視点を理解・共感するよう心がけています。<br>デザインでは、基本の原則を押さえつつ、クライアントの希望を叶えつつも、使いやすく分かりやすいデザインを目指しています。</p>
+								<div class="production-contents-wrap">
+									<div class="production-contents">
+										<i class="fa-solid fa-pen-nib production-contents-icon"></i>
+										<h3 class="production-contents-title">WEBデザイン</h3>
+										<p class="production-contents-text">WEBサイトを作る際、準備が大事だと感じています。仕事で学んだ経験を活かし、クライアントの声に耳を傾け、相手の意図や視点を理解・共感するよう心がけています。<br>デザインでは、基本の原則を押さえつつ、クライアントの希望を叶えつつも、使いやすく分かりやすいデザインを目指しています。</p>
+									</div>
+									<div class="production-contents">
+										<i class="fa-regular fa-keyboard production-contents-icon"></i>
+										<h3 class="production-contents-title">コーディング</h3>
+										<p class="production-contents-text">HTMLを使用してウェブページの基本構造を作成し、CSSを用いて快適な閲覧環境を調整できます。また、JavaScriptの基礎を理解し、jQueryなどのライブラリを使って動的な要素を持つサイトを制作できます。さらに、HTMLをWordPressテーマとして実装するスキルも持っています。</p>
+									</div>
 								</div>
-								<div class="web-production-contents-wrap">
-									<h3 class="skill-text-title">WEBデザイン</h3>
-									<i class="fa-regular fa-keyboard"></i>
-									<p>WEBサイトを作る際、準備が大事だと感じています。仕事で学んだ経験を活かし、クライアントの声に耳を傾け、相手の意図や視点を理解・共感するよう心がけています。<br>デザインでは、基本の原則を押さえつつ、クライアントの希望を叶えつつも、使いやすく分かりやすいデザインを目指しています。</p>
-								</div>
-									
-								<p class="skill-text">
-									WEBサイトを立ち上げる際、準備段階が非常に重要だと学びました。<br>そのため、私は現職で培った経験を活かし、クライアントの声に耳を傾け、相手の意図や視点を理解し共感することを心掛けています。<br>また、デザインにおいては、基本的なデザインの原則を把握した上で、クライアントの要望を実現する一方で、エンドユーザーが使いやすい、分かりやすいデザインを追求しています。
-								</p>
-							</div>
-							<div class="skill-text-wrap">
-								<h3 class="skill-text-title">コーディング</h3>
-								<p class="skill-text">
-									HTMLを使用してウェブページの基本構造を作成し、CSSを用いて快適な閲覧環境を調整できます。<br>また、JavaScriptの基礎を理解し、jQueryなどのライブラリを使って動的な要素を持つサイトを制作できます。<br>さらに、HTMLをWordPressテーマとして実装するスキルも持っています。
-								</p>
-							</div>
-							<div class="skill-content">
-								<div class="skill-wrap">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" class="circle-wrap">
-										<circle cx="55" cy="55" r="50" class="circle-animation" />
-										<text x="50%" y="40%" alignment-baseline="middle" text-anchor="middle" fill="#707070"
+								<div class="skill-content">
+									<div class="skill-wrap">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" class="circle-wrap">
+											<circle cx="55" cy="55" r="50" class="circle-animation html-css-circle-color" />
+											<text x="50%" y="40%" alignment-baseline="middle" text-anchor="middle" fill="#4b6aa5"
 											class="circle-text text-html">HTML</text>
-										<text x="50%" y="60%" alignment-baseline="middle" text-anchor="middle" fill="#707070"
+											<text x="50%" y="60%" alignment-baseline="middle" text-anchor="middle" fill="#4b6aa5"
 											class="circle-text text-css">CSS</text>
-									</svg>
-									<p class="skill-item-text">HTML&CSS</p>
-								</div>
-								<div class="skill-wrap">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" class="circle-wrap">
-										<circle cx="55" cy="55" r="50" class="circle-animation" />
-										<text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#707070"
+										</svg>
+										<p class="skill-item-text">HTML&CSS</p>
+									</div>
+									<div class="skill-wrap">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" class="circle-wrap">
+											<circle cx="55" cy="55" r="50" class="circle-animation js-color" />
+											<text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#4b6aa5"
 											class="circle-text">JS</text>
-									</svg>
-									<p class="skill-item-text">JavaScript</p>
-								</div>
-								<div class="skill-wrap">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" class="circle-wrap">
-										<circle cx="55" cy="55" r="50" class="circle-animation" />
-										<text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#707070"
+										</svg>
+										<p class="skill-item-text">JavaScript</p>
+									</div>
+									<div class="skill-wrap">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" class="circle-wrap">
+											<circle cx="55" cy="55" r="50" class="circle-animation wp-circle-color" />
+											<text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#4b6aa5"
 											class="circle-text">WP</text>
-									</svg>
-									<p class="skill-item-text">WordPress</p>
-								</div>
-								<div class="skill-wrap">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" class="circle-wrap">
-										<circle cx="55" cy="55" r="50" class="circle-animation" />
-										<text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#707070"
+										</svg>
+										<p class="skill-item-text">WordPress</p>
+									</div>
+									<div class="skill-wrap">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" class="circle-wrap">
+											<circle cx="55" cy="55" r="50" class="circle-animation ps-circle-color" />
+											<text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#4b6aa5"
 											class="circle-text">PS</text>
-									</svg>
-									<p class="skill-item-text">Photoshop</p>
-								</div>
-								<div class="skill-wrap">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" class="circle-wrap">
-										<circle cx="55" cy="55" r="50" class="circle-animation" />
-										<text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#707070"
+										</svg>
+										<p class="skill-item-text">Photoshop</p>
+									</div>
+									<div class="skill-wrap">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" class="circle-wrap">
+											<circle cx="55" cy="55" r="50" class="circle-animation ai-circle-color" />
+											<text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#4b6aa5"
 											class="circle-text">Ai</text>
-									</svg>
-									<p class="skill-item-text">illustrator</p>
-								</div>
-								<div class="skill-wrap">
-									<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" class="circle-wrap">
-										<circle cx="55" cy="55" r="50" class="circle-animation" />
-										<text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#707070"
+										</svg>
+										<p class="skill-item-text">illustrator</p>
+									</div>
+									<div class="skill-wrap">
+										<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 110 110" class="circle-wrap">
+											<circle cx="55" cy="55" r="50" class="circle-animation xd-circle-color" />
+											<text x="50%" y="50%" alignment-baseline="middle" text-anchor="middle" fill="#4b6aa5"
 											class="circle-text">XD</text>
-									</svg>
-									<p class="skill-item-text">Adobe XD</p>
+										</svg>
+										<p class="skill-item-text">Adobe XD</p>
+									</div>
 								</div>
 							</div>
-						</section>
-						<section>
-							<div class="profile-text-wrap">
-									<h2 class="profile-title">
-										<span>マネジメント力</span>
-										<span>×</span>
-										<span>プログラミング</span>
-									</h2>
-									<p class="profile-text">
-										私は現在、ドラッグストアの店長として働きながら、副業でWEB制作の仕事を行っています。<br>店長として100人以上の従業員をマネジメントし、幅広い年齢層のチームを指導する中で、常に謙虚な姿勢で接することを心がけてきました。<br>3年前からは独学でプログラミングを学び、その後MENTAのプロの指導を受けてスキルを高めてきました。<br>WEB制作の副業では、経験は浅いですが、WEBデザインやSEOマーケティングのアドバイスなどを通じてクライアントの期待以上の成果を提供できるよう努めてきました。<br>特にココナラでの評価が高く、WEB制作に関する相談も増えています。<br>今は、店舗マネジメントで培ったコミュニケーション能力と、プロから学んだプログラミング技術を活かして、新しい企業で一緒に働く機会を探しています。
-									</p>
+							<div class="web-production-wrap">
+								<div class="production-title-wrap">
+									<h3 class="production-title">WEB制作スキル</h3>
 								</div>
+								<div class="production-contents-wrap">
+									<div class="production-contents">
+										<i class="fa-solid fa-people-group production-contents-icon"></i>
+										<h3 class="production-contents-title">コミュニケーションスキル</h3>
+										<p class="production-contents-text">私は現在、ドラッグストアの店長として働きながら、副業でWEB制作の仕事を行っています。<br>店長として100人以上の従業員をマネジメントし、幅広い年齢層のチームを指導する中で、常に謙虚な姿勢で接することを心がけてきました。</p>
+									</div>
+									<div class="production-contents">
+									 <i class="fa-solid fa-list-check production-contents-icon"></i>
+										<h3 class="production-contents-title">自己管理能力</h3>
+										<p class="production-contents-text">自分の思考や感情、行動をコントロールし、店舗の目標数値を達成するために行動していました。<br>さらに、自分のスキルアップのため、仕事のまえの時間や休日は、自己研鑽に時間を費やすように時間を管理を行いました。</p>
+									</div>
+								</div>
+							</div>
 						</section>
 					</div>
-
 				</div>
 				<div id="aside" class="side-menu page-side-menu">
 					<div class="side-menu-title">
