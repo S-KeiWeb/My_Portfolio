@@ -78,7 +78,6 @@ header
 .page-id-89 .header-nav > .menu-item a:after {
   background: #fff;
 }
-
 //-----隠しメニュー-----//
 #mask-menu {
   color: #fff;
@@ -170,7 +169,7 @@ body.page-id-89 {
   margin-inline: auto;
   margin-top: 200px;
 }
-#aside {
+.side-menu {
   width: 20%;
   position: absolute;
   left: 0;
@@ -179,11 +178,11 @@ body.page-id-89 {
   overflow: auto;
   padding-top: 20px;
 }
-#aside.is-fixed {
+.side-menu.is-fixed {
   position: fixed;
   top: 20px;
 }
-#aside.is-fixed.is-end {
+.side-menu.is-fixed.is-end {
   position: absolute;
   top: auto;
   bottom: 0;
@@ -329,7 +328,6 @@ body.page-id-89 {
   line-height: 3.75rem;
   padding-bottom: 20px;
 }
-
 //-----loading-----//
 #loading {
   background-color: #e7eded;
@@ -354,9 +352,14 @@ body.page-id-89 {
 /*
 page-about.php
 ================================================ */
-.about-page-wrap {
+.page-side-menu {
+    padding-left: 4.6875%;
+}
+.page-wrap {
   max-width: 1280px;
   margin-inline: auto;
+  margin-left: 28%;
+  padding-right: 80px;
 }
 .profile {
   display: flex;
@@ -517,10 +520,10 @@ page-about.php
 /*
 page-works.php
 ================================================ */
-.page-wrap {
-  max-width: 1280px;
-  margin-inline: auto;
-}
+// .page-wrap {
+//   max-width: 1280px;
+//   margin-inline: auto;
+// }
 .works-image-wrap {
   display: grid;
   gap: 40px 3.345%;
