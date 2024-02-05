@@ -106,8 +106,7 @@
         </div>
         <div id="aside" class="side-menu">
           <div class="side-menu-title">
-            <a href="#">Kei's</a>
-            <a href="#">Portfolio</a>
+            <a href="#">Kei's Portfolio</a>
           </div>
           <nav class="side-nav-wrap">
             <?php

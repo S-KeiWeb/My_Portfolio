@@ -11,6 +11,10 @@
           <?php the_title(); ?>
         </span>
       </h1>
+      <div class="works-message">
+        <p>主に、クラウドソーシングサイトで、<br>WEB制作の仕事を請け負、WEBサイトやランディングページを制作してきました。<br>以下、詳細ページに詳しい制作内容を紹介しておりますので、ご覧いただけますと幸いです。
+        </p>
+      </div>
       <div class="works-image-wrap">
         <?php
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -42,8 +46,7 @@
         </div>
         <div id="aside" class="side-menu page-side-menu">
           <div class="side-menu-title">
-            <a href="#">Kei's</a>
-            <a href="#">Portfolio</a>
+            <a href="#">Kei's Portfolio</a>
           </div>
           <nav class="side-nav-wrap">
             <?php

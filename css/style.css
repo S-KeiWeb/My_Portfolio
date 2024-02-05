@@ -495,6 +495,7 @@ page-about.php
 .production-title-wrap {
   border-bottom: 1px solid #333;
   margin-bottom: 80px;
+  width: 80%;
 }
 
 .production-title {
@@ -511,13 +512,14 @@ page-about.php
 .production-contents {
   display: flex;
   flex-direction: column;
-  width: 47%;
+  width: 45%;
 }
 
 .production-contents-icon {
-  font-size: 10rem;
+  font-size: 8rem;
   padding-bottom: 20px;
   margin-inline: auto;
+  opacity: 0.8;
 }
 
 .production-contents-title {
@@ -548,7 +550,7 @@ page-about.php
   stroke: #F16528;
 }
 
-.js-color {
+.js-circle-color {
   stroke: #F0D91C;
 }
 
@@ -642,32 +644,28 @@ page-about.php
   font-size: 2rem;
 }
 
-.message-image-wrap {
-  display: flex;
-  flex-direction: column;
-  max-width: 934px;
-  margin-inline: auto;
+.archive-contents {
+  margin-bottom: 180px;
 }
 
-.message-image {
-  margin: 0 auto;
+.archive-text-wrap {
+  padding-left: 200px;
 }
 
-.message-image-text {
-  font-size: 1.6rem;
-  margin: 0 0 0 auto;
-}
-
-.message-main-text {
-  max-width: 640px;
+.archive-text {
   font-size: 2rem;
-  margin: 40px 0 120px 0;
-  margin-inline: auto;
+  padding-bottom: 100px;
 }
 
 /*
 page-works.php
 ================================================ */
+.works-message {
+  font-size: 2rem;
+  text-align: center;
+  margin-bottom: 120px;
+}
+
 .works-image-wrap {
   display: grid;
   gap: 40px 3.345%;
@@ -748,6 +746,10 @@ single.php
 /*
 Contact_form
 ================================================ */
+.other-page-wrap {
+  padding-left: 4.6875%;
+}
+
 .content {
   font-size: 2rem;
 }
