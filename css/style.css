@@ -134,7 +134,7 @@ front-page.php/main_button
 front-page.php
 ================================================ */
 body.page-id-89 {
-  background-image: url(../img/top-image.jpg);
+  background-image: url(../img/top-image-02.jpg);
   background-repeat: no-repeat;
 }
 
@@ -436,32 +436,23 @@ page-about.php/page-works.php共通
 }
 
 .title-en {
-  font-size: 5rem;
+  font-size: clamp(3rem, 3.5vw, 5rem);
   font-family: "Montserrat", sans-serif;
+  margin-bottom: 5px;
 }
 
 .title-ja {
-  font-size: 2rem;
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
 }
 
 /*
 page-about.php
 ================================================ */
 .profile {
-  display: flex;
+  display: grid;
   margin-bottom: 80px;
-}
-
-.profile-img-wrap {
-  padding-right: 50px;
-}
-
-.my-img {
-  margin-bottom: 20px;
-}
-
-.profile-text-wrap {
-  width: 57%;
+  gap: 50px;
+  grid-template-columns: 33% 57%;
 }
 
 .name-wrap {
@@ -499,37 +490,38 @@ page-about.php
 }
 
 .production-title {
-  font-size: 4rem;
+  font-size: clamp(2.5rem, 2.5vw, 4rem);
   padding-bottom: 10px;
 }
 
 .production-contents-wrap {
-  display: flex;
-  justify-content: space-around;
+  display: grid;
+  width: 100%;
+  gap: 10%;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   margin-bottom: 80px;
 }
 
 .production-contents {
   display: flex;
   flex-direction: column;
-  width: 45%;
 }
 
 .production-contents-icon {
-  font-size: 8rem;
+  font-size: clamp(6rem, 2.5vw, 8rem);
   padding-bottom: 20px;
   margin-inline: auto;
   opacity: 0.8;
 }
 
 .production-contents-title {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 2.5vw, 2.5rem);
   margin-bottom: 40px;
   margin-inline: auto;
 }
 
 .production-contents-text {
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
 }
 
 .circle-wrap {
@@ -593,7 +585,7 @@ page-about.php
 
 .skill-content {
   display: grid;
-  gap: 2.345%;
+  gap: 0.645%;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
   margin-bottom: 70px;
   font-family: "Montserrat", sans-serif;
@@ -653,7 +645,7 @@ page-about.php
 }
 
 .archive-text {
-  font-size: 2rem;
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
   padding-bottom: 100px;
 }
 
@@ -663,7 +655,7 @@ page-works.php
 .works-message {
   font-size: 2rem;
   text-align: center;
-  margin-bottom: 120px;
+  margin-bottom: 150px;
 }
 
 .works-image-wrap {
@@ -673,11 +665,17 @@ page-works.php
   margin-bottom: 120px;
 }
 
-.works-excerpt {
-  font-size: 2rem;
+.works-list {
+  margin-bottom: 100px;
 }
 
-.main-works-image img {
+.works-excerpt {
+  font-size: 2rem;
+  width: 86%;
+  margin-bottom: 15px;
+}
+
+.works-list img {
   margin-bottom: 20px;
 }
 
@@ -751,7 +749,7 @@ Contact_form
 }
 
 .content {
-  font-size: 2rem;
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
 }
 
 .contact-message {
@@ -759,7 +757,7 @@ Contact_form
 }
 
 .contact-message-text {
-  font-size: 5rem;
+  font-size: clamp(3rem, 2.5vw, 5rem);
   text-align: center;
   font-family: "Montserrat", sans-serif;
 }
@@ -846,6 +844,9 @@ Contact_form
     padding-right: 0;
     text-align: left;
     line-height: 1.5em;
+  }
+  .other-page-wrap {
+    padding: 0 2.6875%;
   }
 }
 /*
@@ -975,6 +976,9 @@ mediaquery
     height: 3px;
     background: #4b6aa5;
     width: 45%;
+  }
+  .page-id-89 .openbtn span {
+    background: #fff;
   }
   .openbtn.active span {
     background: #f7f5f5;
@@ -1107,21 +1111,13 @@ mediaquery
     ======================================== */
   .page-wrap {
     margin: 0 10px;
+    padding: 0;
   }
   /*
     about-page.php
     ======================================== */
-  .about-page-wrap {
-    margin: 0 10px;
-  }
   .page-title {
     margin-bottom: 50px;
-  }
-  .title-en {
-    font-size: 4rem;
-  }
-  .title-ja {
-    font-size: 1.4rem;
   }
   .profile {
     display: block;
@@ -1161,6 +1157,18 @@ mediaquery
     line-height: 3.25rem;
     font-size: 1.6rem;
   }
+  .web-production-wrap {
+    margin-bottom: 80px;
+  }
+  .production-contents-wrap {
+    margin-bottom: 120px;
+  }
+  .production-title-wrap {
+    width: 100%;
+  }
+  .archive-text-wrap {
+    padding-left: 0;
+  }
   .skill-content {
     gap: 4.645%;
     grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
@@ -1196,14 +1204,18 @@ mediaquery
   .main-works-image:last-child {
     margin-bottom: 0;
   }
-  .main-works-image img {
+  .works-list img {
     margin-bottom: 10px;
+  }
+  .main-works-image {
+    margin-bottom: 60px;
   }
   .works-text {
     font-size: 1.4rem;
   }
   .works-excerpt {
     font-size: 1.6rem;
+    margin-bottom: 10px;
   }
   .works-content-text {
     font-size: 1.6rem;

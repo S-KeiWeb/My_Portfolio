@@ -111,7 +111,7 @@
 							</div>
 							<div class="web-production-wrap">
 								<div class="production-title-wrap">
-									<h3 class="production-title">WEB制作スキル</h3>
+									<h3 class="production-title">マネジメントスキル</h3>
 								</div>
 								<div class="production-contents-wrap">
 									<div class="production-contents">
@@ -149,7 +149,7 @@
 								</p>
 								<div class="mainpage-about-button">
 									<a class="main-button" href="https://coconala.com/users/2346005" target="_blank"
-										rel="noopener noreferrer">Go To coconala (External Sites)</a>
+										rel="noopener noreferrer">Go To coconala</a>
 								</div>
 							</div>
 						</section>
