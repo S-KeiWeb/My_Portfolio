@@ -350,7 +350,6 @@ body.page-id-89 {
   font-size: 2rem;
   font-family: "Montserrat", sans-serif;
   color: #707070;
-
 }
 /*
 page-about.php/page-works.php共通
@@ -622,6 +621,16 @@ single.php
   border: none;
   width: 70%;
   margin-bottom: 60px;
+}
+// Single-pageのloading画面 //
+#loading-left {
+  background: #707070;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  right: 0;
+  transform-origin: left top;
+  z-index: 9999;
 }
 /*
 Contact_form

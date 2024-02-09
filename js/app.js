@@ -67,6 +67,22 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
+  const loadingAreaLeft = document.querySelector('#loading-left');
+  const keyframes = {
+    transform: ['scaleX(1)', 'scaleX(0)'],
+  };
+
+  const options = {
+    duration: 1000,
+    delay: 200,
+    easing: 'ease',
+    fill: 'forwards',
+  };
+
+  window.addEventListener('load', () => {
+    loadingAreaLeft.animate(keyframes, options);
+  });
+
   const openBtns = document.querySelectorAll(".openbtn");
   openBtns.forEach(function (btn) {
     btn.addEventListener("click", function () {

@@ -743,6 +743,16 @@ single.php
   margin-bottom: 60px;
 }
 
+#loading-left {
+  background: #707070;
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  right: 0;
+  transform-origin: left top;
+  z-index: 9999;
+}
+
 /*
 Contact_form
 ================================================ */
