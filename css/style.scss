@@ -5,12 +5,13 @@ html {
 
 p {
   line-height: 3.25rem;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 img {
   max-width: 100%;
 }
 body {
-  font-family: "Gothic A1", sans-serif;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
   font-weight: 300;
   background-color: #fdf8ed;
 }
@@ -241,6 +242,7 @@ body.page-id-89 {
   margin-bottom: 40px;
   margin-left: 9%;
   line-height: 3.45rem;
+  font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 .fadein {
   opacity: 0;
@@ -415,6 +417,7 @@ page-about.php
 }
 .production-title {
 	font-size: clamp(2.5rem, 2.5vw, 4rem);
+  font-weight: 400;
 	padding-bottom: 10px;
 }
 .production-contents-wrap {
@@ -436,6 +439,7 @@ page-about.php
 }
 .production-contents-title {
 	font-size:  clamp(2rem, 2.5vw, 2.5rem);
+  font-weight: 400;
 	margin-bottom: 40px;
 	margin-inline: auto;
 }
@@ -543,6 +547,7 @@ page-about.php
 .archive-text {
 	font-size: clamp(1.6rem, 2.5vw, 2rem);
 	padding-bottom: 100px;
+  line-height: 3.85rem;
 }
 /*
 page-works.php
@@ -554,20 +559,18 @@ page-works.php
 }
 .works-image-wrap {
   display: grid;
-  gap: 40px 3.345%;
+  gap: 100px 6.345%;
   grid-template-columns: repeat(auto-fit, minmax(46%, 1fr));
   margin-bottom: 120px;
 }
-.works-list {
-	margin-bottom: 100px;
-}
 .works-excerpt {
-  font-size: 2rem;
-	width: 86%;
+  font-size: 1.6rem;
+	width: 60%;
 	margin-bottom: 15px;
 }
 .works-list img {
   margin-bottom: 20px;
+  width: 83%;
 }
 .works-content-text {
   max-width: 900px;
@@ -733,7 +736,6 @@ footer
   height: 400px;
 }
 .footer-message {
-  font-family: "Gothic A1", sans-serif;
   font-size: clamp(1.4rem, 3.5vw, 2rem);
   text-align: center;
   padding: 50px 0;
