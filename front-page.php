@@ -78,15 +78,9 @@
                 <div class="main-works-image-wrap">
                   <div class="main-works-image">
                     <?php
-                    $content = get_the_content();
-                    preg_match_all('/<img.+src=[\'"]([^\'"]+)[\'"].*>/i', $content, $matches);
-                    if (isset($matches[1][0])) {
-                      echo '<img src="' . esc_url($matches[1][0]) . '" alt="Post Image">';
-                    } else {
                       if (has_post_thumbnail()) {
                         the_post_thumbnail();
                       }
-                    }
                     ?>
                   </div>
                   <div class="works-text-wrap">
