@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   };
   const fadeUpObserver = new IntersectionObserver(animateFadeUp);
-  const fadeUpElements = document.querySelectorAll(".main-works-image-wrap");
+  const fadeUpElements = document.querySelectorAll(".main-works-image-wrap, .production-contents-wrap");
   fadeUpElements.forEach((fadeupElement) => {
     fadeUpObserver.observe(fadeupElement);
   });
@@ -178,9 +178,8 @@ document.addEventListener("DOMContentLoaded", function () {
         entry.target.classList.add("circle-animation-active");
 
         fadeObserver.unobserver(entry.target);
-      } else {
-        entry.target.classList.remove("circle-animation-active");
-      }
+        observer.unobserve(entry.target);
+      } 
     });
   };
 
