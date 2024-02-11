@@ -424,7 +424,6 @@ page-about.php
 	width: 100%;
 	gap: 10%;
 	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-	margin-bottom: 80px;
 }
 .production-contents {
 	display: flex;
@@ -497,6 +496,7 @@ page-about.php
   display: grid;
   gap: 0.645%;
   grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+  margin-top: 60px;
   margin-bottom: 70px;
   font-family: "Montserrat", sans-serif;
 }
@@ -603,6 +603,9 @@ single.php
 .my-works-image {
   margin-bottom: 60px;
 }
+.my-works-image img {
+  object-fit: contain;
+}
 .my-works-content-wrap {
  margin-bottom: 160px;
 }
@@ -666,7 +669,9 @@ single.php
 Contact_form
 ================================================ */
 .other-page-wrap {
-	padding-left: 4.6875%;
+	max-width: 1280px;
+  margin-inline: auto;
+  margin-bottom: 120px;
 }
 .content {
   font-size: clamp(1.4rem, 2.5vw, 2rem);
@@ -803,7 +808,7 @@ footer
   justify-content: center;
   margin: 70px 0 60px;
 }
-.footer-nav-list {
+.footer-nav {
   display: flex;
   gap: 0 40px;
   font-size: 2rem;
