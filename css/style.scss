@@ -4,7 +4,7 @@ html {
 }
 
 p {
-  line-height: 3.25rem;
+  line-height: 4.25rem;
   font-family: 'Zen Kaku Gothic New', sans-serif;
 }
 img {
@@ -20,7 +20,7 @@ header
 ================================================ */
 .header {
   display: flex;
-  margin-top: 20px;
+  padding-top: 20px;
   margin-bottom: 100px;
   padding-left: 4.6875%;
   align-items: center;
@@ -61,7 +61,7 @@ header
   display: block;
   font-family: "Montserrat", sans-serif;
 }
-.header-nav > .menu-item a:after {
+.main-nav > .menu-item a:after {
   content: "";
   position: absolute;
   bottom: 0;
@@ -73,10 +73,10 @@ header
   transform: scale(0, 1);
   transform-origin: left top;
 }
-.header-nav > .menu-item a:hover:after {
+.main-nav > .menu-item a:hover:after {
   transform: scale(1, 1);
 }
-.page-id-89 .header-nav > .menu-item a:after {
+.page-id-89 .main-nav > .menu-item a:after {
   background: #fff;
 }
 //-----隠しメニュー-----//
@@ -116,7 +116,14 @@ front-page.php/main_button
 /*
 front-page.php
 ================================================ */
-body.page-id-89 {
+body.page-id-89::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100vh;
   background-image: url(../img/top-image-02.jpg);
   background-repeat: no-repeat;
 }
@@ -166,9 +173,13 @@ body.page-id-89 {
 }
 .main-section-wrap {
   display: flex;
-  max-width: 1290px;
+  max-width: 100%;
+  padding-top: 20px;
+  padding-right: 4.6875%;
   margin-inline: auto;
-  margin-top: 200px;
+  position: relative;
+  z-index: 1;
+  background-color: #fdf8ed;
 }
 .side-menu {
   width: 20%;
@@ -177,7 +188,8 @@ body.page-id-89 {
   top: 0;
   max-height: calc(100vh - 20px);
   overflow: auto;
-  padding-top: 20px;
+  padding-top: 40px;
+  padding-left: 4.6875%;
 }
 .side-menu.is-fixed {
   position: fixed;
@@ -239,7 +251,7 @@ body.page-id-89 {
 }
 .main-about-text {
   font-size: 2rem;
-  margin-bottom: 40px;
+  margin: 100px 0;
   margin-left: 9%;
   line-height: 3.45rem;
   font-family: 'Zen Kaku Gothic New', sans-serif;
@@ -280,9 +292,6 @@ body.page-id-89 {
   width: 250px;
   line-height: 2.35rem;
   margin-bottom: 5px;
-}
-.works-image-text {
-  font-family: "Montserrat", sans-serif;
 }
 .fadeup {
   animation-name: fadeUpAnime;
@@ -385,7 +394,6 @@ page-about.php
 	margin-bottom: 80px;
 	gap: 50px;
 	grid-template-columns: 33% 57%;
-  
 }
 .name-wrap {
 	display: flex;
@@ -396,7 +404,7 @@ page-about.php
 	align-items: baseline;
 }
 .my-name {
-	font-size: 4rem;
+  font-size: 4rem;
 	padding-bottom: 10px;
 	padding-right: 18px;
 }
@@ -476,7 +484,7 @@ page-about.php
 	stroke: #470137;
 }
 .circle-animation-active .circle-animation {
-  animation: dash 4s ease-in-out forwards;
+  animation: dash 2s ease-in-out forwards;
 }
 @keyframes dash {
   from {
@@ -553,7 +561,7 @@ page-about.php
 page-works.php
 ================================================ */
 .works-message {
-	font-size: 2rem;
+	font-size: clamp(1.5rem, 2.5vw, 2rem);
 	text-align: center;
 	margin-bottom: 150px;
 }
@@ -608,24 +616,30 @@ single.php
   object-fit: contain;
 }
 .my-works-content-wrap {
- margin-bottom: 160px;
+  margin-bottom: 50px;
+}
+.return-button {
+  font-size: clamp(1.6rem, 2.5vw, 2.2rem);
+  margin-bottom: 120px;
+  text-align: end;
+  color: #4b6aa5;
 }
 .my-works-content-item {
   margin-bottom: 30px;
 }
 .my-works-content-item h3 {
-  font-size: 3.2rem;
+  font-size: clamp(2.4rem, 2.5vw, 3.2rem);
   color: #4b6aa5;
   border-bottom: 3px solid #4b6aa5;
   padding-bottom: 10px;
   margin-bottom: 10px;
 }
 .my-works-text {
-  font-size: 2.4rem;
+  font-size: clamp(1.6rem, 2.5vw, 2.4rem);
   line-height: 4.45rem;
 }
 .closing-text {
-  font-size: 2.4rem;
+  font-size: clamp(1.6rem, 2.5vw, 2.4rem);
   color: red;
 }
 .works-table-image img {
@@ -656,9 +670,9 @@ single.php
   font-weight: 300;
   border-bottom: 1px solid #707070;
 }
-// Single-pageのloading画面 //
+// single-pageのloading画面 //
 #loading-left {
-  background: #707070;
+  background: #4b6aa5;
   position: fixed;
   width: 100vw;
   height: 100vh;
@@ -694,11 +708,9 @@ Contact_form
   border-bottom: 1px dashed #ccc;
   transition: all 0.3s;
 }
-
 .contact-form-area:last-child {
   border-bottom: none;
 }
-
 .contact-form-area dt {
   flex: 1;
   font-family: "Montserrat", sans-serif;
@@ -706,7 +718,6 @@ Contact_form
 .contact-form-area dd {
   flex: 1;
 }
-
 .contact-form-area input,
 .contact-form-area textarea {
   width: 100%;
@@ -717,7 +728,6 @@ Contact_form
   resize: vertical;
   transition: all 0.3s;
 }
-
 .contact-form-area input:focus,
 .contact-form-area textarea:focus {
   outline: none;
@@ -751,7 +761,6 @@ Contact_form
   border: none;
   text-align: center;
 }
-
 @media screen and (max-width: 768px) {
   .contact-form-area {
     display: block;
@@ -774,6 +783,9 @@ footer
   font-family: "Montserrat", sans-serif;
   border-top: 1px solid #707070;
   padding-bottom: 80px;
+  position: relative;
+  z-index: 1;
+  background-color: #fdf8ed;
 }
 .footer-contact-wrap {
   background-color: #4b6aa5;
@@ -836,10 +848,10 @@ mediaquery
   .site-title {
     font-size: 5.85rem;
   }
-  .header-nav {
+  .main-nav {
     column-gap: 40px;
   }
-  .header-nav > .menu-item {
+  .main-nav > .menu-item {
     padding-right: 40px;
   }
   body.page-id-89 {
@@ -851,8 +863,8 @@ mediaquery
 }
 @media (max-width: 1024px) {
   /*
-    header
-    ======================================== */
+  header
+  ======================================== */
   .header {
     margin-bottom: 80px;
   }
@@ -877,7 +889,6 @@ mediaquery
   }
   .openbtn span {
     display: inline-block;
-    /*アニメーションの設定*/
     transition: all 0.4s;
     position: absolute;
     left: 10px;
@@ -923,8 +934,8 @@ mediaquery
     transform: translate(0);
   }
   /*
-    front-page.php
-    ======================================== */
+  front-page.php
+  ======================================== */
   body.page-id-89 {
     height: 670px;
     background-size: cover;
@@ -1013,15 +1024,15 @@ mediaquery
     font-size: 1.2rem;
   }
   /*
-    page.php
-    ======================================== */
+  page.php
+  ======================================== */
   .page-wrap {
     margin: 0 10px;
 		padding: 0;
   }
   /*
-    about-page.php
-    ======================================== */
+  about-page.php
+  ======================================== */
   .page-title {
     margin-bottom: 50px;
   }
@@ -1030,7 +1041,6 @@ mediaquery
   }
   .profile-img-wrap {
     width: 100%;
-    margin-bottom: 50px;
   }
   .my-img {
     width: 100%;
@@ -1100,8 +1110,8 @@ mediaquery
     font-size: 1.6rem;
   }
   /*
-    works.php
-    ======================================== */
+  works.php
+  ======================================== */
   .works-image-wrap {
     display: block;
   }
@@ -1109,18 +1119,22 @@ mediaquery
     margin-bottom: 0;
   }
   .works-list img {
-    margin-bottom: 10px;
+    width: 100%;
   }
 	.main-works-image {
 		margin-bottom: 60px;
 	}
+  .works-message {
+    text-align: start;
+    margin-bottom: 70px;
+  }
   .works-text {
     font-size: 1.4rem;
   }
   .works-excerpt {
     font-size: 1.6rem;
 		margin-bottom: 10px;
-
+    width: 80%;
   }
   .works-content-text {
     font-size: 1.6rem;
@@ -1129,38 +1143,30 @@ mediaquery
     display: block;
   }
   /*
-    single.php
-    ======================================== */
-  .single-page-wrap {
-    margin: 0 10px;
+  single.php
+  ======================================== */
+  .my-works-page-wrap {
+    padding: 0 4.6875%;
   }
-  .works-table table tr {
-    display: flex;
-    flex-direction: column;
+  .my-works-image img {
+    height: 40%;
   }
-  .works-table table td {
-    line-height: 2.75rem;
+  .my-works-content-item h3 {
+    padding-bottom: 5px;
+    margin-bottom: 5px;
   }
-  .works-table table td:nth-of-type(1) {
-    width: 100%;
-    margin-bottom: 10px;
-    padding: 0;
-  }
-  .works-table table td:nth-of-type(2) {
-    width: 100%;
-    padding: 0;
+  .my-works-text {
+    line-height: 3.05rem;
   }
   /*
-    footer
-    ======================================== */
+  footer
+  ======================================== */
   .footer-nav-wrap {
-    margin-bottom: 30px;
-  }
-  .footer-nav-list {
     display: none;
   }
   .footer-contact-wrap {
     height: 480px;
+    margin-bottom: 30px;
   }
   .footer-message {
     text-align: left;
@@ -1189,5 +1195,24 @@ mediaquery_@hover
   }
   .footer-contact-button:hover {
     background-color: #d9d9d9;
+  }
+}
+/*
+cssAnimation
+================================================ */
+.fade-left {
+  animation-name: fadeLeftAnime;
+  animation-duration: .5s;
+  animation-fill-mode: forwards;
+  opacity: 0;
+  @keyframes fadeLeftAnime {
+    from {
+      opacity: 0;
+      transform: translateX(-200px);
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
   }
 }
