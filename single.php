@@ -42,6 +42,13 @@
               </p>
               </div>
             </div>
+            <div class="return-button">
+              <?php $referrer = wp_get_referer();
+              if ($referrer) {
+                echo '<a href="'. esc_url($referrer) . '" class="back-button">Works Pageに戻る>></a>';
+              }
+              ?>
+            </div>
           </div>
         </article>
       </main>
