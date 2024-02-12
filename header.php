@@ -17,7 +17,7 @@
       <?php
       $args = array(
         'menu' => 'global-navigation',
-        'menu_class' => 'header-nav',
+        'menu_class' => 'header-nav main-nav',
         'container' => false,
       );
       wp_nav_menu($args);
