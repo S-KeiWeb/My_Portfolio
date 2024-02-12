@@ -15,15 +15,15 @@
 						</span>
 					</h1>
 					<div class="profile">
-						<div class="profile-img-wrap">
+						<div class="profile-img-wrap fadeup">
 							<img class="my-img" src="<?php echo get_template_directory_uri(); ?>/img/profile-test.jpg" alt="齊藤恵画像">
 						</div>
 						<div class="profile-text-wrap">
-							<div class="name-wrap">
+							<div class="name-wrap fade-left">
 								<p class="my-name">齊藤恵</p>
 								<p class="my-name-kana">Kei Saitou</p>
 							</div>
-							<p class="profile-text">岩手県盛岡市出身、39歳。<br>
+							<p class="profile-text fade-left">岩手県盛岡市出身、39歳。<br>
 								現状に満足せず、スキルを磨ける場を求めるため、自らWebスキルを学び、WEB業界へのキャリアチェンジを目指しております。<br>
 								現在、店舗マネジメントで培ったコミュニケーション能力と、自ら学んだWEB制作スキルを活かし、新しい企業で一緒に働く機会を探しています。
 							</p>
