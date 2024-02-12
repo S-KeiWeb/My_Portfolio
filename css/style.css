@@ -1150,7 +1150,8 @@ mediaquery
   }
   .main-about-text {
     font-size: 1.6rem;
-    margin-right: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: 0;
     width: 100%;
   }
@@ -1301,6 +1302,9 @@ mediaquery
   /*
   single.php
   ======================================== */
+  .loading-left {
+    display: none;
+  }
   .my-works-page-wrap {
     padding: 0 4.6875%;
   }

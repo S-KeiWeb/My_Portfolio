@@ -597,6 +597,59 @@ page-works.php
   margin-inline: auto;
   margin-bottom: 40px;
 }
+// .ws-goto-top {
+//   font-size: 100px;
+// }
+// #page-top a {
+//   display: flex;
+//   margin-inline: auto;
+//   background-color: #4b6aa5;
+//   border-radius: 30px;
+//   width: 60px;
+//   height: 60px;
+//   color: #fff;
+//   text-align: center;
+//   text-decoration: none;
+//   font-size: 1.4rem;
+//   transition: all 0.3s;
+// }
+// #page-top a:hover {
+//   opacity: 0.7;
+// }
+// #page-top {
+//   position: fixed;
+//   right: 10px;
+//   bottom: 10px;
+//   z-index: 2;
+//   opacity: 0;
+//   transform: translateY(100px);
+// }
+// #page-top.UpMove {
+//   animation: UpAnime 0.5s forwards;
+// }
+// @keyframes UpAnime {
+//   from {
+//     opacity: 0;
+//     transform: translateY(100px);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+// }
+// #page-top.DownMove {
+//   animation: DownAnime 0.5s forwards;
+// }
+// @keyframes DownAnime {
+//   from {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }
+//   to {
+//     opacity: 1;
+//     transform: translateY(100px);
+//   }
+// }
 /*
 single.php
 ================================================ */
@@ -753,7 +806,6 @@ Contact_form
 .contact-form-send input:hover {
   filter: brightness(1.25);
 }
-
 .wpcf7 form.invalid .wpcf7-response-output,
 .wpcf7 form.unaccepted .wpcf7-response-output,
 .wpcf7 form.payment-required .wpcf7-response-output {
@@ -996,7 +1048,8 @@ mediaquery
   }
   .main-about-text {
     font-size: 1.6rem;
-    margin-right: 0;
+    margin-top: 50px;
+    margin-bottom: 50px;
     margin-left: 0;
     width: 100%;
   }
@@ -1145,6 +1198,9 @@ mediaquery
   /*
   single.php
   ======================================== */
+  .loading-left {
+    display: none;
+  }
   .my-works-page-wrap {
     padding: 0 4.6875%;
   }
