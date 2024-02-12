@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", function () {
+  //loading画面anime
   const keyName = "visited";
   const keyValue = true;
 
@@ -91,6 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   });
 
+  //side-menuをコンテンツに沿わせて表示させる
   const container = document.getElementById("main-container");
   const aside = document.getElementById("aside");
   const offsetY = 20;
@@ -131,6 +133,7 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   }
 
+  //front-page-aboutにて使用
   const animateFade = (entries, obs) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
@@ -155,7 +158,8 @@ document.addEventListener("DOMContentLoaded", function () {
   fadeElements.forEach((fadeElement) => {
     fadeObserver.observe(fadeElement);
   });
-
+  
+  //fadein実装（aboutスキルコンテンツ、works一覧にて）
   const animateFadeUp = (entries, obs) => {
     entries.forEach((entry) => {
       if (entry.isIntersecting) {
