@@ -77,11 +77,11 @@
                 ?>
                 <div class="main-works-image-wrap">
                   <div class="main-works-image">
-                    <?php
+                    <a href="<?php the_permalink(); ?>" ><?php
                       if (has_post_thumbnail()) {
                         the_post_thumbnail();
                       }
-                    ?>
+                    ?></a>
                   </div>
                   <div class="works-text-wrap">
                     <p class="works-text">
