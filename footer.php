@@ -16,7 +16,7 @@
     <?php
     $args = array(
       'menu' => 'footer-navigation',
-      'menu_class' => 'footer-nav',
+      'menu_class' => 'footer-nav main-nav',
       'container' => false,
     );
     wp_nav_menu($args);
