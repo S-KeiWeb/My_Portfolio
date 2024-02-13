@@ -12,7 +12,7 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
   <header class="header">
-    <div class="site-title"><a href="<?php echo home_url(); ?>">Kei's-Portfolio</a></div>
+    <div class="site-title"><a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a></div>
     <nav class="header-nav-wrap">
       <?php
       $args = array(
