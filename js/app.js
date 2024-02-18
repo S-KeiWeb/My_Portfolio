@@ -69,20 +69,23 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   const loadingAreaLeft = document.querySelector('#loading-left');
-  const keyframes = {
-    transform: ['scaleX(1)', 'scaleX(0)'],
-  };
-
-  const options = {
-    duration: 1000,
-    delay: 200,
-    easing: 'ease',
-    fill: 'forwards',
-  };
-
-  window.addEventListener('load', () => {
-    loadingAreaLeft.animate(keyframes, options);
-  });
+  if (isElementPresent(loadingAreaLeft)) {
+    const loadingAreaLeft = document.querySelector('#loading-left');
+    const keyframes = {
+      transform: ['scaleX(1)', 'scaleX(0)'],
+    };
+  
+    const options = {
+      duration: 1000,
+      delay: 200,
+      easing: 'ease',
+      fill: 'forwards',
+    };
+  
+    window.addEventListener('load', () => {
+      loadingAreaLeft.animate(keyframes, options);
+    });
+  }
 
   const openBtns = document.querySelectorAll(".openbtn");
   openBtns.forEach(function (btn) {
@@ -176,17 +179,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
   const item = document.querySelector(".skill-content");
 
-  const callback = function (entries, observer) {
-    entries.forEach((entry) => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add("circle-animation-active");
-
-        fadeObserver.unobserver(entry.target);
-        observer.unobserve(entry.target);
-      } 
-    });
-  };
+  if (item) {
+    const callback = function (entries, observer) {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("circle-animation-active");
+          observer.unobserve(entry.target);
+        } 
+      });
+    };
 
   const io = new IntersectionObserver(callback);
   io.observe(item);
+  }
 });

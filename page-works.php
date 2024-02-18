@@ -48,7 +48,7 @@
         </div>
         <div id="aside" class="side-menu page-side-menu">
           <div class="side-menu-title">
-            <a href="#">Kei's Portfolio</a>
+            <a href="#"><?php bloginfo('name'); ?></a>
           </div>
           <nav class="side-nav-wrap">
             <?php

@@ -17,9 +17,11 @@
                 <span class="main-concept">
                   <?php echo esc_html(get_field('main-concept')); ?>
                 </span>
+                <?php if(get_field('main-concept-text')): ?>
                 <span class="main-concept-text">
                   <?php echo esc_html(get_field('main-concept-text')); ?>
                 </span>
+                <?php endif; ?>
               </strong>
             </h1>
           </div>
@@ -36,10 +38,13 @@
 
       <div id="main-container" class="main-section-wrap">
         <div class="main-section-content-wrap">
+        <?php 
+        $page = get_page_by_path('about');
+        ?>
           <section class="main-section-content">
             <h2 class="main-section-content-title">
-              <span class="main-section-content-title-en">About</span>
-              <span class="main-section-content-title-ja">わたしについて</span>
+              <span class="main-section-content-title-en"><?php echo ucwords($page->post_name); ?></span>
+              <span class="main-section-content-title-ja"><?php echo $page->post_title; ?></span>
             </h2>
             <div class="main-content-wrap">
               <div class="mainpage-about-image">
@@ -56,13 +61,15 @@
               </div>
             </div>
           </section>
+          <?php 
+          $page = get_page_by_path('works');
+          ?>
           <section class="main-section-content">
             <h2 class="main-section-content-title">
-              <span class="main-section-content-title-en">Works</span>
-              <span class="main-section-content-title-ja">制作物について</span>
+              <span class="main-section-content-title-en"><?php echo ucwords($page->post_name); ?></span>
+              <span class="main-section-content-title-ja"><?php echo $page->post_title; ?></span>
             </h2>
             <?php
-            $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
             $args = array(
               'post_type' => 'my-works',
               'posts_per_page' => 4,
@@ -70,11 +77,8 @@
               'orderby' => 'date',
               'order' => 'ASC'
             );
-            $the_query = new WP_Query($args);
-            if ($the_query->have_posts()):
-              while ($the_query->have_posts()):
-                $the_query->the_post();
-                ?>
+            $myposts = get_posts( $args );
+            foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
                 <div class="main-works-image-wrap">
                   <div class="main-works-image">
                     <a href="<?php the_permalink(); ?>" ><?php
@@ -92,15 +96,13 @@
                     </p>
                   </div>
                 </div>
-              <?php endwhile; ?>
-            <?php endif;
-            wp_reset_postdata(); ?>
+            <?php endforeach; wp_reset_postdata(); ?>
             <a class="main-button" href="<?php echo esc_url(home_url('/')); ?>works">Go to Works Page</a>
           </section>
         </div>
         <div id="aside" class="side-menu">
           <div class="side-menu-title">
-            <a href="#">Kei's Portfolio</a>
+            <a href="#"><?php bloginfo('name'); ?></a>
           </div>
           <nav class="side-nav-wrap">
             <?php
