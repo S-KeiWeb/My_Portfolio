@@ -16,7 +16,7 @@
 					</h1>
 					<div class="profile">
 						<div class="profile-img-wrap fadeup">
-							<img class="my-img" src="<?php echo get_template_directory_uri(); ?>/img/profile-test.jpg" alt="齊藤恵画像">
+							<img class="my-img" src="<?php echo get_template_directory_uri(); ?>/img/portfolio-image.jpg" alt="齊藤恵画像">
 						</div>
 						<div class="profile-text-wrap">
 							<div class="name-wrap fade-left">
@@ -157,7 +157,7 @@
 				</div>
 				<div id="aside" class="side-menu page-side-menu">
 					<div class="side-menu-title">
-						<a href="#"><?php bloginfo('name'); ?></a>
+						<a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
 					</div>
 					<nav class="side-nav-wrap">
 						<?php

@@ -48,7 +48,7 @@
             </h2>
             <div class="main-content-wrap">
               <div class="mainpage-about-image">
-                <img class="main-content-img fadein" src="<?php echo get_template_directory_uri(); ?>/img/profile-test.jpg"
+                <img class="main-content-img fadein" src="<?php echo get_template_directory_uri(); ?>/img/portfolio-image.jpg"
                   alt="about-img">
               </div>
               <div class="main-about-content">
@@ -102,7 +102,7 @@
         </div>
         <div id="aside" class="side-menu">
           <div class="side-menu-title">
-            <a href="#"><?php bloginfo('name'); ?></a>
+            <a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
           </div>
           <nav class="side-nav-wrap">
             <?php
