@@ -294,16 +294,16 @@ body.page-id-89::before {
   margin-bottom: 60px;
 }
 
+.mainpage-about-image {
+  width: 60%;
+}
+
 .main-about-text {
   font-size: 2rem;
   margin-bottom: 40px;
   margin-left: 9%;
   line-height: 3.45rem;
   font-family: "Zen Kaku Gothic New", sans-serif;
-}
-
-.mainpage-about-image {
-  width: 60%;
 }
 
 .fadein {
@@ -913,6 +913,12 @@ Contact_form
   text-align: center;
 }
 
+@media screen and (min-width: 1400px) {
+  .main-about-text {
+    margin-top: 70px;
+    margin-bottom: 90px;
+  }
+}
 @media screen and (max-width: 768px) {
   .contact-form-area {
     display: block;

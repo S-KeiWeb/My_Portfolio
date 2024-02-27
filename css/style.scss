@@ -249,15 +249,16 @@ body.page-id-89::before {
   display: flex;
   margin-bottom: 60px;
 }
+.mainpage-about-image {
+  width: 70%;
+}
 .main-about-text {
+	margin-bottom: 70px;
   font-size: 2rem;
   margin-bottom: 40px;
   margin-left: 9%;
   line-height: 3.45rem;
   font-family: 'Zen Kaku Gothic New', sans-serif;
-}
-.mainpage-about-image {
-  width: 60%;
 }
 .fadein {
   opacity: 0;
@@ -417,6 +418,10 @@ page-about.php
 }
 .profile-text {
   font-size: 2rem;
+}
+.my-img {
+	height: 100%;
+	object-fit: cover;
 }
 .web-production-wrap {
 	margin-bottom: 130px;		
@@ -766,6 +771,12 @@ Contact_form
   background-color: #fce3e3;
   border: none;
   text-align: center;
+}
+@media screen and (min-width: 1400px) {
+  .main-about-text {
+    margin-top: 70px;
+    margin-bottom: 90px;
+  }
 }
 @media screen and (max-width: 768px) {
   .contact-form-area {
