@@ -11,6 +11,8 @@ p {
 
 img {
   max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 body {
@@ -35,6 +37,9 @@ header
   width: 100%;
   font-size: 5rem;
   font-family: "Montserrat", sans-serif;
+}
+.site-title:hover {
+  opacity: 0.5;
 }
 
 .header-nav {
@@ -123,12 +128,16 @@ front-page.php/main_button
   border: 1px solid;
   border-radius: 30px;
   background-color: #4b6aa5;
-  padding: 14px 80px;
+  padding: 10px 80px;
   font-size: 2.2rem;
   color: #fff;
   margin: 0 auto;
   transition: all 0.3s ease;
   font-family: "Montserrat", sans-serif;
+}
+.main-button:hover {
+  background-color: #fff;
+  color: #4b6aa5;
 }
 
 /*
@@ -192,7 +201,7 @@ body.page-id-89::before {
 }
 
 .main-concept-message {
-  font-size: clamp(1.5rem, 1.8vw, 3rem);
+  font-size: clamp(2rem, 1.8vw, 3rem);
   line-height: 4.45rem;
 }
 
@@ -295,12 +304,20 @@ body.page-id-89::before {
 }
 
 .mainpage-about-image {
-  width: 60%;
+  width: 70%;
+}
+
+.mainpage-about-image img {
+  width: 100%;
+  height: auto;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .main-about-text {
   font-size: 2rem;
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 60px;
   margin-left: 9%;
   line-height: 3.45rem;
   font-family: "Zen Kaku Gothic New", sans-serif;
@@ -491,6 +508,12 @@ page-about.php
 
 .profile-text {
   font-size: 2rem;
+}
+
+.my-img {
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .web-production-wrap {
@@ -684,8 +707,9 @@ page-works.php
 
 .works-excerpt {
   font-size: 1.6rem;
+  line-height: 3.15rem;
   width: 60%;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
 }
 
 .works-list img {
@@ -831,9 +855,8 @@ Contact_form
 }
 
 .contact-message-text {
-  font-size: clamp(3rem, 2.5vw, 5rem);
+  font-size: clamp(1.6rem, 2.5vw, 2.4rem);
   text-align: center;
-  font-family: "Montserrat", sans-serif;
 }
 
 .contact-form {
@@ -913,12 +936,6 @@ Contact_form
   text-align: center;
 }
 
-@media screen and (min-width: 1400px) {
-  .main-about-text {
-    margin-top: 70px;
-    margin-bottom: 90px;
-  }
-}
 @media screen and (max-width: 768px) {
   .contact-form-area {
     display: block;
@@ -933,6 +950,9 @@ Contact_form
   .other-page-wrap {
     padding: 0 2.6875%;
   }
+  .contact-message-text {
+    text-align: left;
+  }
 }
 /*
 footer
@@ -940,7 +960,7 @@ footer
 .footer {
   font-family: "Montserrat", sans-serif;
   border-top: 1px solid #707070;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   position: relative;
   z-index: 1;
   background-color: #fdf8ed;
@@ -969,6 +989,9 @@ footer
   border-radius: 32px;
   transition: all 0.3s ease;
 }
+.footer-contact-button:hover {
+  opacity: 0.5;
+}
 
 .footer-contact-button-item {
   display: flex;
@@ -993,6 +1016,10 @@ footer
 
 .footer-list-item {
   transition: all 0.3s ease;
+}
+
+.page-id-89 .footer-nav > .menu-item a::after {
+  background: #4b6aa5;
 }
 
 .copyright {
@@ -1209,7 +1236,6 @@ mediaquery
   }
   .my-img {
     width: 100%;
-    height: 280px;
     margin-bottom: 30px;
     -o-object-fit: cover;
        object-fit: cover;
@@ -1351,20 +1377,6 @@ mediaquery
 @media (max-width: 393px) {
   .works-responsive-title {
     font-size: 2.7rem;
-  }
-}
-/*
-mediaquery_@hover
-================================================ */
-@media (hover) {
-  .site-title a:hover {
-    opacity: 0.3;
-  }
-  .footer-list-item:hover {
-    opacity: 0.3;
-  }
-  .footer-contact-button:hover {
-    background-color: #d9d9d9;
   }
 }
 /*

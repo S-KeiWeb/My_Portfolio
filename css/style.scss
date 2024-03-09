@@ -7,9 +7,12 @@ p {
   line-height: 4.25rem;
   font-family: 'Zen Kaku Gothic New', sans-serif;
 }
+
 img {
   max-width: 100%;
+  object-fit: cover;
 }
+
 body {
   font-family: 'Zen Kaku Gothic New', sans-serif;
   font-weight: 300;
@@ -30,6 +33,9 @@ header
   width: 100%;
   font-size: 5rem;
   font-family: "Montserrat", sans-serif;
+  &:hover {
+    opacity: 0.5;
+  }
 }
 .header-nav {
   display: flex;
@@ -106,12 +112,16 @@ front-page.php/main_button
   border: 1px solid;
   border-radius: 30px;
   background-color: #4b6aa5;
-  padding: 14px 80px;
+  padding: 10px 80px;
   font-size: 2.2rem;
   color: #fff;
   margin: 0 auto;
   transition: all 0.3s ease;
   font-family: "Montserrat", sans-serif;
+  &:hover {
+    background-color: #fff;
+    color: #4b6aa5;
+  }
 }
 /*
 front-page.php
@@ -165,7 +175,7 @@ body.page-id-89::before {
   margin-bottom: 20px;
 }
 .main-concept-message {
-  font-size: clamp(1.5rem, 1.8vw, 3rem);
+  font-size: clamp(2rem, 1.8vw, 3rem);
   line-height: 4.45rem;
 }
 #main-container {
@@ -252,10 +262,15 @@ body.page-id-89::before {
 .mainpage-about-image {
   width: 70%;
 }
+.mainpage-about-image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
 .main-about-text {
-	margin-bottom: 70px;
   font-size: 2rem;
-  margin-bottom: 40px;
+  margin-top: 20px;
+  margin-bottom: 60px;
   margin-left: 9%;
   line-height: 3.45rem;
   font-family: 'Zen Kaku Gothic New', sans-serif;
@@ -282,6 +297,7 @@ body.page-id-89::before {
   height: auto;
   object-fit: cover;
 }
+
 .works-text-wrap {
   display: flex;
   justify-content: flex-end;
@@ -447,19 +463,19 @@ page-about.php
 	flex-direction: column;
 }
 .production-contents-icon {
-	font-size:  clamp(6rem, 2.5vw, 8rem);
+	font-size: clamp(6rem, 2.5vw, 8rem);
 	padding-bottom: 20px;
 	margin-inline: auto;
 	opacity: 0.8;
 }
 .production-contents-title {
-	font-size:  clamp(2rem, 2.5vw, 2.5rem);
+	font-size: clamp(2rem, 2.5vw, 2.5rem);
   font-weight: 400;
 	margin-bottom: 40px;
 	margin-inline: auto;
 }
 .production-contents-text {
-	font-size:  clamp(1.6rem, 2.5vw, 2rem);
+	font-size: clamp(1.6rem, 2.5vw, 2rem);
 }
 .circle-wrap {
   width: 160px;
@@ -581,8 +597,9 @@ page-works.php
 }
 .works-excerpt {
   font-size: 1.6rem;
+  line-height: 3.15rem;
 	width: 60%;
-	margin-bottom: 15px;
+	margin-bottom: 10px;
 }
 .works-list img {
   margin-bottom: 20px;
@@ -703,9 +720,8 @@ Contact_form
   margin-bottom: 40px;
 }
 .contact-message-text {
-  font-size: clamp(3rem, 2.5vw, 5rem);
+  font-size: clamp(1.6rem, 2.5vw, 2.4rem); 
   text-align: center;
-  font-family: "Montserrat", sans-serif;
 }
 .contact-form {
   max-width: 800px;
@@ -772,12 +788,6 @@ Contact_form
   border: none;
   text-align: center;
 }
-@media screen and (min-width: 1400px) {
-  .main-about-text {
-    margin-top: 70px;
-    margin-bottom: 90px;
-  }
-}
 @media screen and (max-width: 768px) {
   .contact-form-area {
     display: block;
@@ -792,6 +802,9 @@ Contact_form
 	.other-page-wrap {
 		padding: 0 2.6875%;
 	}
+  .contact-message-text {
+    text-align: left;
+  }
 }
 /*
 footer
@@ -799,7 +812,7 @@ footer
 .footer {
   font-family: "Montserrat", sans-serif;
   border-top: 1px solid #707070;
-  padding-bottom: 80px;
+  padding-bottom: 40px;
   position: relative;
   z-index: 1;
   background-color: #fdf8ed;
@@ -824,6 +837,9 @@ footer
   background: #fff;
   border-radius: 32px;
   transition: all 0.3s ease;
+  &:hover {
+    opacity: 0.5;
+  }
 }
 .footer-contact-button-item {
   display: flex;
@@ -845,6 +861,9 @@ footer
 }
 .footer-list-item {
   transition: all 0.3s ease;
+}
+.page-id-89 .footer-nav > .menu-item a::after {
+  background: #4b6aa5;
 }
 .copyright {
   font-size: 2rem;
@@ -1059,7 +1078,6 @@ mediaquery
   }
   .my-img {
     width: 100%;
-    height: 280px;
     margin-bottom: 30px;
     object-fit: cover;
     object-position: 10% 30%;
@@ -1199,20 +1217,6 @@ mediaquery
 @media (max-width: 393px) {
   .works-responsive-title {
     font-size: 2.7rem;
-  }
-}
-/*
-mediaquery_@hover
-================================================ */
-@media (hover) {
-  .site-title a:hover {
-    opacity: 0.3;
-  }
-  .footer-list-item:hover {
-    opacity: 0.3;
-  }
-  .footer-contact-button:hover {
-    background-color: #d9d9d9;
   }
 }
 /*
