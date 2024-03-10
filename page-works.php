@@ -12,8 +12,8 @@
         </span>
       </h1>
       <div class="works-message">
-          <p>主に、クラウドソーシングサイトで、WEB制作の仕事を請け負い、WEBサイトやランディングページを制作してきました。<br>以下、詳細ページに詳しい制作内容を紹介しておりますので、ご覧いただけますと幸いです。</p>
-        </div>
+        <p>主に、クラウドソーシングサイトで、WEB制作の仕事を請け負い、WEBサイトやランディングページを制作してきました。<br>以下、詳細ページに詳しい制作内容を紹介しておりますので、ご覧いただけますと幸いです。</p>
+      </div>
       <div class="works-image-wrap">
         <?php
         $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
@@ -29,7 +29,6 @@
         <?php if ($the_query->have_posts()):
           while ($the_query->have_posts()):
             $the_query->the_post(); ?>
-            <!-- <p id="page-top"><a href="#">Topへ</a></p> -->
             <div class="works-section-image works-list">
               <a href="<?php the_permalink(); ?>">
                 <?php if (has_post_thumbnail()) {
@@ -48,7 +47,9 @@
         </div>
         <div id="aside" class="side-menu page-side-menu">
           <div class="side-menu-title">
-            <a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+            <a href="<?php echo home_url(); ?>">
+              <?php bloginfo('name'); ?>
+            </a>
           </div>
           <nav class="side-nav-wrap">
             <?php

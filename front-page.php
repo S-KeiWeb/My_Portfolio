@@ -54,8 +54,8 @@
                 <div class="about-section-text fadein">
                   <?php echo wp_kses_post(get_field('main-about-text')); ?>
                 </div>
-                <div class="mainpage-about-button">
-                  <a class="main-button" href="<?php echo esc_url(home_url('/')); ?>about">Who is Kei?</a>
+                <div class="button-secondary-wrap">
+                  <a class="button-secondary" href="<?php echo esc_url(home_url('/')); ?>about">Who is Kei?</a>
                 </div>
               </div>
             </div>
@@ -104,7 +104,7 @@
               </div>
             <?php endforeach;
             wp_reset_postdata(); ?>
-            <a class="main-button" href="<?php echo esc_url(home_url('/')); ?>works">Go to Works Page</a>
+            <a class="button-secondary" href="<?php echo esc_url(home_url('/')); ?>works">Go to Works Page</a>
           </section>
         </div>
         <div id="aside" class="side-menu">

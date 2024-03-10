@@ -15,11 +15,11 @@
 						</span>
 					</h1>
 					<div class="profile">
-						<div class="profile-img-wrap fadeup">
-							<img class="my-img" src="<?php echo get_template_directory_uri(); ?>/img/portfolio-image.jpg" alt="齊藤恵画像">
+						<div class="profile-image-wrap fadeup">
+							<img class="my-image" src="<?php echo get_template_directory_uri(); ?>/img/portfolio-image.jpg" alt="齊藤恵画像">
 						</div>
 						<div class="profile-text-wrap">
-							<div class="name-wrap fade-left">
+							<div class="my-name-wrap fade-left">
 								<p class="my-name">齊藤恵</p>
 								<p class="my-name-kana">Kei Saitou</p>
 							</div>
@@ -30,13 +30,13 @@
 						</div>
 					</div>
 
-					<div class="skill-content-wrap">
+					<div class="production-section">
 						<section class="section-content">
 							<h2 class="section-content-title">
 								<span class="section-content-title-en">Skill</span>
 								<span class="section-content-title-ja">できること</span>
 							</h2>
-							<div class="web-production-wrap">
+							<div class="production-wrap">
 								<div class="production-title-wrap">
 									<h3 class="production-title">WEB制作スキル</h3>
 								</div>
@@ -109,7 +109,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="web-production-wrap">
+							<div class="production-wrap">
 								<div class="production-title-wrap">
 									<h3 class="production-title">マネジメントスキル</h3>
 								</div>
@@ -132,7 +132,7 @@
 							</div>
 						</section>
 					</div>
-					<div class="archive-contents">
+					<div class="archive-section">
 						<section class="section-content">
 							<h2 class="section-content-title">
 								<span class="section-content-title-en">Experience</span>
@@ -147,8 +147,8 @@
 								<p class="archive-text">
 									これまでの仕事はすべてクラウドソーシングサイトから受けてきました。その中で最も多かったのがココナラでの仕事です。<br>主に新規店舗のホームページや会員募集のランディングページのデザインをお願いされました。クライアントの要望を注意深く聞き、できる限り形にしてきました。<br>WEB制作の副業では経験が浅いですが、クライアントへのWEBデザインやSEOマーケティングのアドバイスを通じて、期待以上の成果を提供するよう心がけております。特にココナラで高い評価をいただいており、WEB制作に関する相談も増えています。実績と評価は以下のリンクからご覧いただけます。
 								</p>
-								<div class="mainpage-about-button">
-									<a class="main-button" href="https://coconala.com/users/2346005" target="_blank"
+								<div class="button-secondary-wrap">
+									<a class="button-secondary" href="https://coconala.com/users/2346005" target="_blank"
 										rel="noopener noreferrer">Go To coconala</a>
 								</div>
 							</div>

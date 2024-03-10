@@ -5,9 +5,9 @@
     もし、追加の情報や質問がありましたらどうぞお気軽にお知らせください。<br>
     最後に、お忙しい中私のポートフォリオサイトにお時間を割いていただき、誠にありがとうございました。
     </p>
-    <div class="footer-contact-button-wrap">
-      <a class="footer-contact-button" href="<?php echo esc_url( home_url( '/' ) ); ?>contact">
-        <span class="footer-contact-button-item">Contact Me</span>
+    <div class="button-primary-wrap">
+      <a class="button-primary" href="<?php echo esc_url( home_url( '/' ) ); ?>contact">
+        <span class="button-primary-item">Contact Me</span>
       </a>
     </div>
   </div>

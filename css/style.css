@@ -124,7 +124,7 @@ header
 /*
 front-page.php/main_button
 ================================================ */
-.main-button {
+.button-secondary {
   border: 1px solid;
   border-radius: 30px;
   background-color: #4b6aa5;
@@ -135,7 +135,7 @@ front-page.php/main_button
   transition: all 0.3s ease;
   font-family: "Montserrat", sans-serif;
 }
-.main-button:hover {
+.button-secondary:hover {
   background-color: #fff;
   color: #4b6aa5;
 }
@@ -326,7 +326,7 @@ body.page-id-89::before {
   margin-bottom: 10px;
 }
 
-.mainpage-about-button {
+.button-secondary-wrap {
   display: block;
   text-align: center;
 }
@@ -478,7 +478,7 @@ page-about.php
   grid-template-columns: 33% 57%;
 }
 
-.name-wrap {
+.my-name-wrap {
   display: flex;
   width: 76%;
   border-bottom: 3px solid #4b6aa5;
@@ -502,13 +502,13 @@ page-about.php
   font-size: 2rem;
 }
 
-.my-img {
+.my-image {
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
 }
 
-.web-production-wrap {
+.production-wrap {
   margin-bottom: 130px;
 }
 
@@ -667,7 +667,7 @@ page-about.php
   font-size: 2rem;
 }
 
-.archive-contents {
+.archive-section {
   margin-bottom: 180px;
 }
 
@@ -971,7 +971,7 @@ footer
   line-height: 4.3rem;
 }
 
-.footer-contact-button {
+.button-primary {
   position: relative;
   display: block;
   margin-inline: auto;
@@ -981,11 +981,11 @@ footer
   border-radius: 32px;
   transition: all 0.3s ease;
 }
-.footer-contact-button:hover {
+.button-primary:hover {
   opacity: 0.5;
 }
 
-.footer-contact-button-item {
+.button-primary-item {
   display: flex;
   height: 100%;
   color: #4b6aa5;
@@ -1188,15 +1188,10 @@ mediaquery
   .works-section-wrap {
     margin-left: 0;
   }
-  .main-text {
-    font-size: 1.6rem;
-    margin-inline: auto;
-    margin-bottom: 40px;
-  }
   .works-image-title {
     font-size: 1.4rem;
   }
-  .main-button {
+  .button-secondary {
     padding: 10px 80px;
     font-size: 1.5rem;
     margin: 0 auto;
@@ -1220,10 +1215,10 @@ mediaquery
   .profile {
     display: block;
   }
-  .profile-img-wrap {
+  .profile-image-wrap {
     width: 100%;
   }
-  .my-img {
+  .my-image {
     width: 100%;
     margin-bottom: 30px;
     -o-object-fit: cover;
@@ -1236,9 +1231,6 @@ mediaquery
   }
   .my-name-birth {
     font-size: 2rem;
-  }
-  .my-profile-text {
-    font-size: 1.6rem;
   }
   .profile-text-wrap {
     width: 100%;
@@ -1253,7 +1245,7 @@ mediaquery
     line-height: 3.25rem;
     font-size: 1.6rem;
   }
-  .web-production-wrap {
+  .production-wrap {
     margin-bottom: 80px;
   }
   .production-contents-wrap {
@@ -1286,9 +1278,6 @@ mediaquery
   }
   .skill-text {
     margin-left: 0;
-    font-size: 1.6rem;
-  }
-  .message-main-text {
     font-size: 1.6rem;
   }
   /*
@@ -1358,7 +1347,7 @@ mediaquery
     padding: 30px 7px;
     line-height: 2.8rem;
   }
-  .footer-contact-button {
+  .button-primary {
     height: 50px;
     width: 310px;
   }
