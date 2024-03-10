@@ -31,10 +31,10 @@
 					</div>
 
 					<div class="skill-content-wrap">
-						<section class="main-section-content">
-							<h2 class="main-section-content-title">
-								<span class="main-section-content-title-en">Skill</span>
-								<span class="main-section-content-title-ja">できること</span>
+						<section class="section-content">
+							<h2 class="section-content-title">
+								<span class="section-content-title-en">Skill</span>
+								<span class="section-content-title-ja">できること</span>
 							</h2>
 							<div class="web-production-wrap">
 								<div class="production-title-wrap">
@@ -133,10 +133,10 @@
 						</section>
 					</div>
 					<div class="archive-contents">
-						<section class="main-section-content">
-							<h2 class="main-section-content-title">
-								<span class="main-section-content-title-en">Experience</span>
-								<span class="main-section-content-title-ja">実績紹介</span>
+						<section class="section-content">
+							<h2 class="section-content-title">
+								<span class="section-content-title-en">Experience</span>
+								<span class="section-content-title-ja">実績紹介</span>
 							</h2>
 							<div class="archive-wrap">
 								<div class="production-title-wrap">
@@ -157,7 +157,9 @@
 				</div>
 				<div id="aside" class="side-menu page-side-menu">
 					<div class="side-menu-title">
-						<a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+						<a href="<?php echo home_url(); ?>">
+							<?php bloginfo('name'); ?>
+						</a>
 					</div>
 					<nav class="side-nav-wrap">
 						<?php

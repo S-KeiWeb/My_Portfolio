@@ -5,7 +5,7 @@ html {
 
 p {
   line-height: 4.25rem;
-  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 
 img {
@@ -14,7 +14,7 @@ img {
 }
 
 body {
-  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
   font-weight: 300;
   background-color: #fdf8ed;
 }
@@ -140,48 +140,44 @@ body.page-id-89::before {
 .page-id-89 .header {
   color: #fff;
 }
-.top-main-wrap {
+.main {
   position: relative;
   max-width: 100%;
   height: 40vw;
   margin-bottom: 120px;
   color: #fff;
 }
-.top-concept-wrap {
+.concept {
   margin-bottom: 60px;
 }
-.concept {
+.title {
   padding-left: 4.6875%;
 }
-.main-concept {
+.title-main {
   display: flex;
   font-size: clamp(4.8rem, 11vw, 10rem);
   font-weight: 400;
   font-style: normal;
 }
-.main-concept-text {
+.title-sub {
   padding-top: 5px;
   font-size: clamp(1.6rem, 3vw, 3.5rem);
 }
-.concept-en {
+.message {
   position: absolute;
   bottom: 0;
   right: 0;
   padding-right: 5.6875%;
   font-family: "Montserrat", sans-serif;
 }
-.main-concept-en {
-  font-size: clamp(2.5rem, 2.7vw, 5rem);
-  margin-bottom: 20px;
-}
-.main-concept-message {
+.message-text {
   font-size: clamp(2rem, 1.8vw, 3rem);
   line-height: 4.45rem;
 }
 #main-container {
   position: relative;
 }
-.main-section-wrap {
+.container {
   display: flex;
   max-width: 100%;
   padding-top: 50px;
@@ -226,28 +222,30 @@ body.page-id-89::before {
   padding: 10px;
   font-size: 1.8rem;
 }
-.main-section-content {
+// front-page.php/page-about.php/共通
+.section-content {
   display: flex;
   flex-flow: column;
   margin-bottom: 80px;
 }
-.main-section-content h2 {
+.section-content h2 {
   color: #4b6aa5;
 }
-.main-section-content-title {
+.section-content-title {
   display: flex;
   flex-direction: column;
   margin-bottom: 100px;
 }
-.main-section-content-title-en {
+.section-content-title-en {
   font-size: clamp(3rem, 3.5vw, 5rem);
   padding-bottom: 5px;
   font-family: "Montserrat", sans-serif;
 }
-.main-section-content-title-ja {
+.section-content-title-ja {
   font-size: clamp(1.4rem, 3.5vw, 1.6rem);
 }
-.main-section-content-wrap {
+
+.section-wrap {
   margin-inline: auto;
   margin-left: 40%;
 }
@@ -255,60 +253,57 @@ body.page-id-89::before {
   display: block;
   margin-inline: auto;
 }
-.main-content-wrap {
+.about-section-wrap {
   display: flex;
   margin-bottom: 60px;
 }
-.mainpage-about-image {
+.about-section-image-wrap {
   width: 70%;
 }
-.mainpage-about-image img {
+.about-section-image {
   width: 100%;
   height: auto;
   object-fit: cover;
 }
-.main-about-text {
+.about-section-text {
   font-size: 2rem;
   margin-top: 20px;
   margin-bottom: 60px;
   margin-left: 9%;
   line-height: 3.45rem;
-  font-family: 'Zen Kaku Gothic New', sans-serif;
+  font-family: "Zen Kaku Gothic New", sans-serif;
 }
 .fadein {
   opacity: 0;
 }
-.main-about-text p {
+.about-section-text p {
   margin-bottom: 10px;
 }
 .mainpage-about-button {
   display: block;
   text-align: center;
 }
-.main-works-image-wrap {
+.works-section-image-wrap {
   display: flex;
   margin-bottom: 120px;
 }
-.main-works-image-wrap:nth-last-child(4) {
+.works-section-image-wrap:nth-last-child(4) {
   margin-bottom: 80px;
 }
-.main-works-image img {
+.works-section-image img {
   max-width: 100%;
   height: auto;
   object-fit: cover;
 }
-
-.works-text-wrap {
+.works-section-wrap {
   display: flex;
   justify-content: flex-end;
   flex-direction: column;
   margin-bottom: 11px;
   margin-left: 20px;
 }
-.works-text-wrap p {
+.works-section-text {
   font-size: clamp(1.4rem, 3.5vw, 1.6rem);
-}
-.works-text {
   width: 250px;
   line-height: 2.35rem;
   margin-bottom: 5px;
@@ -329,7 +324,7 @@ body.page-id-89::before {
     transform: translateY(0);
   }
 }
-.works-image-title {
+.works-section-company {
   font-size: 2rem;
 }
 .contact-wrap {
@@ -395,13 +390,13 @@ page-about.php/page-works.php共通
 .page-title {
   display: flex;
   flex-direction: column;
-	color: #4b6aa5;
+  color: #4b6aa5;
   margin-bottom: 120px;
 }
 .title-en {
   font-size: clamp(3rem, 3.5vw, 5rem);
   font-family: "Montserrat", sans-serif;
-	margin-bottom: 5px;
+  margin-bottom: 5px;
 }
 .title-ja {
   font-size: clamp(1.4rem, 3.5vw, 2rem);
@@ -410,72 +405,72 @@ page-about.php/page-works.php共通
 page-about.php
 ================================================ */
 .profile {
-	display: grid;
-	margin-bottom: 80px;
-	gap: 50px;
-	grid-template-columns: 33% 57%;
+  display: grid;
+  margin-bottom: 80px;
+  gap: 50px;
+  grid-template-columns: 33% 57%;
 }
 .name-wrap {
-	display: flex;
-	width: 76%;
-	border-bottom: 3px solid #4b6aa5;
-	margin-bottom: 40px;
-	padding-top: 10%;
-	align-items: baseline;
+  display: flex;
+  width: 76%;
+  border-bottom: 3px solid #4b6aa5;
+  margin-bottom: 40px;
+  padding-top: 10%;
+  align-items: baseline;
 }
 .my-name {
   font-size: 4rem;
-	padding-bottom: 10px;
-	padding-right: 18px;
+  padding-bottom: 10px;
+  padding-right: 18px;
 }
 .my-name-kana {
   font-size: 2rem;
-	font-family: "Montserrat", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 .profile-text {
   font-size: 2rem;
 }
 .my-img {
-	height: 100%;
-	object-fit: cover;
+  height: 100%;
+  object-fit: cover;
 }
 .web-production-wrap {
-	margin-bottom: 130px;		
+  margin-bottom: 130px;
 }
 .production-title-wrap {
-	border-bottom: 1px solid #333;
-	margin-bottom: 80px;
-	width: 80%;
+  border-bottom: 1px solid #333;
+  margin-bottom: 80px;
+  width: 80%;
 }
 .production-title {
-	font-size: clamp(2.5rem, 2.5vw, 4rem);
+  font-size: clamp(2.5rem, 2.5vw, 4rem);
   font-weight: 400;
-	padding-bottom: 10px;
+  padding-bottom: 10px;
 }
 .production-contents-wrap {
-	display: grid;
-	width: 100%;
-	gap: 10%;
-	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  display: grid;
+  width: 100%;
+  gap: 10%;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
 }
 .production-contents {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 .production-contents-icon {
-	font-size: clamp(6rem, 2.5vw, 8rem);
-	padding-bottom: 20px;
-	margin-inline: auto;
-	opacity: 0.8;
+  font-size: clamp(6rem, 2.5vw, 8rem);
+  padding-bottom: 20px;
+  margin-inline: auto;
+  opacity: 0.8;
 }
 .production-contents-title {
-	font-size: clamp(2rem, 2.5vw, 2.5rem);
+  font-size: clamp(2rem, 2.5vw, 2.5rem);
   font-weight: 400;
-	margin-bottom: 40px;
-	margin-inline: auto;
+  margin-bottom: 40px;
+  margin-inline: auto;
 }
 .production-contents-text {
-	font-size: clamp(1.6rem, 2.5vw, 2rem);
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
 }
 .circle-wrap {
   width: 160px;
@@ -490,22 +485,22 @@ page-about.php
   transform-origin: 50% 50%;
 }
 .html-css-circle-color {
-	stroke: #F16528;
+  stroke: #f16528;
 }
 .js-circle-color {
-	stroke: #F0D91C;
+  stroke: #f0d91c;
 }
 .wp-circle-color {
-	stroke: #3AABD2;
+  stroke: #3aabd2;
 }
 .ps-circle-color {
-	stroke: #001E36;
+  stroke: #001e36;
 }
 .ai-circle-color {
-	stroke: #330000;
+  stroke: #330000;
 }
 .xd-circle-color {
-	stroke: #470137;
+  stroke: #470137;
 }
 .circle-animation-active .circle-animation {
   animation: dash 2s ease-in-out forwards;
@@ -571,23 +566,23 @@ page-about.php
   font-size: 2rem;
 }
 .archive-contents {
-	margin-bottom: 180px;
+  margin-bottom: 180px;
 }
 .archive-text-wrap {
-	padding-left: 200px;
+  padding-left: 200px;
 }
 .archive-text {
-	font-size: clamp(1.6rem, 2.5vw, 2rem);
-	padding-bottom: 100px;
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
+  padding-bottom: 100px;
   line-height: 3.85rem;
 }
 /*
 page-works.php
 ================================================ */
 .works-message {
-	font-size: clamp(1.5rem, 2.5vw, 2rem);
-	text-align: center;
-	margin-bottom: 150px;
+  font-size: clamp(1.5rem, 2.5vw, 2rem);
+  text-align: center;
+  margin-bottom: 150px;
 }
 .works-image-wrap {
   display: grid;
@@ -598,8 +593,8 @@ page-works.php
 .works-excerpt {
   font-size: 1.6rem;
   line-height: 3.15rem;
-	width: 60%;
-	margin-bottom: 10px;
+  width: 60%;
+  margin-bottom: 10px;
 }
 .works-list img {
   margin-bottom: 20px;
@@ -709,7 +704,7 @@ single.php
 Contact_form
 ================================================ */
 .other-page-wrap {
-	max-width: 1280px;
+  max-width: 1280px;
   margin-inline: auto;
   margin-bottom: 120px;
 }
@@ -720,7 +715,7 @@ Contact_form
   margin-bottom: 40px;
 }
 .contact-message-text {
-  font-size: clamp(1.6rem, 2.5vw, 2.4rem); 
+  font-size: clamp(1.6rem, 2.5vw, 2.4rem);
   text-align: center;
 }
 .contact-form {
@@ -799,9 +794,9 @@ Contact_form
     text-align: left;
     line-height: 1.5em;
   }
-	.other-page-wrap {
-		padding: 0 2.6875%;
-	}
+  .other-page-wrap {
+    padding: 0 2.6875%;
+  }
   .contact-message-text {
     text-align: left;
   }
@@ -893,7 +888,7 @@ mediaquery
   body.page-id-89 {
     background-size: 100% 890px;
   }
-  .top-main-wrap {
+  .main {
     height: 45vw;
   }
 }
@@ -932,9 +927,9 @@ mediaquery
     background: #4b6aa5;
     width: 45%;
   }
-	.page-id-89 .openbtn span {
-		background: #fff;
-	}
+  .page-id-89 .openbtn span {
+    background: #fff;
+  }
   .openbtn.active span {
     background: #f7f5f5;
   }
@@ -981,34 +976,31 @@ mediaquery
   .contact {
     display: none;
   }
-  .top-main-wrap {
+  .main {
     margin-bottom: 350px;
   }
   .top {
     margin-bottom: 40px;
   }
-  .top-concept-wrap {
+  .concept {
     margin-bottom: 140px;
   }
-  .concept-en {
+  .message {
     position: static;
     padding-right: 0%;
     padding-left: 4.6875%;
   }
-  .main-concept-en {
-    margin-bottom: 20px;
-  }
-  .main-concept-message {
+  .message-text {
     line-height: 2.85rem;
   }
   .side-menu {
     display: none;
   }
-  .main-section-wrap {
+  .container {
     padding-top: 50px;
     padding-right: 0;
   }
-  .main-section-content-title {
+  .section-content-title {
     margin-bottom: 60px;
   }
   .main-content-title-en {
@@ -1017,28 +1009,28 @@ mediaquery
   .main-content-title-ja {
     font-size: 1.4rem;
   }
-  .main-section-content-wrap {
+  .section-wrap {
     margin: 0 10px;
     padding-right: 0;
   }
-  .main-content-wrap {
+  .about-section-wrap {
     display: block;
     margin-bottom: 30px;
   }
-  .mainpage-about-image {
+  .about-section-image-wrap {
     width: 100%;
   }
-  .main-about-text {
+  .about-section-text {
     font-size: 1.6rem;
     margin-top: 10px;
     margin-bottom: 40px;
     margin-left: 0;
   }
-  .main-works-image-wrap {
+  .works-section-image-wrap {
     display: block;
     margin-bottom: 60px;
   }
-  .works-text-wrap {
+  .works-section-wrap {
     margin-left: 0;
   }
   .main-text {
@@ -1062,7 +1054,7 @@ mediaquery
   ======================================== */
   .page-wrap {
     margin: 0 10px;
-		padding: 0;
+    padding: 0;
   }
   /*
   about-page.php
@@ -1104,18 +1096,18 @@ mediaquery
     line-height: 3.25rem;
     font-size: 1.6rem;
   }
-	.web-production-wrap {
+  .web-production-wrap {
     margin-bottom: 80px;
-	}
-	.production-contents-wrap {
-		margin-bottom: 120px;
-	}
-	.production-title-wrap {
+  }
+  .production-contents-wrap {
+    margin-bottom: 120px;
+  }
+  .production-title-wrap {
     width: 100%;
-	}
-	.archive-text-wrap {
+  }
+  .archive-text-wrap {
     padding-left: 0;
-	}
+  }
   .skill-content {
     gap: 4.645%;
     grid-template-columns: repeat(auto-fit, minmax(90px, 1fr));
@@ -1148,15 +1140,15 @@ mediaquery
   .works-image-wrap {
     display: block;
   }
-  .main-works-image:last-child {
+  .works-section-image:last-child {
     margin-bottom: 0;
   }
   .works-list img {
     width: 100%;
   }
-	.main-works-image {
-		margin-bottom: 60px;
-	}
+  .works-section-image {
+    margin-bottom: 60px;
+  }
   .works-message {
     text-align: start;
     margin-bottom: 70px;
@@ -1166,7 +1158,7 @@ mediaquery
   }
   .works-excerpt {
     font-size: 1.6rem;
-		margin-bottom: 10px;
+    margin-bottom: 10px;
     width: 80%;
   }
   .works-content-text {
@@ -1224,7 +1216,7 @@ cssAnimation
 ================================================ */
 .fade-left {
   animation-name: fadeLeftAnime;
-  animation-duration: .5s;
+  animation-duration: 0.5s;
   animation-fill-mode: forwards;
   opacity: 0;
   @keyframes fadeLeftAnime {

@@ -30,7 +30,7 @@
           while ($the_query->have_posts()):
             $the_query->the_post(); ?>
             <!-- <p id="page-top"><a href="#">Topへ</a></p> -->
-            <div class="main-works-image works-list">
+            <div class="works-section-image works-list">
               <a href="<?php the_permalink(); ?>">
                 <?php if (has_post_thumbnail()) {
                   the_post_thumbnail();

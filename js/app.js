@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const keyValue = true;
 
   const isElementPresent = (element) => {
-    return element !== null && element !== "undefined";
+    return element !== null && typeof element !== "undefined";
   };
 
   if (!sessionStorage.getItem(keyName)) {
@@ -68,21 +68,21 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
 
-  const loadingAreaLeft = document.querySelector('#loading-left');
+  const loadingAreaLeft = document.querySelector("#loading-left");
   if (isElementPresent(loadingAreaLeft)) {
-    const loadingAreaLeft = document.querySelector('#loading-left');
+    const loadingAreaLeft = document.querySelector("#loading-left");
     const keyframes = {
-      transform: ['scaleX(1)', 'scaleX(0)'],
+      transform: ["scaleX(1)", "scaleX(0)"],
     };
-  
+
     const options = {
       duration: 1000,
       delay: 200,
-      easing: 'ease',
-      fill: 'forwards',
+      easing: "ease",
+      fill: "forwards",
     };
-  
-    window.addEventListener('load', () => {
+
+    window.addEventListener("load", () => {
       loadingAreaLeft.animate(keyframes, options);
     });
   }
@@ -161,7 +161,7 @@ document.addEventListener("DOMContentLoaded", function () {
   fadeElements.forEach((fadeElement) => {
     fadeObserver.observe(fadeElement);
   });
-  
+
   //fadein実装（aboutスキルコンテンツ、works一覧にて）
   const animateFadeUp = (entries, obs) => {
     entries.forEach((entry) => {
@@ -172,7 +172,9 @@ document.addEventListener("DOMContentLoaded", function () {
     });
   };
   const fadeUpObserver = new IntersectionObserver(animateFadeUp);
-  const fadeUpElements = document.querySelectorAll(".main-works-image-wrap, .production-contents-wrap");
+  const fadeUpElements = document.querySelectorAll(
+    ".works-section-image-wrap, .production-contents-wrap"
+  );
   fadeUpElements.forEach((fadeupElement) => {
     fadeUpObserver.observe(fadeupElement);
   });
@@ -185,11 +187,11 @@ document.addEventListener("DOMContentLoaded", function () {
         if (entry.isIntersecting) {
           entry.target.classList.add("circle-animation-active");
           observer.unobserve(entry.target);
-        } 
+        }
       });
     };
 
-  const io = new IntersectionObserver(callback);
-  io.observe(item);
+    const io = new IntersectionObserver(callback);
+    io.observe(item);
   }
 });

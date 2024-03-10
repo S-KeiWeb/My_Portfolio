@@ -5,54 +5,53 @@
     the_post(); ?>
 
     <main>
-      <section class="top-main-wrap">
+      <section class="main">
         <div id="loading">
           <p>Loading...</p>
           <div id="loading-screen"></div>
         </div>
-        <div class="top-main">
-          <div class="top-concept-wrap">
-            <h1 class="concept">
-              <strong>
-                <span class="main-concept">
-                  <?php echo esc_html(get_field('main-concept')); ?>
+        <div class="concept">
+          <h1 class="title">
+            <strong>
+              <span class="title-main">
+                <?php echo esc_html(get_field('title-main')); ?>
+              </span>
+              <?php if (get_field('title-sub')): ?>
+                <span class="title-sub">
+                  <?php echo esc_html(get_field('title-sub')); ?>
                 </span>
-                <?php if(get_field('main-concept-text')): ?>
-                <span class="main-concept-text">
-                  <?php echo esc_html(get_field('main-concept-text')); ?>
-                </span>
-                <?php endif; ?>
-              </strong>
-            </h1>
-          </div>
-          <div class="concept-en">
-            <h2 class="main-concept-en">
-              <?php echo esc_html(get_field('main-concept-en')); ?>
-            </h2>
-            <p class="main-concept-message">
-              <?php echo wp_kses_post(get_field('main-concept-message')); ?>
-            </p>
-          </div>
+              <?php endif; ?>
+            </strong>
+          </h1>
+        </div>
+        <div class="message">
+          <p class="message-text">
+            <?php echo wp_kses_post(get_field('message-text')); ?>
+          </p>
         </div>
       </section>
 
-      <div id="main-container" class="main-section-wrap">
-        <div class="main-section-content-wrap">
-        <?php 
-        $page = get_page_by_path('about');
-        ?>
-          <section class="main-section-content">
-            <h2 class="main-section-content-title">
-              <span class="main-section-content-title-en"><?php echo ucwords($page->post_name); ?></span>
-              <span class="main-section-content-title-ja"><?php echo $page->post_title; ?></span>
+      <div id="main-container" class="container">
+        <div class="section-wrap">
+          <?php
+          $page = get_page_by_path('about');
+          ?>
+          <section class="section-content">
+            <h2 class="section-content-title">
+              <span class="section-content-title-en">
+                <?php echo ucwords($page->post_name); ?>
+              </span>
+              <span class="section-content-title-ja">
+                <?php echo $page->post_title; ?>
+              </span>
             </h2>
-            <div class="main-content-wrap">
-              <div class="mainpage-about-image">
-                <img class="main-content-img fadein" src="<?php echo get_template_directory_uri(); ?>/img/portfolio-image.jpg"
-                  alt="about-img">
+            <div class="about-section-wrap">
+              <div class="about-section-image-wrap">
+                <img class="about-section-image fadein"
+                  src="<?php echo get_template_directory_uri(); ?>/img/portfolio-image.jpg" alt="about-img">
               </div>
-              <div class="main-about-content">
-                <div class="main-about-text fadein">
+              <div class="about-section-text-wrap">
+                <div class="about-section-text fadein">
                   <?php echo wp_kses_post(get_field('main-about-text')); ?>
                 </div>
                 <div class="mainpage-about-button">
@@ -61,13 +60,17 @@
               </div>
             </div>
           </section>
-          <?php 
+          <?php
           $page = get_page_by_path('works');
           ?>
-          <section class="main-section-content">
-            <h2 class="main-section-content-title">
-              <span class="main-section-content-title-en"><?php echo ucwords($page->post_name); ?></span>
-              <span class="main-section-content-title-ja"><?php echo $page->post_title; ?></span>
+          <section class="section-content">
+            <h2 class="section-content-title">
+              <span class="section-content-title-en">
+                <?php echo ucwords($page->post_name); ?>
+              </span>
+              <span class="section-content-title-ja">
+                <?php echo $page->post_title; ?>
+              </span>
             </h2>
             <?php
             $args = array(
@@ -77,32 +80,38 @@
               'orderby' => 'date',
               'order' => 'ASC'
             );
-            $myposts = get_posts( $args );
-            foreach ( $myposts as $post ) : setup_postdata( $post ); ?>
-                <div class="main-works-image-wrap">
-                  <div class="main-works-image">
-                    <a href="<?php the_permalink(); ?>" ><?php
-                      if (has_post_thumbnail()) {
-                        the_post_thumbnail();
-                      }
-                    ?></a>
-                  </div>
-                  <div class="works-text-wrap">
-                    <p class="works-text">
-                      <?php the_excerpt(); ?>
-                    </p>
-                    <p class="works-image-text">
-                      <?php the_title(); ?>
-                    </p>
-                  </div>
+            $myposts = get_posts($args);
+            foreach ($myposts as $post):
+              setup_postdata($post); ?>
+              <div class="works-section-image-wrap">
+                <div class="works-section-image">
+                  <a href="<?php the_permalink(); ?>">
+                    <?php
+                    if (has_post_thumbnail()) {
+                      the_post_thumbnail();
+                    }
+                    ?>
+                  </a>
                 </div>
-            <?php endforeach; wp_reset_postdata(); ?>
+                <div class="works-section-wrap">
+                  <p class="works-section-text">
+                    <?php the_excerpt(); ?>
+                  </p>
+                  <p class="works-section-company">
+                    <?php the_title(); ?>
+                  </p>
+                </div>
+              </div>
+            <?php endforeach;
+            wp_reset_postdata(); ?>
             <a class="main-button" href="<?php echo esc_url(home_url('/')); ?>works">Go to Works Page</a>
           </section>
         </div>
         <div id="aside" class="side-menu">
           <div class="side-menu-title">
-            <a href="<?php echo home_url(); ?>"><?php bloginfo('name'); ?></a>
+            <a href="<?php echo home_url(); ?>">
+              <?php bloginfo('name'); ?>
+            </a>
           </div>
           <nav class="side-nav-wrap">
             <?php
