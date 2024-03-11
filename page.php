@@ -4,7 +4,7 @@
 	<?php while (have_posts()):
 		the_post(); ?>
 		<main class="other-page-wrap">
-			<h1 class="page-title">
+			<h1 class="page-title contact-page-title">
 				<span class="title-en">
 					<?php echo ucwords($post->post_name); ?>
 				</span>
@@ -12,13 +12,10 @@
 					<?php the_title(); ?>
 				</span>
 			</h1>
-			<div class="container">
-				<div class="content">
-					<?php the_content(); ?>
-				</div>
+			<div class="content">
+				<?php the_content(); ?>
 			</div>
 		</main>
-
 	<?php endwhile; ?>
 <?php endif; ?>
 
