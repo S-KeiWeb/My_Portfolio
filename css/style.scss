@@ -721,7 +721,7 @@ Contact_form
   margin-bottom: 40px;
 }
 .contact-message-text {
-  font-size: clamp(1.6rem, 2.5vw, 2.4rem);
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
   text-align: center;
 }
 .contact-form {
@@ -808,23 +808,23 @@ Contact_form
   }
 }
 /*
-404page
+404page/thanks-page共通
 ================================================ */
-.not-found-page-title-wrap {
+.other-page-title-wrap {
   background-color: #4b6aa5;
   color: #fff;
   text-align: center;
 }
-.not-found-page-title {
+.other-page-title {
   font-family: "Montserrat", sans-serif;
   font-size: 4rem;
   padding: 30px 0 15px;
   line-height: 2rem;
 }
-.not-found-sub-title {
+.other-sub-title {
   font-size: 1.6rem;
 }
-.not-found-page-main {
+.other-page-main {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -832,14 +832,22 @@ Contact_form
   width: 100%;
   height: 40vh;
 }
-.not-found-page-section p {
+.other-page-section p {
   font-size: 2rem;
   color: #333;
   margin-bottom: 20px;
 }
-.return-home {
+/*
+404page
+================================================ */.return-home {
   color: #4b6aa5;
   border-bottom: 1px solid #4b6aa5;
+}
+/*
+thanks-page
+================================================ */
+.other-page-section-message {
+  margin-bottom: 40px;
 }
 /*
 footer
