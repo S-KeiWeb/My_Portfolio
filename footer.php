@@ -1,6 +1,6 @@
 <footer class="footer">
-  <?php if(!is_page('contact')): ?>
-  <?php get_template_part('cta'); ?>
+  <?php if (!is_page(['contact', 'thanks'])): ?>
+    <?php get_template_part('cta'); ?>
   <?php endif; ?>
   <nav class="footer-nav-wrap">
     <?php
