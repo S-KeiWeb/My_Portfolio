@@ -1,0 +1,57 @@
+/* primary_button cta.phpで使用*/
+.button-primary {
+  position: relative;
+  display: block;
+  margin-inline: auto;
+  max-width: 500px;
+  height: 64px;
+  background: #fff;
+  border-radius: 32px;
+  transition: all 0.3s ease;
+  &:hover {
+    opacity: 0.5;
+  }
+  @include mq('tab') {
+    height: 50px;
+    width: 310px;
+  }
+}
+.button-primary:hover {
+  opacity: 0.5;
+}
+
+.button-primary-item {
+  display: flex;
+  height: 100%;
+  color: #4b6aa5;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+
+/* || secondary_button front-page.php/about-page.phpで使用 */
+
+.button-secondary-wrap {
+  text-align: center;
+}
+
+.button-secondary {
+  border: 1px solid;
+  border-radius: 30px;
+  background-color: #4b6aa5;
+  padding: 10px 80px;
+  font-size: 2.2rem;
+  color: #fff;
+  transition: all 0.3s ease;
+  font-family: "Montserrat", sans-serif;
+  &:hover {
+    background-color: #fff;
+    color: #4b6aa5;
+  }
+  @include mq("tab") {
+    padding: 10px 80px;
+    font-size: 1.5rem;
+    margin: 0 auto;
+  }
+}

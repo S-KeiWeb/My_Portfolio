@@ -1,0 +1,58 @@
+.footer {
+  font-family: "Montserrat", sans-serif;
+  border-top: 1px solid #707070;
+  padding-bottom: 40px;
+  position: relative;
+  z-index: 1;
+  background-color: #fdf8ed;
+}
+
+.cta-contact-wrap {
+  background-color: #4b6aa5;
+  color: #fff;
+  height: 400px;
+  @include mq('tab') {
+    height: 480px;
+    margin-bottom: 30px;
+  }
+}
+
+.cta-message {
+  font-size: clamp(1.4rem, 3.5vw, 2rem);
+  text-align: center;
+  padding: 50px 0;
+  line-height: 4.3rem;
+  @include mq('tab') {
+    text-align: left;
+    padding: 30px 7px;
+    line-height: 2.8rem;
+  }
+}
+
+.footer-nav-wrap {
+  display: flex;
+  justify-content: center;
+  margin: 70px 0 60px;
+  @include mq('tab') {
+    display: none;
+  }
+}
+
+.footer-nav {
+  display: flex;
+  gap: 0 40px;
+  font-size: 2rem;
+}
+
+.footer-list-item {
+  transition: all 0.3s ease;
+}
+
+.page-id-89 .footer-nav > .menu-item a::after {
+  background: #4b6aa5;
+}
+
+.copyright {
+  font-size: 2rem;
+  text-align: center;
+}

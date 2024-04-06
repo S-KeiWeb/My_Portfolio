@@ -1,0 +1,116 @@
+.other-page-wrap {
+  max-width: 1280px;
+  margin-inline: auto;
+  margin-bottom: 120px;
+  @include mq('sp') {
+    padding: 0 2.6875%;
+  }
+}
+
+.contact-page-title {
+  padding-left: 18.6%;
+}
+
+.content {
+  font-size: clamp(1.4rem, 2.5vw, 2rem);
+}
+
+.contact-message {
+  margin-bottom: 40px;
+}
+
+.contact-message-text {
+  font-size: clamp(1.6rem, 2.5vw, 2rem);
+  text-align: center;
+  @include mq('sp') {
+    text-align: left;
+  }
+}
+
+.contact-form {
+  max-width: 800px;
+  margin-inline: auto;
+}
+
+.contact-form-area {
+  padding: 2em 0;
+  border-bottom: 1px dashed #ccc;
+  transition: all 0.3s;
+  @include mq('sp') {
+    display: block;
+  }
+}
+
+.contact-form-area:last-child {
+  border-bottom: none;
+}
+
+.contact-form-area dt {
+  flex: 1;
+  font-family: "Montserrat", sans-serif;
+  @include mq('sp') {
+    width: 100%;
+    margin-bottom: 5px;
+    padding-right: 0;
+    text-align: left;
+    line-height: 1.5em;
+  }
+}
+
+.contact-form-area dd {
+  flex: 1;
+}
+
+.contact-form-area p {
+  font-family: "Montserrat", sans-serif;
+  color: #707070;
+}
+
+.contact-form-area input,
+.contact-form-area textarea {
+  width: 100%;
+  padding: 0.8em;
+  border: none;
+  background-color: #e6e6e6;
+  font-size: 16px;
+  resize: vertical;
+  transition: all 0.3s;
+}
+
+.contact-form-area input:focus,
+.contact-form-area textarea:focus {
+  outline: none;
+  background: #dde2e9;
+}
+
+.contact-form-send input {
+  display: block;
+  background: linear-gradient(135deg, #6b7a8e 0%, #4b6aa5 100%);
+  width: 300px;
+  height: 60px;
+  margin: 30px auto 0;
+  border: none;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 2px 5px 15px 0 rgba(0, 0, 0, 0.2);
+  font-size: 1.3em;
+  font-weight: bold;
+  transition: all 0.3s;
+}
+
+.contact-form-send {
+  text-align: center;
+}
+
+.contact-form-send input:hover {
+  filter: brightness(1.25);
+}
+
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output,
+.wpcf7 form.payment-required .wpcf7-response-output {
+  background-color: #fce3e3;
+  border: none;
+  text-align: center;
+}
+
