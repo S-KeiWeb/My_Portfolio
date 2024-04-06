@@ -1,5 +1,5 @@
-<div class="footer-contact-wrap">
-    <p class="footer-message">
+<div class="cta-contact-wrap">
+    <p class="cta-message">
     ポートフォリオサイトをご覧いただきありがとうございました。<br>
     業界未経験ではありますが、この転職の機会を通じて新たな挑戦でも貢献できるよう準備を整えております。<br>
     もし、追加の情報や質問がありましたらどうぞお気軽にお知らせください。<br>

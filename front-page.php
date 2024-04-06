@@ -104,7 +104,9 @@
               </div>
             <?php endforeach;
             wp_reset_postdata(); ?>
-            <a class="button-secondary" href="<?php echo esc_url(home_url('/')); ?>works">Go to Works Page</a>
+            <div class="button-secondary-wrap">
+              <a class="button-secondary" href="<?php echo esc_url(home_url('/')); ?>works">Go to Works Page</a>
+            </div>
           </section>
         </div>
         <div id="aside" class="side-menu">
